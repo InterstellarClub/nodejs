@@ -2,18 +2,18 @@
 layout: about-release-schedule.hbs
 title: الإصدارات  
 statuses:
-  maintenance: 'صيانة LTS'
-  active: 'نشك LTS'
-  current: 'الحالية'
+  maintenance: 'قيد الصيانة LTS'
+  active: 'نشط LTS'
+  current: 'حالي'
   pending: 'قيد الإنتظار'
 columns:
   - 'الإصدار'
   - 'الحالة'
-  - 'إسم رمز'
-  - 'الإصدار الأولي'
-  - 'بداية النشاط LTS'
+  - 'الإسم الرمزي'
+  - 'إصدار أولي'
+  - 'بداية نشاط LTS'
   - 'بداية صيانة  LTS'
-  - 'نهاية الحياة'
+  - 'نهاية الصلاحية'
 schedule-footer: التواريخ قابلة للتغيير.
 ---
 
