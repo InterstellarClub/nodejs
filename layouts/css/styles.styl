@@ -37,8 +37,11 @@
 
 .has-side-nav
   aside
+    if dir(rtl)
+      float right
+    else
+      float left
     width 200px
-    float left
     margin-top 1.5em
 
     ul
@@ -63,7 +66,10 @@
         background-color $active-green
 
   article
-    margin-left 220px
+    if dir(rtl)
+      margin-right 220px
+    else
+      margin-left 220px
 
 .edit-link
   float right
@@ -76,6 +82,9 @@
       width 100%
       float none
     article
+    if dir(rtl)
+      margin-right 0px
+    else
       margin-left 0px
 
 .full-width
