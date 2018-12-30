@@ -4,10 +4,10 @@
   "url": "https://nodejs.org/ar/",
   "locale": "ar",
   "rtl": true,
-  "scrollToTop": "إنتقل إلى الأعلى",
+  "scrollToTop": "أعلى",
   "reportNodeIssue": "Node.js أبلغ عن عطل في",
   "reportWebsiteIssue": "أبلغ عن عطل في الموقع",
-  "getHelpIssue": "احصل على مساعدة",
+  "getHelpIssue": "الحصول على مساعدة",
   "by": "من طرف",
   "all-downloads": "تحميل جميع النسخ",
   "nightly": "إصدارات ليلية",
@@ -40,7 +40,7 @@
     },
     "community": {
       "link": "about/community",
-      "text": "المجمع"
+      "text": "المجتمع"
     },
     "workinggroups": {
       "link": "about/working-groups",
@@ -52,11 +52,11 @@
     },
     "resources": {
       "link": "about/resources",
-      "text": "مصادر"
+      "text": "المصادر"
     },
     "trademark": {
       "link": "about/trademark",
-      "text": "علامة تجارية"
+      "text": "العلامة التجارية"
     },
     "privacy": {
       "link": "about/privacy",
@@ -65,7 +65,7 @@
   },
   "download": {
     "link": "download",
-    "text": "تحميل",
+    "text": "التنزيلات",
     "releases": {
       "link": "download/releases",
       "text": "الاصدارات السابقة"
@@ -79,19 +79,19 @@
       "text": "وتائق الاصدارات مختومة SHASUMS"
     },
     "install-on-linux": {
-      "text": "Installing Node.js via binary archive on Linux"
+      "text": "تثبيت نود جي اس عبر ارشيف ثنائي على لينكس"
     }
   },
   "docs": {
     "link": "docs",
-    "text": "توتيق",
+    "text": "التوثيق",
     "es6": {
       "link": "docs/es6",
       "text": "ES6 وما بعدها"
     },
     "inspector": {
       "link": "docs/inspector",
-      "text": "أدوات التفتيش"
+      "text": "أدوات المراقبة"
     },
     "api-lts": {
       "link": "/dist/latest-%ver-major%/docs/api",
@@ -112,7 +112,7 @@
     "text": "قم بالانضمام",
     "code-and-learn": {
       "link": "get-involved/code-and-learn",
-      "text": "برمج + تعلم"
+      "text": "برمج و تعلم"
     },
     "collab-summit": {
       "link": "get-involved/collab-summit",
@@ -133,7 +133,7 @@
   },
   "blog": {
     "link": "blog",
-    "text": "مدونة"
+    "text": "المدونة"
   },
   "foundation": {
     "link": "https://foundation.nodejs.org/",
@@ -141,7 +141,7 @@
   },
   "releases": {
     "title": "أرشيف الاصدارات",
-    "downloads": "تحميل"
+    "downloads": "تحميلات"
   },
   "links": {
     "pages": {
