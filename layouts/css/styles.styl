@@ -19,94 +19,176 @@
 @import 'page-modules/_prev-next-navigation'
 @import 'page-modules/_release-schedule'
 
-.intro
-  margin-top 140px
-  font-size 38px
-  line-height 1.2
+langsLTR = en ca de es fr gl it ja ko pt-br uk zh-cn zh-tw
+langsRTL = ar fa
 
-  h1
-    font-size inherit
-    margin-bottom 15px
+for langs in langsLTR
+  html[lang={langs}]
+    .intro
+      margin-top 140px
+      font-size 38px
+      line-height 1.2
 
-    & + p
-      margin-top 0
+      h1
+        font-size inherit
+        margin-bottom 15px
 
-  span
-    color $light-gray
-    display block
+        & + p
+          margin-top 0
 
-.has-side-nav
-  aside
-    if dir(rtl)
+      span
+        color $light-gray
+        display block
+
+    .has-side-nav
+      aside
+        float left
+        width 200px
+        margin-top 1.5em
+
+        ul
+          list-style-type none
+          margin 0
+          padding 0
+
+        li
+          padding 0.1em 0.5em
+
+        a
+          display block
+          padded-link(10px)
+          padding-top 5px
+          padding-bottom 5px
+          line-height 1
+
+        .active
+          > a,
+          > a:hover
+            color $white
+            background-color $active-green
+
+      article
+        margin-left 220px
+
+    .edit-link
       float right
-    else
-      float left
-    width 200px
-    margin-top 1.5em
+      font-size 0.9em
+      margin 0.5em 0
 
-    ul
-      list-style-type none
-      margin 0
+    @media screen and (max-width: 480px)
+      .has-side-nav
+        aside
+          width 100%
+          float none
+        article
+          margin-left 0px
+
+    .full-width
+      width 100%
+
+    .small
+      font-size 10px
+
+    .color-lightgray
+      color $light-gray
+
+    a:hover .color-lightgray
+      color $white
+
+    .no-padding
       padding 0
 
-    li
-      padding 0.1em 0.5em
+    .highlight-box
+      background-color $light-gray3
+      padding 5px 15px
+      border-radius 2px
+      margin-top 1em
 
-    a
-      display block
-      padded-link(10px)
-      padding-top 5px
-      padding-bottom 5px
-      line-height 1
+      & *:first-child
+        margin-top 0.5rem
 
-    .active
-      > a,
-      > a:hover
-        color $white
-        background-color $active-green
+for langs in langsRTL
+  html[lang={langs}]
+    .intro
+      margin-top 140px
+      font-size 38px
+      line-height 1.2
 
-  article
-    if dir(rtl)
-      margin-right 220px
-    else
-      margin-left 220px
+      h1
+        font-size inherit
+        margin-bottom 15px
 
-.edit-link
-  float right
-  font-size 0.9em
-  margin 0.5em 0
+        & + p
+          margin-top 0
 
-@media screen and (max-width: 480px)
-  .has-side-nav
-    aside
+      span
+        color $light-gray
+        display block
+
+    .has-side-nav
+      aside
+        float right
+        width 200px
+        margin-top 1.5em
+
+        ul
+          list-style-type none
+          margin 0
+          padding 0
+
+        li
+          padding 0.1em 0.5em
+
+        a
+          display block
+          padded-link(10px)
+          padding-top 5px
+          padding-bottom 5px
+          line-height 1
+
+        .active
+          > a,
+          > a:hover
+            color $white
+            background-color $active-green
+
+      article
+        margin-right 220px
+
+    .edit-link
+      float right
+      font-size 0.9em
+      margin 0.5em 0
+
+    @media screen and (max-width: 480px)
+      .has-side-nav
+        aside
+          width 100%
+          float none
+        article
+          margin-right 0px
+
+
+    .full-width
       width 100%
-      float none
-    article
-    if dir(rtl)
-      margin-right 0px
-    else
-      margin-left 0px
 
-.full-width
-  width 100%
+    .small
+      font-size 10px
 
-.small
-  font-size 10px
+    .color-lightgray
+      color $light-gray
 
-.color-lightgray
-  color $light-gray
+    a:hover .color-lightgray
+      color $white
 
-a:hover .color-lightgray
-  color $white
+    .no-padding
+      padding 0
 
-.no-padding
-  padding 0
+    .highlight-box
+      background-color $light-gray3
+      padding 5px 15px
+      border-radius 2px
+      margin-top 1em
 
-.highlight-box
-  background-color $light-gray3
-  padding 5px 15px
-  border-radius 2px
-  margin-top 1em
-
-  & *:first-child
-    margin-top 0.5rem
+      & *:first-child
+        margin-top 0.5rem
