@@ -19,7 +19,7 @@ title: Installing Node.js via package manager
 * [OpenBSD](#openbsd)
 * [openSUSE and SLE](#opensuse-and-sle)
 * [macOS](#macos)
-* [SmartOS and illumos](#smartos-and-illumos)
+* [SmartOS و illumos](#smartos-and-illumos)
 * [Solus](#solus)
 * [Void Linux](#void-linux)
 * [ويندوز](#windows)
@@ -67,7 +67,7 @@ cd /usr/ports/www/node && make install
 
 ## Gentoo
 
-Node.js is available in the portage tree.
+النود جي اس متوفر عبر portage tree.
 
 ```bash
 emerge nodejs
@@ -75,40 +75,36 @@ emerge nodejs
 
 ## NetBSD
 
-Node.js is available in the pkgsrc tree:
+النود جي اس متوفر في pkgsrc tree:
 
 ```bash
 cd /usr/pkgsrc/lang/nodejs && make install
 ```
-
-Or install a binary package (if available for your platform) using pkgin:
+أو يمكنك تثبيت حزمة ثنائية (إذا كانت متوفرة لمنصتك) باستعمال pkgin:
 
 ```bash
 pkgin -y install nodejs
 ```
 
 ## nvm
-Node Version Manager is a bash script used to manage multiple released Node.js versions. It allows
-you to perform operations like install, uninstall, switch version, etc.
-To install nvm, use this [install script](https://github.com/creationix/nvm#install-script).
 
-On Unix / OS X systems Node.js built from source can be installed using
-[nvm](https://github.com/creationix/nvm) by installing into the location that nvm expects:
+مدير نسخ النود هو عبارة عن سكريبت خاص بالباش يستخدم لإدارة عدة نسخ من النود جي اس، حيث يسمح لك بالقيام بعمليات مختلفة كتثبيت و إلغاء تثبيت و تبديل نسخة معينة و اكثر من ذلك.
+لتثبيت مدير نسخ النود استعمل [سكريبت التثبيت](https://github.com/creationix/nvm#install-script).
+
+على انظمة يونيكس و OS X، يمكن تثبيت نسخة من النود جي اس تم بنائها من المصدر عبر [مدير نسخ النود (nvm)](https://github.com/creationix/nvm) عبر تثبيتها في المسار الذي يتوقعه مدير نسخ النود:
 
 ```bash
 $ env VERSION=`python tools/getnodeversion.py` make install DESTDIR=`nvm_version_path v$VERSION` PREFIX=""
 ```
 
-After this you can use `nvm` to switch between released versions and versions
-built from source.
-For example, if the version of Node.js is v8.0.0-pre:
+بعد قيامك بهذه الخطوة، يمكنك استعمال مدير نسخ النود للتبديل بين النسخ المحررة و النسخ المبنية من المصدر.
+على سبيل المثال ، اذا كانت نسخة النود جي اس الحالية هي <span dir="ltr">v8.0.0-pre</span>:
 
 ```bash
 $ nvm use 8
 ```
 
-Once the official release is out you will want to uninstall the version built
-from source:
+حالما يتم إطلاق نسخة رسمية، قم بإلغاء تثبيت النسخة المبنية من المصدر:
 
 ```bash
 $ nvm uninstall 8
@@ -116,13 +112,13 @@ $ nvm uninstall 8
 
 ## OpenBSD
 
-Node.js is available through the ports system.
+يتوفر النود جي اس حاليا عبر نظام البوابات.
 
 ```bash
 /usr/ports/lang/node
 ```
 
-Using [pkg_add](http://man.openbsd.org/OpenBSD-current/man1/pkg_add.1) on OpenBSD:
+باستعمال [pkg_add](http://man.openbsd.org/OpenBSD-current/man1/pkg_add.1) على OpenBSD:
 
 ```bash
 pkg_add node
@@ -130,15 +126,15 @@ pkg_add node
 
 ## openSUSE and SLE
 
-Node.js is available in the main repositories under the following packages:
+يتوفر النود جي اس في المستودعات الرئيسية تحت الحزم الاتية:
 
 * **openSUSE Leap 42.2**: `nodejs4`
 * **openSUSE Leap 42.3**: `nodejs4`, `nodejs6`
 * **openSUSE Tumbleweed**: `nodejs4`, `nodejs6`, `nodejs8`
 * **SUSE Linux Enterprise Server (SLES) 12**: `nodejs4`, `nodejs6`
-  (The "Web and Scripting Module" must be [added before installing](https://www.suse.com/documentation/sles-12/book_sle_deployment/data/sec_add-ons_extensions.html).)
+  (يجب إضافة الـ "موديل الويب و البرمجة" [قبل التثبيت](https://www.suse.com/documentation/sles-12/book_sle_deployment/data/sec_add-ons_extensions.html))
 
-For example, to install Node.js 4.x on openSUSE Leap 42.2, run the following as root:
+على سبيل المثال، لتثبيت النود جي اس <span dir="ltr">4.x</span> على <span dir="ltr">openSUSE Leap 42.2</span> قم بتنفيذ ما يلي كجذر:
 
 ```bash
 zypper install nodejs4
@@ -146,23 +142,23 @@ zypper install nodejs4
 
 ## macOS
 
-Simply download the [macOS Installer](https://nodejs.org/#download) direct from the [nodejs.org](https://nodejs.org) web site.
+بكل بساطة، قم بتنزيل [مثبت الماك او اس](https://nodejs.org/#download) مباشرة من موقع [nodejs.org](https://nodejs.org).
 
-_If you want to download the package with bash:_
+_إذا كنت تريد تنزيل الحزمة باستعمال الباش:_
 
 ```bash
 curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg" && sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
 ```
 
-### Alternatives
+### البدائل
 
-Using **[Homebrew](http://brew.sh/)**:
+باستعمال **[Homebrew](http://brew.sh/)**:
 
 ```bash
 brew install node
 ```
 
-Using **[MacPorts](http://www.macports.org/)**:
+باستعمال **[MacPorts](http://www.macports.org/)**:
 
 ```bash
 port install nodejs<major version>
@@ -171,29 +167,29 @@ port install nodejs<major version>
 port install nodejs7
 ```
 
-Using **[pkgsrc](https://pkgsrc.joyent.com/install-on-osx/)**:
+باستعمال **[pkgsrc](https://pkgsrc.joyent.com/install-on-osx/)**:
 
-Install the binary package:
+تثبيت الحزمة الثنائية:
 
 ```bash
 pkgin -y install nodejs
 ```
 
-Or build manually from pkgsrc:
+ من أو قم ببنائها يدويا من pkgsrc:
 
 ```bash
 cd pkgsrc/lang/nodejs && bmake install
 ```
 
-## SmartOS and illumos
+## SmartOS و illumos
 
-SmartOS images come with pkgsrc pre-installed.  On other illumos distributions, first install **[pkgsrc](https://pkgsrc.joyent.com/install-on-illumos/)**, then you may install the binary package as normal:
+تأتي اسطوانة SmartOS مثبتة افتراضيا مع pkgsrc. على توزيعات أخرى من illumos، قم بتثبيت **[pkgsrc](https://pkgsrc.joyent.com/install-on-illumos/)** أولا و عندها يمكنك تثبيت الحزمة الثنائية اعتياديا:
 
 ```bash
 pkgin -y install nodejs
 ```
 
-Or build manually from pkgsrc:
+او قم ببنائها يدويا من pkgsrc:
 
 ```bash
 cd pkgsrc/lang/nodejs && bmake install
@@ -202,7 +198,7 @@ cd pkgsrc/lang/nodejs && bmake install
 
 ## Solus
 
-Solus provides node.js in its main repository.
+توفر Solus النود جي اس في مستودعها الرئيسي.
 
 ```bash
 sudo eopkg install nodejs
@@ -211,19 +207,19 @@ sudo eopkg install nodejs
 
 ## Void Linux
 
-Void Linux ships node.js stable in the main repository.
+يوفر Void Linux نسخة مستقرة من النود جي اس في المستودع الرئيسي.
 
 ```bash
 xbps-install -Sy nodejs
 ```
 
-## Windows
+## ويندوز
 
-Simply download the [Windows Installer](https://nodejs.org/#download) directly from the [nodejs.org](https://nodejs.org) web site.
+قم بتحميل [المثبت الخاص بويندوز](https://nodejs.org/#download) مباشرة من موقع [nodejs.org](https://nodejs.org).
 
-### Alternatives
+### البدائل
 
-Using **[Chocolatey](http://chocolatey.org)**:
+باستعمال **[Chocolatey](http://chocolatey.org)**:
 
 ```bash
 cinst nodejs
@@ -231,7 +227,7 @@ cinst nodejs
 cinst nodejs.install
 ```
 
-Using **[Scoop](http://scoop.sh/)**:
+باستعمال **[Scoop](http://scoop.sh/)**:
 
 ```bash
 scoop install nodejs
