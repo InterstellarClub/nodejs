@@ -6,7 +6,7 @@ downloads:
     headline: التنزيلات
     lts: مستقر
     current: الحالي
-    tagline-current: آخر الميزات
+    tagline-current: يحتوي على آخر الميزات
     tagline-lts: موصى به لأغلب المستخدمين
     display-hint: عرض التنزيلات لـ
     intro: >
@@ -24,7 +24,6 @@ additional:
     intro: >
         يقوم أعضاء من مجتمع النود جي اس بالاشراف على نسخ غير رسمية من النود جي اس لمنصات أخرى.
         يجب التذكير أن هذه النسخ غير مدعومة من الفريق الأساسي للنود جي اس و قد لا تكون على نفس مستوى التطوير الخاص بالاصدارات الحالية للنود جي اس.
-        Members of the Node.js community maintain unofficial builds of Node.js for additional platforms. Note that such builds are not supported by the Node.js core team and may not yet be at the same build level as current Node.js release.
     platform: منصة
     provider: مزود
     SunOSBinaries: ملف ثنائي لـSun OS
