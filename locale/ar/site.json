@@ -9,7 +9,7 @@
   "reportWebsiteIssue": "أبلغ عن عطل في الموقع",
   "getHelpIssue": "الحصول على مساعدة",
   "by": "من طرف",
-  "all-downloads": "تحميل جميع النسخ",
+  "all-downloads": "جميع التحميلات",
   "nightly": "إصدارات ليلية",
   "chakracore-nightly": "Node-ChakraCore إصدارات ليلية خاصة ب",
   "previous": "السابق",
@@ -33,7 +33,7 @@
   },
   "about": {
     "link": "about",
-    "text": "عن الموقع",
+    "text": "عن النود جي اس",
     "governance": {
       "link": "about/governance",
       "text": "الحوكمة"
@@ -109,7 +109,7 @@
   },
   "getinvolved": {
     "link": "get-involved",
-    "text": "قم بالانضمام",
+    "text": "إنضم إلينا",
     "code-and-learn": {
       "link": "get-involved/code-and-learn",
       "text": "برمج و تعلم"
