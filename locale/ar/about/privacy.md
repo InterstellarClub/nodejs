@@ -50,12 +50,12 @@ layout: about.hbs
 ليس من المرخص للمستخدم إضافة مستخدمين آخرين لموقع (حتى المستخدمين الذين دخلوا في تحويلات معهم) أو لائحة بريدية بدون موافقة خطية، و تحث المؤسسة المستخدمين على الاخذ بعين الاعتبار سياسات الخصوصية و الامن الخاصة بمواقع أطراف التحويل قبل الشروع في التحويلات أو اختيار الإفصاح عن معلومات.
 
 ## البريد الالكتروني
-The Foundation may use (or provide to The Linux Foundation or other third party contractors to use) contact information received by the Foundation to email any user with respect to any Foundation or project of The Linux Foundation (a “Project”) opportunity, event or other matter.
+قد تستعمل المؤسسة (أو تزود مؤسسة اللينكس او أطراف ثالثة متعاقدة) بمعلومات الاتصال التي تم استقبالها من طرف المؤسسة لإرسال رسائل إلكترونية لأي مستخدم مع احترام فرصة أو مناسبة أي مؤسسة أو مشروع خاص بمؤسسة اللينكس (مشروع) أو أي شيء.
 
-If a user no longer wishes to receive emails from the Foundation or any Project or any Site, the Foundation will (or, if applicable, have The Linux Foundation) provide instructions in each of its emails on how to be removed from any lists. The Foundation will make commercially reasonable efforts to honor such requests.
+اذا لم يعد المستخدم يريد تلقي رسائل إلكترونية من المؤسسة أو من أي مشروع أو موقع، تقوم المؤسسة (أو مؤسسة اللينكس إذا أمكن) بتوفير الإرشادات اللازمة لكيفية إلغاء الإشتراك من أي قائمة بريدية في جميع الرسائل. تبذل المؤسسة الجهود التجارية اللازمة لضمان صدق مثل هذه الطلبات
 
-## Photographs
-Users may have the opportunity to submit photographs to the Sites for product promotions, contests, and other purposes to be disclosed at the time of request. In these circumstances, the Sites are designed to allow the public to view, download, save, and otherwise access the photographs posted. By submitting a photograph, users waive any privacy expectations users have with respect to the security of such photographs, and the Foundation’s use or exploitation of users’ likeness.  You may submit a photograph only if you are the copyright holder or if you are authorized to do so under license by the copyright holder, and by submitting a photograph you agree to indemnify and hold the Foundation, its directors, officers, employees and agents harmless from any claims arising out of your submission.  By submitting a photograph, you grant the Foundation a perpetual, worldwide, royalty-free license to use the photograph in any media now known of hereinafter invented for any business purpose that the Foundation, at its sole discretion, may decide.
+## الصور الفوتوغرافية
+قد تتاح للمستخدمين الفرصة لرفع صور فوتوغرافية للمواقع  لغرض عروض على المنتجات، أو منافسات و أغراض أخرى يتم الإفصاح عنها وقت إجراء الطلب. إن المواقع مصممة للسماح بمشاهدة و تنزيل و حفظ و الوصول إلى الصور المنشورة علنيا في مثل هذه الظروف. بنشر الصور الفوتوغرافية، يتنازل المستخدمون عن توقعاتهم بشأن الخصوصية مع الاحتفاظ بتأمين مثل هذه الصور و استعمال المؤسسة أو استغلالها لما يمثله المستخدمون. يحق لك نشر صور فوتوغرافية فقط إذا كنت صاحب حقوق الملكية أو اذا كنت مرخصاً لفعل ذلك من قبل صاحب حقوق الملكية، و بنشرك لصور فوتوغرافية، فأنت توافق على تعويض و تحمل الأذى الناتج عن هذا النشر بحق المؤسسة، مديريها ،ضباطها ،وموظفيها و عملائها. بنشرك لصور فوتوغرافية، فإنك تمنح المؤسسة رخصة دائمة عالمية بدون حقوق ملكية لاستعمال الصور في أي  وسيلة إعلامية معروفة فيما يلي و تم وجودها لأجل أي غرض تجاري قد تقرره المؤسسة وفقا لتقديرها وحدها.
 
 ## Links to Third-Party Sites and Services
 The Sites may permit you to access or link to third party websites and information on the Internet, and other websites may contain links to the Sites. When a user uses these links, the user leaves the Sites. The Foundation has not reviewed these third party sites, does not control, and is not responsible for, any of the third party sites, their content or privacy practices. The privacy and security practices of websites accessed from the Sites are not covered by this Privacy Policy, and the Foundation is not responsible for the privacy or security practices or the content of such websites, including but not limited to the third party services you access through the Foundation. If a user decides to access any of the linked sites, the Foundation encourages the user to read the privacy statements of those sites. The user accesses such sites at user’s own risk.
@@ -90,8 +90,8 @@ The California Online Privacy Protection Action (“CalOPPA”) permits customer
 
 Please note that the Foundation does not respond to “do not track” signals or other similar mechanisms intended to allow California residents to opt-out of Internet tracking under CalOPPA.  The Foundation may track and/or disclose your online activities over time and across different websites to third parties when you use our services.
 
-## What to Do in the Event of Lost or Stolen Information
+## ما الذي يجب فعله في حال ضياع أو سرقة المعلومات
 You must promptly notify us if you become aware that any information provided by or submitted to our Site or through our Product is lost, stolen, or used without permission at privacy@nodejs.org.
 
-## Questions or Concerns
-If you have any questions or concerns regarding privacy at the Foundation, please send us a detailed message to [privacy@nodejs.org](mailto:privacy@nodejs.org).
+## أسئلة
+إذا كانت لديك أية أسئلة عن الخصوصية في المؤسسة، تفضل بمراسلتنا عبر البريد الالكتروني [privacy@nodejs.org](mailto:privacy@nodejs.org).
