@@ -3,15 +3,7 @@ title: Comment s'impliquer ?
 layout: contribute.hbs
 ---
 
-# Nous encourageons toute forme de contributions de la part de la communauté 
-
-La communauté Node.js est vaste, inclusive et heureuse de permettre à autant 
-d'utilisateurs de contribuer de toutes les manières possibles. Si vous souhaitez
-[signaler un problème](https://github.com/nodejs/node/issues), aider à documenter
-ou contribuer au code du projet, vous êtes au bon endroit. Explorez les ressources 
-de notre communauté pour trouver comment vous pouvez aider:
-
-<hr>
+# Comment s'impliquer ?
 
 ## Discussion de la communauté
 
@@ -27,8 +19,6 @@ de notre communauté pour trouver comment vous pouvez aider:
 
 - [Node.js Collection](https://medium.com/the-node-js-collection) est une liste de contenus maintenue par la communauté sur Medium [en].
 
-- [NodeUp](http://nodeup.com) est un podcast sur les actualités de la communauté Node [en].
-
 - La [Community Committee](https://github.com/nodejs/community-committee) s'agit d'un comité de haut niveau de la Fondation Node.js axé sur les efforts communautaires.
 
 
@@ -40,22 +30,13 @@ de notre communauté pour trouver comment vous pouvez aider:
 
 - [L'étiquette Stack Overflow Node.js](http://stackoverflow.com/questions/tagged/node.js) rassemble de nouvelles informations chaque jours [en].
 
-- [How To Node](http://howtonode.org/) a de nombreux tutoriaux utiles [en].
-
 
 ## Site et projets des commuanutés internationales 
 
-- [blog Node.js australien](http://nodejs.org.au/)
 - [communauté chinoise](http://cnodejs.org)
 - [communauté française Google+ des utilisateurs Node.js](https://plus.google.com/communities/113346206415381691435)
-- [communauté allemande Node.js](http://nodecode.de)
 - [communauté hongroise (Magyar)](http://nodehun.blogspot.com/)
-- [communauté iranienne](http://nodejs.ir)
 - [communauté israelienne sur Facebook](https://www.facebook.com/groups/node.il/)
 - [communauté japonaise](http://nodejs.jp/)
-- [communauté Coréenne](http://nodejs.github.io/nodejs-ko/)
-- [communauté du Nicaragua](http://nodenica.com/)
 - [communauté espagnole sur Facebook](https://www.facebook.com/groups/node.es/)
 - [communauté espagnole](http://nodehispano.com)
-- [communauté turque](http://node.ist/)
-- [communauté du Viêt Nam](http://nodejs.vn)
