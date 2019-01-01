@@ -24,31 +24,32 @@ layout: about.hbs
 
 لأجل تكييف عمليات الاتصل اللاحقة للمؤسسة مع المستخدمين، و لأجل الاستمرار في تحسين الخدمات و المنتجات على المواقع، قد تطلب المؤسسة من المستخدمين توفير معلومات عن اهنماماتهم، تركيبتهم السكانية، خبراتهم و تفضيلات اتصال مفصلة. قد تقوم المؤسسة و أطراف  ثالثة متمثلة في شركات الإشهار بتتبع المعلومات بخصوص استعمال المستخدم للمواقع مثل عنوان بروتوكول الانترنت.
 
-## How the Foundation Uses the Information Collected
-The Foundation may use collected information for any lawful purpose related to the Foundation’s business, including, but not limited to:
+## كيف تستعمل المؤسسة المعلومات المجمعة
+تستعمل المؤسسة المعلومات المجمعة لأي غرض قانوني يتعلق بأعمال المؤسسة، من بينها و لكن غير محدودة إليها:
 
-- To understand a user’s needs and create content that is relevant to the user;
-- To generate statistical studies;
-- To conduct market research and planning by sending user surveys;
-- To notify user referrals of services, information, or products when a user requests that the Foundation send such information to referrals;
-- To improve services, information, and products;
-- To help a user complete a transaction, or provide services or customer support;
-- To communicate back to the user;
-- To update the user on services, information, and products;
-- To personalize a Site for the user;
-- To notify the user of any changes with a Site that may affect the user;
-- To enforce terms of use on a Site; and
-- To allow the user to purchase products, access services, or otherwise engage in activities the user selects.
+- فهم احتياجات المستخدم و إنشاء محتوى على صلة به.
+- إنشاء دراسات إحصائية.
+- القيام بأبحاث السوق و التخطيط عبر إرسال استطلاعات رأي المستخدم.
+- إبلاغ إحالات المستخدم من الخدمات، و المعلومات أو المنتجات عندا يطلب مستخدم من المؤسسة إرسال مثل هذه المعلومات إلى الإحالات.
+- تحسين الخدمات و المعلومات و المنتجات.
+- مساعدة المستخدم على إكمال عملية تحويل أو توفير خدمة أو دعم عملاء.
+- الإتصال بالمستخدم
+- تحديث المستخدم في خدمة، معلومة أو منتج
+- تخصيص موقع حسب المستخدم
+- تنبيه المستخدم بأي تغييرات طارئة على موقع و التي من شأنها التأثير عليه.
+- تطبيق شروط الإستخدام على موقع
+- تمكين المستخدم من شراء منتجات و الوصول إلى خدمات ، أو الانخراط في نشاطات يختارها.
 
-User names, identifications ("IDs"), and email addresses (as well as any additional information that a user may choose to post) may be publicly available on a Site when users voluntarily and publicly disclose personal information, such as when a user posts information in conjunction with content subject to an Open Source license, or as part of a message posted to a public forum or a publicly released software application. The personal information you may provide to the Foundation may reveal or allow others to discern aspects of your life that are not expressly stated in your profile (for example, your picture or your name may reveal your hair color, race or approximate age). By providing personal information to us when you create or update your account and profile or post a photograph, you are expressly and voluntarily accepting our Terms of Use and freely accepting and agreeing to our processing of your personal information in ways set out by this Privacy Policy. Supplying information to us, including any information deemed “sensitive” by applicable law, is entirely voluntary on your part. You may withdraw your consent to the Foundation’s collection and processing of your information by closing your account.  You should be aware that your information may continue to be viewable to others after you close your account, such as on cached pages on Internet search engines.  Users may not be able to change or remove public postings once posted. Such information may be used by visitors of these pages to send unsolicited messages. The Foundation is not responsible for any consequences which may occur from the third-party use of information that a user chooses to submit to public pages.
+إن أسماء المستخدمين، الارقام التعريفية الحصرية ("ID") و عناوين البريد الالكتروني (إضافة إلى أي معلومات يختار المستخدم ان ينشرها) قد تكون متاحة علنيا في موقع عندما يختار المستخدم الافصاح بإرادته عنها، مثل عندما ينشر المستخدم معلومات متعلقة برخصة مفتوحة المصدر أو كجزء من رسالة منشورة علنيا في منتدى عام أو تطبيق برنامج تم إصداره عموميا.  المعلومات التي قد توفرها للمؤسسة قد تسمح للآخرين أو تكشف لهم خبايا حياتك الشخصية التي لم يتم التعبير عنها صراحة على حسابك (على سبيل المثال، يمكن لصورتك الشخصية أو إسمك أن يكشف لون الشعر ، العرق أو العمر التقريبي).
+بتوفيرك للمعلومات الشخصية لنا عبر إنشاء أو تحديث حسابك و ملفك الشخصي أو نشر صورة فوتوغرافية، تعتبر قد وافقت تطوعيا على شروط الاستخدام الخاصة بنا و قبلت و وافقت على معالجتنا للمعلومات الشخصية بحريتك و بطرق تم إقرارها بسياسة الخصوصية هذه. يمكنك سحب موافقتك على جمع المعلومنا و معالجتها من قبل المؤسسة عبر إغلاق حسابك. يجب عليك ان تنتبه أن معلوماتك الشخصية قد تبقى قابلة للمشاهدة للآخرين بعد إغلاقك لحسابك و ذلك من خلال الصفحات المخزنة في محركات بحث الانترنت.
+قد لا يتمكن المستخدمون من تغيير أو حذف المنشورات العامة بعد نشرها. قد يتم استعمال مثل هذه المعلومات من طرف الزوار لإرسال رسائل غير مرغوب فيها. إن المؤسسة غير مسؤولة عن اي تبعات قد تحصل من استعمال اطراف ثالثة للمعلومات التي اختار المستخدم أن يقر بها في صفحات ظاهرة علنيا.
 
-## Opt Out
-A user will always be able to make the decision whether to proceed with any activity that requests personal information including personally identifiable information. If a user does not provide requested information, the user may not be able to complete certain transactions.
+## إلغاء الإشتراك
+يمكن للمستخدم إتخاذ القرار بالاستمرار في أي نشاط يطلب معلومات شخصية بما فيها المعلومات الشخصية القابلة للتعريف. إذا كان المستخدم لا يوفر المعلومات المطلوبة، فقد لا يمكن له إكمال تحويلات معينة.
 
-Users are not licensed to add other users to a Site (even users who entered into transactions with them) or to their mailing lists without written consent.
-The Foundation encourages users to evaluate privacy and security policies of any of the Sites’ transaction partners before entering into transactions or choosing to disclose information.
+ليس من المرخص للمستخدم إضافة مستخدمين آخرين لموقع (حتى المستخدمين الذين دخلوا في تحويلات معهم) أو لائحة بريدية بدون موافقة خطية، و تحث المؤسسة المستخدمين على الاخذ بعين الاعتبار سياسات الخصوصية و الامن الخاصة بمواقع أطراف التحويل قبل الشروع في التحويلات أو اختيار الإفصاح عن معلومات.
 
-## Email
+## البريد الالكتروني
 The Foundation may use (or provide to The Linux Foundation or other third party contractors to use) contact information received by the Foundation to email any user with respect to any Foundation or project of The Linux Foundation (a “Project”) opportunity, event or other matter.
 
 If a user no longer wishes to receive emails from the Foundation or any Project or any Site, the Foundation will (or, if applicable, have The Linux Foundation) provide instructions in each of its emails on how to be removed from any lists. The Foundation will make commercially reasonable efforts to honor such requests.
