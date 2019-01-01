@@ -1,12 +1,12 @@
 ---
-title: Privacy Policy
+title: سياسة الخصوصية
 layout: about.hbs
 ---
-# Privacy Policy
+# سياسة الخصوصية
 
-NODE.JS FOUNDATION (the "Foundation”) is committed to protecting the privacy of its users. This Privacy Policy (or the “Policy”) applies to its websites (whether currently or in the future supported, hosted or maintained, including without limitation nodejs.org, the “Sites”) and describes the information the Foundation collects about users of the Sites (“users”) and how that information may be used.
+إن مؤسسة النود جي اس (المؤسسة) ملتزمة بحماية خصوصية مستخدميها. و سياسة الخصوصية هذه (السياسة) تنطبق على مواقعها (سواء حاليا أو او في المواقع المستضافة و المدعة و المصانة مستقبلا بدون حدود النود جي اس، "المواقع") و تصف المعلومات التي تجمعها المؤسسة عن مستخدمي المواقع (المستخدمين) و كيف قد يتم استعمال هذه المعلومات.
 
-Read the Privacy Policy carefully. By using any Site, you will be deemed to have accepted the terms of the Policy. If you do not agree to accept the terms of the Privacy Policy, you are directed to discontinue accessing or otherwise using the Sites or any materials obtained from the Sites.
+إقرأ سياسة الخصوصية بتمعن، باستعمال اي  موقع سيتم اعتبارك موافقاً على شروط السياسة. إذا لم توافق على شروط السياسة، سيتم توجيهك لانهاء وصول و استعمال المواقع أو مواد تم الحصول عليها من هذه المواقع.
 
 ## Changes to the Privacy Policy
 The Foundation reserves the right to update and change this Privacy Policy from time to time. Each time a user uses the Sites, the current version of the Privacy Policy applies. Accordingly, a user should check the date of this Privacy Policy (which appears at the top) and review for any changes since the last version. If a user does not agree to the Privacy Policy, the user should not use any of the Sites. Continued use any of the Sites following any revision of this Privacy Policy constitutes an acceptance of any change.
