@@ -8,10 +8,10 @@ layout: about.hbs
 
 إقرأ سياسة الخصوصية بتمعن، باستعمال اي  موقع سيتم اعتبارك موافقاً على شروط السياسة. إذا لم توافق على شروط السياسة، سيتم توجيهك لانهاء وصول و استعمال المواقع أو مواد تم الحصول عليها من هذه المواقع.
 
-## Changes to the Privacy Policy
-The Foundation reserves the right to update and change this Privacy Policy from time to time. Each time a user uses the Sites, the current version of the Privacy Policy applies. Accordingly, a user should check the date of this Privacy Policy (which appears at the top) and review for any changes since the last version. If a user does not agree to the Privacy Policy, the user should not use any of the Sites. Continued use any of the Sites following any revision of this Privacy Policy constitutes an acceptance of any change.
+## التغييرات على سياسة الخصوصية
+تحتفظ المؤسسة بحق تعديل  و نحديث سياسة الخصوصية هذه من وقت لآخر. في كل مرة يستخدم فيها السمتخدم موقعاً، يتم تطبيق السياسة الحالية للخصوصية. و موازاة مع ذلك، على المستخدم تفقد تاريخ سياسة الخصوصية هذه (التي تظهر في الأعلى) و مراجعة أي تغييرات طرأت منذ النسخة الأخيرة. إذا لم يوافق المستخدم على سياسة الخصوصية، قيجب عليه ألا يستعمل أياً من المواقع و الاستعمال المستمر لاي من هذه المواقع باتباع اي من المراجعات المتعلقة بسياسة الخصوصية يعني القبول بأي تغييرات فيها.
 
-## What Does this Privacy Policy Cover?
+## ما الذي تغطيه سياسة الخصوصية هذه؟
 This Privacy Policy covers the Foundation’s treatment of aggregate information collected by the Sites and personal information that you provide in connection with your use of the Sites. This Policy does not apply to the practices of third parties that the Foundation does not own or control, including but not limited to third party services you access through the Foundation, or to individuals that the Foundation does not employ or manage.
 
 ## Children Under 13 Years of Age
