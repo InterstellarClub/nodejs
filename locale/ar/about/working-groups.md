@@ -1,34 +1,31 @@
 ---
 layout: about.hbs
-title: Working Groups
+title: مجموعات العمل
 ---
 # Core Working Groups
 <!-- Information here should mostly mirror: https://github.com/nodejs/node/blob/master/WORKING_GROUPS.md -->
 
-Core Working Groups are created by the
-[Technical Steering Committee (TSC)](https://github.com/nodejs/TSC/blob/master/TSC-Charter.md).
+تم إنشاء مجموعات العمل الرئيسية من قبل:
+[لجنة التوجيه التقني (TSC)](https://github.com/nodejs/TSC/blob/master/TSC-Charter.md).
 
-## Current Working Groups
+## مجموعات العمل الحالية
 
-* [Addon API](#addon-api)
-* [Benchmarking](#benchmarking)
-* [Build](#build)
-* [Diagnostics](#diagnostics)
+* [API الخاص بالاضافات](#addon-api)
+* [قياس الأداء](#benchmarking)
+* [البناء](#build)
+* [فحوصات](#diagnostics)
 * [Docker](#docker)
-* [Evangelism](#evangelism)
+* [التوعية](#evangelism)
 * [i18n](#i18n)
-* [Release](#release)
-* [Security](#security)
-* [Streams](#streams)
-* [Website](#website)
+* [الإصدار](#release)
+* [الأمن](#security)
+* [البث](#streams)
+* [موقع الويب](#website)
 
-### [Addon API](https://github.com/nodejs/nan)
+### [API الخاص بالاضافات](https://github.com/nodejs/nan)
 
-The Addon API Working Group is responsible for maintaining the NAN project and
-corresponding _nan_ package in npm. The NAN project makes available an
-abstraction layer for native add-on authors for Node.js,
-assisting in the writing of code that is compatible with many actively used
-versions of Node.js, V8 and libuv.
+إن مجموعة عمل الـ API الخاص بالاضافات مسؤولة عن صيانة مشروع NAN و الحزم الموافقة له المسماة _nan_ على مدير حزم نود
+يمكن مشروع NAN من إتاحة طبقة مجردة لأجل مؤلفي الاضافات الاصلية للتود جي اس، و ذلك بمساعدتهم في كتابة شفرة متوافقة مع عدة نسخ من النود جي اس، V8 و libuv.
 
 Responsibilities include:
 * Maintaining the [NAN](https://github.com/nodejs/nan) GitHub repository,
