@@ -2,8 +2,8 @@
 layout: about.hbs
 title: مجموعات العمل
 ---
-# Core Working Groups
-<!-- Information here should mostly mirror: https://github.com/nodejs/node/blob/master/WORKING_GROUPS.md -->
+# مجموعات العمل الرئيسية
+<!-- المعلومات الموجودة هنا غالبا ما توجد في هذا الرابط: https://github.com/nodejs/node/blob/master/WORKING_GROUPS.md -->
 
 تم إنشاء مجموعات العمل الرئيسية من قبل:
 [لجنة التوجيه التقني (TSC)](https://github.com/nodejs/TSC/blob/master/TSC-Charter.md).
@@ -27,23 +27,18 @@ title: مجموعات العمل
 إن مجموعة عمل الـ API الخاص بالاضافات مسؤولة عن صيانة مشروع NAN و الحزم الموافقة له المسماة _nan_ على مدير حزم نود
 يمكن مشروع NAN من إتاحة طبقة مجردة لأجل مؤلفي الاضافات الاصلية للتود جي اس، و ذلك بمساعدتهم في كتابة شفرة متوافقة مع عدة نسخ من النود جي اس، V8 و libuv.
 
-Responsibilities include:
-* Maintaining the [NAN](https://github.com/nodejs/nan) GitHub repository,
-  including code, issues and documentation.
-* Maintaining the [addon-examples](https://github.com/nodejs/node-addon-examples)
-  GitHub repository, including code, issues and documentation.
-* Maintaining the C++ Addon API within the Node.js project, in subordination to
-  the Node.js TSC.
-* Maintaining the Addon documentation within the Node.js project, in
-  subordination to the Node.js TSC.
-* Maintaining the _nan_ package in npm, releasing new versions as appropriate.
-* Messaging about the future of the Node.js and NAN interface to give the
-  community advance notice of changes.
+تتضمن المسؤوليات:
+* صيانة مستودع مشروع [NAN](https://github.com/nodejs/nan) على الـGitHub بما في ذلك الشفرة و المشاكل و التوثيق.
+* صيانة مستودع [أمثلة عن الإضافات](https://github.com/nodejs/node-addon-examples) على الـGitHub بما في ذلك الشفرة و المشاكل و التوثيق.
+* صيانة إضافة الC++ الخاصة بواجهة برمجة التطبيقات في إطار مشروع النود جي اس و تحت إطار لجنة التوجيه التقني الخاصة بالنود جي اس.
+* صيانة توثيق الإضافة في إطار مشروع النود جي اس و تحت إطار لجنة التوجيه التقني الخاصة بالنود جي اس.
+* صيانة حزمة الـ _nan_ في مدير حزم النود و إصدار النسخ الجديدة كما يجب.
+* المراسلة حول مستقبل النود جي اس و واجهة الـNAN لإعطاء المجتمع ملاحظة مسبقة عن التغييرات.
 
-The current members can be found in their
+يمكن إيجاد الأعضاء الحاليين في ملف
 [README](https://github.com/nodejs/nan#collaborators).
 
-### [Benchmarking](https://github.com/nodejs/benchmarking)
+### [قياس الأداء](https://github.com/nodejs/benchmarking)
 
 The purpose of the Benchmark Working Group is to gain consensus
 on an agreed set of benchmarks that can be used to:
