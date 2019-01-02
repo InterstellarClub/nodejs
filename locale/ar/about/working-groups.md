@@ -1,6 +1,6 @@
 ---
 layout: about.hbs
-title: Working Groups
+title: مجموعات العمل
 ---
 # Core Working Groups
 <!-- Information here should mostly mirror: https://github.com/nodejs/node/blob/master/WORKING_GROUPS.md -->
@@ -10,19 +10,19 @@ Core Working Groups are created by the
 
 ## Current Working Groups
 
-* [Addon API](#addon-api)
-* [Benchmarking](#benchmarking)
-* [Build](#build)
-* [Diagnostics](#diagnostics)
+* [إضافة واجهة تطبيق API](#addon-api)
+* [المرجعية](#benchmarking)
+* [البناء](#build)
+* [الفحوصات](#diagnostics)
 * [Docker](#docker)
-* [Evangelism](#evangelism)
-* [i18n](#i18n)
-* [Release](#release)
-* [Security](#security)
-* [Streams](#streams)
-* [Website](#website)
+* [التبشير](#evangelism)
+* [ التدويل i18n](#i18n)
+* [الإصدرات](#release)
+* [الأمان](#security)
+* [التيارات](#streams)
+* [الموقع](#website)
 
-### [Addon API](https://github.com/nodejs/nan)
+### [إضافة واجهة تطبيق API](https://github.com/nodejs/nan)
 
 The Addon API Working Group is responsible for maintaining the NAN project and
 corresponding _nan_ package in npm. The NAN project makes available an
@@ -46,7 +46,7 @@ Responsibilities include:
 The current members can be found in their
 [README](https://github.com/nodejs/nan#collaborators).
 
-### [Benchmarking](https://github.com/nodejs/benchmarking)
+### [المرجعية](https://github.com/nodejs/benchmarking)
 
 The purpose of the Benchmark Working Group is to gain consensus
 on an agreed set of benchmarks that can be used to:
@@ -62,7 +62,7 @@ Responsibilities include:
 * Adding regular execution of chosen benchmarks to Node.js builds
 * Tracking/publicizing performance between builds/releases
 
-### [Build](https://github.com/nodejs/build)
+### [البناء](https://github.com/nodejs/build)
 
 The Build Working Group's purpose is to create and maintain a distributed
 automation infrastructure.
@@ -73,7 +73,7 @@ Responsibilities include:
 * Running performance testing and comparisons.
 * Creating and managing build-containers.
 
-### [Diagnostics](https://github.com/nodejs/diagnostics)
+### [الفحوصات](https://github.com/nodejs/diagnostics)
 
 The Diagnostics Working Group's purpose is to surface a set of comprehensive,
 documented, and extensible diagnostic interfaces for use by Node.js tools and
@@ -103,7 +103,7 @@ Responsibilities include:
 * Decide and implement image improvements and/or fixes.
 * Maintain and improve the images' documentation.
 
-### [Evangelism](https://github.com/nodejs/evangelism)
+### [التبشير](https://github.com/nodejs/evangelism)
 
 The Evangelism Working Group promotes the accomplishments
 of Node.js and lets the community know how they can get involved.
@@ -116,7 +116,7 @@ Responsibilities include:
 * Publishing regular update summaries and other promotional
   content.
 
-### i18n
+###  التدويل i18n
 
 The i18n Working Groups handle more than just translations. They
 are endpoints for community members to collaborate with each
@@ -135,42 +135,42 @@ Responsibilities include:
 
 Each language community maintains its own membership.
 
-* [nodejs-ar - Arabic (العَرَبِيَّة)](https://github.com/nodejs/nodejs-ar)
-* [nodejs-bg - Bulgarian (български)](https://github.com/nodejs/nodejs-bg)
-* [nodejs-bn - Bengali (বাংলা)](https://github.com/nodejs/nodejs-bn)
-* [nodejs-zh-CN - Chinese (中文)](https://github.com/nodejs/nodejs-zh-CN)
-* [nodejs-cs - Czech (Čeština)](https://github.com/nodejs/nodejs-cs)
-* [nodejs-da - Danish (Dansk)](https://github.com/nodejs/nodejs-da)
-* [nodejs-de - German (Deutsch)](https://github.com/nodejs/nodejs-de)
-* [nodejs-el - Greek (Ελληνικά)](https://github.com/nodejs/nodejs-el)
-* [nodejs-es - Spanish (Español)](https://github.com/nodejs/nodejs-es)
-* [nodejs-fa - Persian (فارسی)](https://github.com/nodejs/nodejs-fa)
-* [nodejs-fi - Finnish (Suomi)](https://github.com/nodejs/nodejs-fi)
-* [nodejs-fr - French (Français)](https://github.com/nodejs/nodejs-fr)
-* [nodejs-he - Hebrew (עברית)](https://github.com/nodejs/nodejs-he)
-* [nodejs-hi - Hindi (हिन्दी)](https://github.com/nodejs/nodejs-hi)
-* [nodejs-hu - Hungarian (Magyar)](https://github.com/nodejs/nodejs-hu)
-* [nodejs-id - Indonesian (Bahasa Indonesia)](https://github.com/nodejs/nodejs-id)
-* [nodejs-it - Italian (Italiano)](https://github.com/nodejs/nodejs-it)
-* [nodejs-ja - Japanese (日本語)](https://github.com/nodejs/nodejs-ja)
-* [nodejs-ka - Georgian (ქართული)](https://github.com/nodejs/nodejs-ka)
-* [nodejs-ko - Korean (한국어)](https://github.com/nodejs/nodejs-ko)
-* [nodejs-mk - Macedonian (Македонски)](https://github.com/nodejs/nodejs-mk)
-* [nodejs-ms - Malay (بهاس ملايو‎)](https://github.com/nodejs/nodejs-ms)
-* [nodejs-nl - Dutch (Nederlands)](https://github.com/nodejs/nodejs-nl)
-* [nodejs-no - Norwegian (Norsk)](https://github.com/nodejs/nodejs-no)
-* [nodejs-pl - Polish (Język Polski)](https://github.com/nodejs/nodejs-pl)
-* [nodejs-pt - Portuguese (Português)](https://github.com/nodejs/nodejs-pt)
-* [nodejs-ro - Romanian (Română)](https://github.com/nodejs/nodejs-ro)
-* [nodejs-ru - Russian (Русский)](https://github.com/nodejs/nodejs-ru)
-* [nodejs-sv - Swedish (Svenska)](https://github.com/nodejs/nodejs-sv)
-* [nodejs-ta - Tamil (தமிழ்)](https://github.com/nodejs/nodejs-ta)
-* [nodejs-tr - Turkish (Türkçe)](https://github.com/nodejs/nodejs-tr)
-* [nodejs-zh-TW - Taiwanese (國語)](https://github.com/nodejs/nodejs-zh-TW)
-* [nodejs-uk - Ukrainian (Українська)](https://github.com/nodejs/nodejs-uk)
-* [nodejs-vi - Vietnamese (Tiếng Việt)](https://github.com/nodejs/nodejs-vi)
+* [nodejs-ar - العربية (العَرَبِيَّة)](https://github.com/nodejs/nodejs-ar)
+* [nodejs-bg - البلغارية (български)](https://github.com/nodejs/nodejs-bg)
+* [nodejs-bn - بنغالية (বাংলা)](https://github.com/nodejs/nodejs-bn)
+* [nodejs-zh-CN - الصينية (中文)](https://github.com/nodejs/nodejs-zh-CN)
+* [nodejs-cs - تشيكية (Čeština)](https://github.com/nodejs/nodejs-cs)
+* [nodejs-da - الدانمركية (Dansk)](https://github.com/nodejs/nodejs-da)
+* [nodejs-de - ألمانية (Deutsch)](https://github.com/nodejs/nodejs-de)
+* [nodejs-el - اليونانية (Ελληνικά)](https://github.com/nodejs/nodejs-el)
+* [nodejs-es - الأسبانية (Español)](https://github.com/nodejs/nodejs-es)
+* [nodejs-fa - الفارسية (فارسی)](https://github.com/nodejs/nodejs-fa)
+* [nodejs-fi - الفنلندية (Suomi)](https://github.com/nodejs/nodejs-fi)
+* [nodejs-fr - الفرنسية (Français)](https://github.com/nodejs/nodejs-fr)
+* [nodejs-he - العبرية (עברית)](https://github.com/nodejs/nodejs-he)
+* [nodejs-hi - الهندية (हिन्दी)](https://github.com/nodejs/nodejs-hi)
+* [nodejs-hu - الهنغارية (Magyar)](https://github.com/nodejs/nodejs-hu)
+* [nodejs-id - الأندونيسية (Bahasa Indonesia)](https://github.com/nodejs/nodejs-id)
+* [nodejs-it - الإيطالية (Italiano)](https://github.com/nodejs/nodejs-it)
+* [nodejs-ja - اليابانية (日本語)](https://github.com/nodejs/nodejs-ja)
+* [nodejs-ka - الجورجية (ქართული)](https://github.com/nodejs/nodejs-ka)
+* [nodejs-ko - الكورية (한국어)](https://github.com/nodejs/nodejs-ko)
+* [nodejs-mk - المقدونية (Македонски)](https://github.com/nodejs/nodejs-mk)
+* [nodejs-ms - الملايو (بهاس ملايو‎)](https://github.com/nodejs/nodejs-ms)
+* [nodejs-nl - الهولندية (Nederlands)](https://github.com/nodejs/nodejs-nl)
+* [nodejs-no - النرويجية (Norsk)](https://github.com/nodejs/nodejs-no)
+* [nodejs-pl - البولندية (Język Polski)](https://github.com/nodejs/nodejs-pl)
+* [nodejs-pt - البرتغالية (Português)](https://github.com/nodejs/nodejs-pt)
+* [nodejs-ro - الرومانية (Română)](https://github.com/nodejs/nodejs-ro)
+* [nodejs-ru - الروسية (Русский)](https://github.com/nodejs/nodejs-ru)
+* [nodejs-sv - السويدية (Svenska)](https://github.com/nodejs/nodejs-sv)
+* [nodejs-ta - التاميل (தமிழ்)](https://github.com/nodejs/nodejs-ta)
+* [nodejs-tr - التركية (Türkçe)](https://github.com/nodejs/nodejs-tr)
+* [nodejs-zh-TW - التايوانية (國語)](https://github.com/nodejs/nodejs-zh-TW)
+* [nodejs-uk - الاوكرانية (Українська)](https://github.com/nodejs/nodejs-uk)
+* [nodejs-vi - الفيتنامية (Tiếng Việt)](https://github.com/nodejs/nodejs-vi)
 
-### [Release](https://github.com/nodejs/LTS)
+### [الإصدرات](https://github.com/nodejs/LTS)
 The Release Working Group manages the release process for Node.js.
 
 Responsibilities include:
@@ -182,7 +182,7 @@ Responsibilities include:
   backporting changes to these branches.
 * Define the policy for what gets backported to release streams
 
-### [Security](https://github.com/nodejs/security-wg)
+### [الأمان](https://github.com/nodejs/security-wg)
 
 The Security Working Group manages all aspects and processes linked to Node.js security.
 
@@ -210,7 +210,7 @@ Responsibilities include:
 * Facilitate and promote the expansion of a healthy security service and product
   provider ecosystem.
 
-### [Streams](https://github.com/nodejs/readable-stream)
+### [التيارات](https://github.com/nodejs/readable-stream)
 
 The Streams Working Group is dedicated to the support and improvement of the
 Streams API as used in Node.js and the npm ecosystem. We seek to create a
@@ -229,7 +229,7 @@ Responsibilities include:
 * Recommending versions of `readable-stream` to be included in Node.js.
 * Messaging about the future of streams to give the community advance notice of changes.
 
-### [Website](https://github.com/nodejs/nodejs.org)
+### [الموقع](https://github.com/nodejs/nodejs.org)
 
 The Website Working Group's purpose is to build and maintain a public
 website for the Node.js project.
