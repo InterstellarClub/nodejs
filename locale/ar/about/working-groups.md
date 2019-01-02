@@ -2,25 +2,25 @@
 layout: about.hbs
 title: مجموعات العمل
 ---
-# Core Working Groups
+# مجموعات العمل على النواة
 <!-- Information here should mostly mirror: https://github.com/nodejs/node/blob/master/WORKING_GROUPS.md -->
 
-Core Working Groups are created by the
+مجموعات العاملة على النواة أنشاءة من قبل 
 [Technical Steering Committee (TSC)](https://github.com/nodejs/TSC/blob/master/TSC-Charter.md).
 
-## Current Working Groups
+## مجموعات العمل الحالية
 
-* [إضافة واجهة تطبيق API](#addon-api)
-* [المرجعية](#benchmarking)
-* [البناء](#build)
-* [الفحوصات](#diagnostics)
-* [Docker](#docker)
-* [التبشير](#evangelism)
+* [إضافة واجهة تطبيق API](#إضافة واجهة تطبيق API )
+* [المرجعية](#المرجعية)
+* [البناء](#البناء)
+* [الفحوصات](#الفحوصات)
+* [الدوكر](#الدوكر)
+* [الإدماج](#الإدماج)
 * [ التدويل i18n](#i18n)
-* [الإصدرات](#release)
-* [الأمان](#security)
-* [التيارات](#streams)
-* [الموقع](#website)
+* [الإصدرات](#الإصدرات)
+* [الأمان](#الأمان)
+* [التيارات](#التيارات)
+* [الموقع](#الموقع)
 
 ### [إضافة واجهة تطبيق API](https://github.com/nodejs/nan)
 
@@ -44,7 +44,7 @@ Responsibilities include:
   community advance notice of changes.
 
 The current members can be found in their
-[README](https://github.com/nodejs/nan#collaborators).
+[إقرائني](https://github.com/nodejs/nan#collaborators).
 
 ### [المرجعية](https://github.com/nodejs/benchmarking)
 
@@ -93,7 +93,7 @@ Responsibilities include:
 * Defining and adding common structures to the dumps generated in order to
   support tools that want to introspect those dumps.
 
-### [Docker](https://github.com/nodejs/docker-node)
+### [الدوكر](https://github.com/nodejs/docker-node)
 
 The Docker Working Group's purpose is to build, maintain, and improve official
 Docker images for the Node.js project.
@@ -103,7 +103,7 @@ Responsibilities include:
 * Decide and implement image improvements and/or fixes.
 * Maintain and improve the images' documentation.
 
-### [التبشير](https://github.com/nodejs/evangelism)
+### [الإدماج](https://github.com/nodejs/evangelism)
 
 The Evangelism Working Group promotes the accomplishments
 of Node.js and lets the community know how they can get involved.
@@ -135,7 +135,7 @@ Responsibilities include:
 
 Each language community maintains its own membership.
 
-* [nodejs-ar - العربية (العَرَبِيَّة)](https://github.com/nodejs/nodejs-ar)
+* [nodejs-ar -العربية (العَرَبِيَّة)](https://github.com/nodejs/nodejs-ar)
 * [nodejs-bg - البلغارية (български)](https://github.com/nodejs/nodejs-bg)
 * [nodejs-bn - بنغالية (বাংলা)](https://github.com/nodejs/nodejs-bn)
 * [nodejs-zh-CN - الصينية (中文)](https://github.com/nodejs/nodejs-zh-CN)
