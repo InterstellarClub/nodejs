@@ -2,27 +2,26 @@
 layout: about.hbs
 title: مجموعات العمل
 ---
+
 # مجموعات العمل الرئيسية
 <!-- المعلومات الموجودة هنا غالبا ما توجد في هذا الرابط: https://github.com/nodejs/node/blob/master/WORKING_GROUPS.md -->
+
+* [إضافة واجهة تطبيق API](#إضافة واجهة تطبيق API )
+* [المرجعية](#المرجعية)
+* [البناء](#البناء)
+* [الفحوصات](#الفحوصات)
+* [الدوكر](#الدوكر)
+* [الإدماج](#الإدماج)
+* [ التدويل i18n](#i18n)
+* [الإصدرات](#الإصدرات)
+* [الأمان](#الأمان)
+* [التيارات](#التيارات)
+* [الموقع](#الموقع)
 
 تم إنشاء مجموعات العمل الرئيسية من قبل:
 [لجنة التوجيه التقني (TSC)](https://github.com/nodejs/TSC/blob/master/TSC-Charter.md).
 
-## مجموعات العمل الحالية
-
-* [a - API الخاص بالاضافات](#a)
-* [b - قياس الأداء](#b)
-* [c - البناء](#C)
-* [d - الفحوصات](#d)
-* [e - الدوكر](#e)
-* [f - الإدماج](#f)
-* [i18n](#i18n)
-* [g - الإصدار](#g)
-* [h - الأمن](#h)
-* [i - التيار](#i)
-* [j - الموقع](#j)
-
-### [a - API الخاص بالاضافات](https://github.com/nodejs/nan)
+### [إضافة واجهة تطبيق API](https://github.com/nodejs/nan)
 
 إن مجموعة عمل الـ API الخاص بالاضافات مسؤولة عن صيانة مشروع NAN و الحزم الموافقة له المسماة _nan_ على مدير حزم نود
 يمكن مشروع NAN من إتاحة طبقة مجردة لأجل مؤلفي الاضافات الاصلية للتود جي اس، و ذلك بمساعدتهم في كتابة شفرة متوافقة مع عدة نسخ من النود جي اس، V8 و libuv.
@@ -85,7 +84,7 @@ Responsibilities include:
 * Defining and adding common structures to the dumps generated in order to
   support tools that want to introspect those dumps.
 
-### [Docker](https://github.com/nodejs/docker-node)
+### [الدوكر](https://github.com/nodejs/docker-node)
 
 The Docker Working Group's purpose is to build, maintain, and improve official
 Docker images for the Node.js project.
@@ -95,7 +94,11 @@ Responsibilities include:
 * Decide and implement image improvements and/or fixes.
 * Maintain and improve the images' documentation.
 
+<<<<<<< HEAD
 ### [Evangelism](https://github.com/nodejs/evangelism)
+=======
+### [الإدماج](https://github.com/nodejs/evangelism)
+>>>>>>> eb6e725c13ed8906eac32bd12f184807cda77517
 
 The Evangelism Working Group promotes the accomplishments
 of Node.js and lets the community know how they can get involved.
@@ -127,6 +130,7 @@ Responsibilities include:
 
 Each language community maintains its own membership.
 
+<<<<<<< HEAD
 * [nodejs-ar - Arabic (العَرَبِيَّة)](https://github.com/nodejs/nodejs-ar)
 * [nodejs-bg - Bulgarian (български)](https://github.com/nodejs/nodejs-bg)
 * [nodejs-bn - Bengali (বাংলা)](https://github.com/nodejs/nodejs-bn)
@@ -163,6 +167,44 @@ Each language community maintains its own membership.
 * [nodejs-vi - Vietnamese (Tiếng Việt)](https://github.com/nodejs/nodejs-vi)
 
 ### [Release](https://github.com/nodejs/LTS)
+=======
+* [nodejs-ar -العربية (العَرَبِيَّة)](https://github.com/nodejs/nodejs-ar)
+* [nodejs-bg - البلغارية (български)](https://github.com/nodejs/nodejs-bg)
+* [nodejs-bn - بنغالية (বাংলা)](https://github.com/nodejs/nodejs-bn)
+* [nodejs-zh-CN - الصينية (中文)](https://github.com/nodejs/nodejs-zh-CN)
+* [nodejs-cs - تشيكية (Čeština)](https://github.com/nodejs/nodejs-cs)
+* [nodejs-da - الدانمركية (Dansk)](https://github.com/nodejs/nodejs-da)
+* [nodejs-de - ألمانية (Deutsch)](https://github.com/nodejs/nodejs-de)
+* [nodejs-el - اليونانية (Ελληνικά)](https://github.com/nodejs/nodejs-el)
+* [nodejs-es - الأسبانية (Español)](https://github.com/nodejs/nodejs-es)
+* [nodejs-fa - الفارسية (فارسی)](https://github.com/nodejs/nodejs-fa)
+* [nodejs-fi - الفنلندية (Suomi)](https://github.com/nodejs/nodejs-fi)
+* [nodejs-fr - الفرنسية (Français)](https://github.com/nodejs/nodejs-fr)
+* [nodejs-he - العبرية (עברית)](https://github.com/nodejs/nodejs-he)
+* [nodejs-hi - الهندية (हिन्दी)](https://github.com/nodejs/nodejs-hi)
+* [nodejs-hu - الهنغارية (Magyar)](https://github.com/nodejs/nodejs-hu)
+* [nodejs-id - الأندونيسية (Bahasa Indonesia)](https://github.com/nodejs/nodejs-id)
+* [nodejs-it - الإيطالية (Italiano)](https://github.com/nodejs/nodejs-it)
+* [nodejs-ja - اليابانية (日本語)](https://github.com/nodejs/nodejs-ja)
+* [nodejs-ka - الجورجية (ქართული)](https://github.com/nodejs/nodejs-ka)
+* [nodejs-ko - الكورية (한국어)](https://github.com/nodejs/nodejs-ko)
+* [nodejs-mk - المقدونية (Македонски)](https://github.com/nodejs/nodejs-mk)
+* [nodejs-ms - الملايو (بهاس ملايو‎)](https://github.com/nodejs/nodejs-ms)
+* [nodejs-nl - الهولندية (Nederlands)](https://github.com/nodejs/nodejs-nl)
+* [nodejs-no - النرويجية (Norsk)](https://github.com/nodejs/nodejs-no)
+* [nodejs-pl - البولندية (Język Polski)](https://github.com/nodejs/nodejs-pl)
+* [nodejs-pt - البرتغالية (Português)](https://github.com/nodejs/nodejs-pt)
+* [nodejs-ro - الرومانية (Română)](https://github.com/nodejs/nodejs-ro)
+* [nodejs-ru - الروسية (Русский)](https://github.com/nodejs/nodejs-ru)
+* [nodejs-sv - السويدية (Svenska)](https://github.com/nodejs/nodejs-sv)
+* [nodejs-ta - التاميل (தமிழ்)](https://github.com/nodejs/nodejs-ta)
+* [nodejs-tr - التركية (Türkçe)](https://github.com/nodejs/nodejs-tr)
+* [nodejs-zh-TW - التايوانية (國語)](https://github.com/nodejs/nodejs-zh-TW)
+* [nodejs-uk - الاوكرانية (Українська)](https://github.com/nodejs/nodejs-uk)
+* [nodejs-vi - الفيتنامية (Tiếng Việt)](https://github.com/nodejs/nodejs-vi)
+
+### [الإصدرات](https://github.com/nodejs/LTS)
+>>>>>>> eb6e725c13ed8906eac32bd12f184807cda77517
 The Release Working Group manages the release process for Node.js.
 
 Responsibilities include:

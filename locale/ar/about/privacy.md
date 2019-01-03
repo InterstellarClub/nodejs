@@ -78,19 +78,14 @@ layout: about.hbs
 
 في حال علم المؤسسة بأن تأمين أحد مواقعها قد تم اختراقه أو بأن المعلومات الشخصية لمستخدم قد تم كشفها لأطراف ثالثة غير معنية كنتبجة لنشاط خارجي، بما في ذلك و غير مقتصر على الهجمات الإلكترونية أو الإحتيال، تحتفظ المؤسسة بحق إتخاذ إجراءات معقول و مناسبة بما في ذلك و غير مقتصرة على التحقيق و التبليغ و تنبيه السلطات و قوى القانون 
 
-
-While our aim is to keep data from unauthorized or unsafe access, modification or destruction, no method of transmission on the Internet, or method of electronic storage, is 100% secure and we cannot guarantee its absolute security.
+بينما نهدف إلى إبقاء البيانات آمنة من الوصول الغير آمن و الغير مصرح به، أو من التعديل و الإتلاف، لا توجد هنالك طريقة لنقل البيانات عبر الانترنت، أو طريقة للتخزين الإلكتروني تعتبر آمنة 100% ولا يمكننا أن نضمن أمانها المطلق.
 
 ## حماية البيانات
-Given the international scope of the Foundation, personal information may be visible to persons outside your country of residence, including to persons in countries that your own country’s privacy laws and regulations deem deficient in ensuring an adequate level of protection for such information.  If you are unsure whether this privacy statement is in conflict with applicable local rules, you should not submit your information.  If you are located within the European Union, you should note that your information will be transferred to the United States, which is deemed by the European Union to have inadequate data protection.  Nevertheless, in accordance with local laws implementing the European Union Privacy Directive on the protection of individuals with regard to the processing of personal data and on the free movement of such data, individuals located in countries outside of the United States of America who submit personal information do thereby consent to the general use of such information as provided in this Privacy Policy and to its transfer to and/or storage in the United States of America. By utilizing any Site and/or directly providing personal information to us, you hereby agree to and acknowledge your understanding of the terms of this Privacy Policy, and consent to have your personal data transferred to and processed in the United States and/or in other jurisdictions as determined by the Foundation, notwithstanding your country of origin, or country, state and/or province of residence.  If you do not want your personal information collected and used by the Foundation, please do not visit or use the Sites.
+بإعتبار أن المؤسسة عالمية، قد تكون المعلومات الشخصية مرئية لأشخاص خارج دولتك أو مكان إقامتك، بما في ذلك أشخاص في دول لا تطبق فيها قوانين و أعراف دولتك لضمان القدر نفسه من الحماية لمثل هذه المعلومات. إذا كنت غير واثق من
+If you are unsure whether this privacy statement is in conflict with applicable local rules, you should not submit your information.  If you are located within the European Union, you should note that your information will be transferred to the United States, which is deemed by the European Union to have inadequate data protection.  Nevertheless, in accordance with local laws implementing the European Union Privacy Directive on the protection of individuals with regard to the processing of personal data and on the free movement of such data, individuals located in countries outside of the United States of America who submit personal information do thereby consent to the general use of such information as provided in this Privacy Policy and to its transfer to and/or storage in the United States of America. By utilizing any Site and/or directly providing personal information to us, you hereby agree to and acknowledge your understanding of the terms of this Privacy Policy, and consent to have your personal data transferred to and processed in the United States and/or in other jurisdictions as determined by the Foundation, notwithstanding your country of origin, or country, state and/or province of residence.  If you do not want your personal information collected and used by the Foundation, please do not visit or use the Sites.
 
-<<<<<<< HEAD
 ## قوانين تنظيمية
 تلتزم سياسة الخصوصية هذه بقوانين ولاية كاليفورنيا، الولايات المتحدة الأمريكية بدون أي تأثير على مبادئ النزاع القانوني.
-=======
-## إدارة القانون
-This Privacy Policy is governed by the laws of the State of California, United States of America without giving any effect to the principles of conflicts of law.
->>>>>>> 8c49c1f8fddfc68de3602deca74ab233462f2dac
 
 ## سياسة الخصوصية في كاليفورنيا
 
