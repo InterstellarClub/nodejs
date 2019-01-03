@@ -69,7 +69,7 @@ layout: about.hbs
 ## مشاركة المعلومات
 قد تفصح المؤسسة عن معومات شخصية أو معلومات تم جمعها متعلقة بحسابك الشخصي كما تم وصفه في سياسة الخصوصية هذه، و كما تم ترخيصه تحت القانون أو منطقيا بالضرورة إلى: (1) التوافق مع المتطلبات أو الإجراءات القانونية، بما فيها و غير محدودة بها مذكرات الإستدعاء المدني و الجنائي، الأوامر القضائية و أي إفصاحات إجبارية. (2) التحقيق و إلزامية تطبيق سياسة الخصوصية هذه أو شروط استعمالنا الحالية و السابقة على غير وجه التحديد. (3) الاستجابة لمزاعم انتهاك حقوق الاطراف الثالثة. (4) الاستجابة لمساءلات خدمة الزبائن. (5) حماية الحقوق و الملكية و  الأمن الخاص بالمؤسسة، و مستخدمينا أو العامة أو (6) كجزء من بيع جميع أو جزء من أصول المؤسسة أو كتغيير في طريقة تحكم المنظمة أو أحد فروعها أو كتحضير لأي من هذه الأحداث. تحتفظ المؤسسة بحق أي معلومة مماثلة لأي منظمة قد تندمج معها مستقبلا أو تتحول إليها. أي طرف ثالث قد تحول المؤسسة إليه أو تبيعه أياً من أصولها له الحق في استعمال المعلومات الشخصية و المعلومات الأخرى التي توفرها بالطريقة التي تمت صياغتها في سياسة الخصوصية هذه.
 
-## هل المعلومات عني في أمان ?
+## هل معلوماتي في أمان؟
 لإبقاء معلوماتك في أمان، إمنع أي وصول أو افصاح عن المعلومات غير مصرح بهما، و راجع مدى دقة البيانات، ولضمان الاستعمال الملائم للمعلومات، فإن المؤسة تطبق المعايير الفيزيائية و الالكترونية و الإجراءات الإدارية المتعارف عليها لحماية و تأمين المعلومات التي تجمعها المؤسسة، ورغم ذلك، فإن المؤسسة لا تضمن أن اطرافاً ثالثة لن تحاول خرق الإجراءات المتخذة لمنع الاستعمال الغير ملائم للمعلومات الشخصية.
 
 إن الوصول إلى المعلومات الشخصية الغير عامة يقتصر على المؤسسة أو أفراد مؤسسة اللينكس، بما في ذلك المتعاقدين لكل منظمة على أساس الحاجة للاطلاع.
@@ -81,20 +81,19 @@ layout: about.hbs
 بينما نهدف إلى إبقاء البيانات آمنة من الوصول الغير آمن و الغير مصرح به، أو من التعديل و الإتلاف، لا توجد هنالك طريقة لنقل البيانات عبر الانترنت، أو طريقة للتخزين الإلكتروني تعتبر آمنة 100% ولا يمكننا أن نضمن أمانها المطلق.
 
 ## حماية البيانات
-بإعتبار أن المؤسسة عالمية، قد تكون المعلومات الشخصية مرئية لأشخاص خارج دولتك أو مكان إقامتك، بما في ذلك أشخاص في دول لا تطبق فيها قوانين و أعراف دولتك لضمان القدر نفسه من الحماية لمثل هذه المعلومات. إذا كنت غير واثق من
-If you are unsure whether this privacy statement is in conflict with applicable local rules, you should not submit your information.  If you are located within the European Union, you should note that your information will be transferred to the United States, which is deemed by the European Union to have inadequate data protection.  Nevertheless, in accordance with local laws implementing the European Union Privacy Directive on the protection of individuals with regard to the processing of personal data and on the free movement of such data, individuals located in countries outside of the United States of America who submit personal information do thereby consent to the general use of such information as provided in this Privacy Policy and to its transfer to and/or storage in the United States of America. By utilizing any Site and/or directly providing personal information to us, you hereby agree to and acknowledge your understanding of the terms of this Privacy Policy, and consent to have your personal data transferred to and processed in the United States and/or in other jurisdictions as determined by the Foundation, notwithstanding your country of origin, or country, state and/or province of residence.  If you do not want your personal information collected and used by the Foundation, please do not visit or use the Sites.
+بإعتبار أن المؤسسة عالمية، قد تكون المعلومات الشخصية مرئية لأشخاص خارج دولتك أو مكان إقامتك، بما في ذلك أشخاص في دول لا تطبق فيها قوانين و أعراف دولتك لضمان القدر نفسه من الحماية لمثل هذه المعلومات. إذا كنت غير واثق من توافق سياسة الخصوصية هذه مع القوانين المحلية المطبقة، فيجب عليك ألا تقوم بتوفير معلوماتك. إذا كنت موجوداً في الإتحاد الأوروبي، عليك أن تعي أن معلوماتم سيتم نقلها إلى الولايات المتحدة التي تختلف في معايير حماية البيانات. رغم ذلك و بالتوافق مع القوانين المحلية التي تطبق معايير الخصوصية للاتحاد الأوروبي و المتعلقة بحماية الأفراد مع الأخذ بعين الاعتبار البيانات الشخصية و حرية نقل مثل هذه البيانات، فإن الأفراد الذين يدلون بمعلومات شخصية و المتواجدين في دول خارج الولايات المتحدة الأمريكي  يمتثلون بذلك للاستعمال العام لمثل هذه المعلومات كما تم الإدلاء به في سياسة الخصوصية هذه و يمتثلون لنقل أو تخزين البيانات في الولايات المتحدة الأمريكية. بإستعمال أي موقع و / أو توفير معلومات شخصية لنا مباشرة، فأنك توافق على و تقر بفهمك لشروط سياسة الخصوصية هذه. و تسلم بأن بياناتك الشخصية يتم نقلها و معالجتها في الولايات المتحدة و / أو في نطاقات قضائية أخرى محددة من قبل المؤسسة، بغض النظر عن دولتك الأصلية أو الدولة، الولاية و / أو المقاطعة التي تقيم فيها. إذا لم ترد لمعلوماتك الشخصية ان يتم تجميعها أو إستعمالها، فلا تقم بزيارة او استخدام المواقع.
 
 ## قوانين تنظيمية
 تلتزم سياسة الخصوصية هذه بقوانين ولاية كاليفورنيا، الولايات المتحدة الأمريكية بدون أي تأثير على مبادئ النزاع القانوني.
 
 ## سياسة الخصوصية في كاليفورنيا
+إن  قانون كاليفورنيا لحماية الخصوصية على الانترنت ("CalOPPA") يسمح للمستخدمين المقيمين  بكاليفورنيا و الذين زودوا المؤسسة بمعلومات تعتبر شخصيا بناء على قانون CalOPPA بطلب معلومات معينة متعلقة بالإفصاح عن معلوماتهم لأطراف ثالثة لأغراضهم المتعلقة بالتسويق المباشر. إذا كنت مقيما في كاليفورنيا و لديك سؤال حول هذه المسألة، تفضل بالتواصل عبر privacy@nodejs.org.
 
-The California Online Privacy Protection Action (“CalOPPA”) permits customers who are California residents and who have provided the Foundation with “personal information” as defined in CalOPPA to request certain information about the disclosure of information to third parties for their direct marketing purposes. If you are a California resident with a question regarding this provision, please contact privacy@nodejs.org.
-
-Please note that the Foundation does not respond to “do not track” signals or other similar mechanisms intended to allow California residents to opt-out of Internet tracking under CalOPPA.  The Foundation may track and/or disclose your online activities over time and across different websites to third parties when you use our services.
+يجب ان تدرك أن المؤسسة لا تستجيب لطلبات عدم التتبع أو أي آليات مشابها تسمح للمقيمين بكاليفورنيا بعدم تعقبهم تحت طائلة قانون CalOPPA.
+قد تقوم المؤسسة بتتبع و / أو الإفصاح عن نشاطك الافتراضي مع الوقت و على مستوى مواقع مختلفة لأطراف ثالثة، و ذلك عند استعمالك لخدماتنا.
 
 ## ما الذي يجب فعله في حال ضياع أو سرقة المعلومات
-You must promptly notify us if you become aware that any information provided by or submitted to our Site or through our Product is lost, stolen, or used without permission at privacy@nodejs.org.
+عليك بإعلامنا إذا كنت مدركاً أن أي معلومات شخصية متوفرة أو تم الإدلاء بها لموقع أو عبر منتج من منتجاتنا قد ضاعت، تمت سرقتها، أو استخدامها بدون رخصة عبر privacy@nodejs.org.
 
 ## أسئلة
 إذا كانت لديك أية أسئلة عن الخصوصية في المؤسسة، تفضل بمراسلتنا عبر البريد الالكتروني [privacy@nodejs.org](mailto:privacy@nodejs.org).
