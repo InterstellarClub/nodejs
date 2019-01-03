@@ -4,7 +4,7 @@ labels:
   banner: مستجدات أمنية مهمة، المرجو التحميل الآن !
   current-version: الاصدار الحالي
   download: تحميل
-  download-for: تحميل النسخة الخاصة ب
+  download-for: تحميل النسخة الخاصة بـ
   other-downloads: تحميل نسخ أخرى
   other-lts-downloads: أخرى LTS تحميل نسخ 
   other-current-downloads: تحميلات حالية أخرى

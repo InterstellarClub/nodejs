@@ -10,19 +10,19 @@ title: مجموعات العمل
 
 ## مجموعات العمل الحالية
 
-* [API الخاص بالاضافات](#addon-api)
-* [قياس الأداء](#benchmarking)
-* [البناء](#build)
-* [فحوصات](#diagnostics)
-* [Docker](#docker)
-* [التوعية](#evangelism)
+* [a - API الخاص بالاضافات](#a)
+* [b - قياس الأداء](#b)
+* [c - البناء](#C)
+* [d - الفحوصات](#d)
+* [e - الدوكر](#e)
+* [f - الإدماج](#f)
 * [i18n](#i18n)
-* [الإصدار](#release)
-* [الأمن](#security)
-* [البث](#streams)
-* [موقع الويب](#website)
+* [g - الإصدار](#g)
+* [h - الأمن](#h)
+* [i - التيار](#i)
+* [j - الموقع](#j)
 
-### [API الخاص بالاضافات](https://github.com/nodejs/nan)
+### [a - API الخاص بالاضافات](https://github.com/nodejs/nan)
 
 إن مجموعة عمل الـ API الخاص بالاضافات مسؤولة عن صيانة مشروع NAN و الحزم الموافقة له المسماة _nan_ على مدير حزم نود
 يمكن مشروع NAN من إتاحة طبقة مجردة لأجل مؤلفي الاضافات الاصلية للتود جي اس، و ذلك بمساعدتهم في كتابة شفرة متوافقة مع عدة نسخ من النود جي اس، V8 و libuv.
@@ -54,7 +54,7 @@ Responsibilities include:
 * Adding regular execution of chosen benchmarks to Node.js builds
 * Tracking/publicizing performance between builds/releases
 
-### [Build](https://github.com/nodejs/build)
+### [البناء](https://github.com/nodejs/build)
 
 The Build Working Group's purpose is to create and maintain a distributed
 automation infrastructure.
