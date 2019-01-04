@@ -9,6 +9,3 @@ npm-debug.log
 .DS_Store
 .AppleDouble
 .LSOverride
-
-# VS Code rtl markdown stylesheet
-style.css
