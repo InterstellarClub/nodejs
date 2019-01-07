@@ -58,7 +58,7 @@
     "request": "^2.87.0",
     "require-dir": "1.0.0",
     "semver": "5.5.0",
-    "st": "1.2.2",
+    "st": "^1.2.2",
     "strftime": "0.10.0"
   },
   "devDependencies": {
