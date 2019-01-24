@@ -1,4 +1,4 @@
-{
+﻿{
   "title": "Node.js",
   "author": "Node.js Foundation",
   "url": "https://nodejs.org/ar/",
@@ -65,11 +65,7 @@
   },
   "download": {
     "link": "download",
-<<<<<<< HEAD
-    "text": "التنزيلات",
-=======
     "text": "تنزيلات",
->>>>>>> 3bc57d56f539a2c655f826d2f845bcd532d99294
     "releases": {
       "link": "download/releases",
       "text": "الاصدارات السابقة"
@@ -83,11 +79,7 @@
       "text": "وثائق الاصدارات مختومة SHASUMS"
     },
     "install-on-linux": {
-<<<<<<< HEAD
-      "text": "تثبيت نود جي اس عبر ارشيف ثنائي على لينكس"
-=======
       "text": "تثبيت Node.js باستعمال أرشيف ثنائي على لينكس"
->>>>>>> 3bc57d56f539a2c655f826d2f845bcd532d99294
     }
   },
   "docs": {
@@ -99,11 +91,7 @@
     },
     "inspector": {
       "link": "docs/inspector",
-<<<<<<< HEAD
-      "text": "أدوات المراقبة"
-=======
       "text": "أدوات الإشراف"
->>>>>>> 3bc57d56f539a2c655f826d2f845bcd532d99294
     },
     "api-lts": {
       "link": "/dist/latest-%ver-major%/docs/api",
@@ -153,9 +141,6 @@
   },
   "releases": {
     "title": "أرشيف الاصدارات",
-<<<<<<< HEAD
-    "downloads": "تحميلات"
-=======
     "downloads": "التنزيلات"
   },
   "links": {
