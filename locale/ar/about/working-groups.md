@@ -1,16 +1,16 @@
 ---
 layout: about.hbs
-title: Working Groups
+title:  مجموعات العمل
 ---
-# Core Working Groups
+# مجموعات العمل الأساسية
 <!-- Information here should mostly mirror: https://github.com/nodejs/node/blob/master/WORKING_GROUPS.md -->
 
-Core Working Groups are created by the
-[Technical Steering Committee (TSC)](https://github.com/nodejs/TSC/blob/master/TSC-Charter.md).
+يتم إنشاء مجموعات العمل الأساسية من قبل لجنة التوجيه التقني
+[لجنة التوجيه التقني (TSC)](https://github.com/nodejs/TSC/blob/master/TSC-Charter.md).
 
-## Current Working Groups
+## مجموعات العمل الحالية
 
-* [Addon API](#addon-api)
+* [addon API](#addon-api)
 * [المقاييس](#المقاييس)
 * [البناء](#البناء)
 * [التشخيص](#التشخيص)
@@ -22,31 +22,23 @@ Core Working Groups are created by the
 * [التدفق](#التدفق)
 * [الموقع](#الموقع)
 
-### [Addon API](https://github.com/nodejs/nan)
+### [addon-api](https://github.com/nodejs/nan)
 
-The Addon API Working Group is responsible for maintaining the NAN project and
-corresponding _nan_ package in npm. The NAN project makes available an
-abstraction layer for native add-on authors for Node.js,
-assisting in the writing of code that is compatible with many actively used
-versions of Node.js, V8 and libuv.
+ان مجموعة <span dir="rtl">Addon API<span> مسؤولة عن صيانة مستودع مشروع NAN و الحزم التابعة له تحت مسمى _nan_ على مدير حزم النود. يوفر مشروع NAN طبقة مجردة للمؤلفين الاصليين لاضافة النود جي اس، و ذلك عبر المساعدة في كتابة شفرة برمجية متوافقة مع عدة اصدارات نشطة من النود جي اس و V8 و libuv.
+تشمل مسؤوليات هذه المجموعة:
+* صيانة مستودع [NAN](https://github.com/nodejs/nan) على الـGitHub، بما في ذلك الشفرة البرمجة، والمشاكل و التوثيق الخاص به
 
-Responsibilities include:
-* Maintaining the [NAN](https://github.com/nodejs/nan) GitHub repository,
-  including code, issues and documentation.
-* Maintaining the [addon-examples](https://github.com/nodejs/node-addon-examples)
-  GitHub repository, including code, issues and documentation.
-* Maintaining the C++ Addon API within the Node.js project, in subordination to
-  the Node.js TSC.
-* Maintaining the Addon documentation within the Node.js project, in
-  subordination to the Node.js TSC.
-* Maintaining the _nan_ package in npm, releasing new versions as appropriate.
-* Messaging about the future of the Node.js and NAN interface to give the
-  community advance notice of changes.
 
-The current members can be found in their
+* صيانة مستودع [addon-examples](https://github.com/nodejs/node-addon-examples) على الـGitHub، بما في ذلك الشفرة البرمجية، والمشاكل والتوثيق الخاص به
+* صيانة اضافة واجهة برمجة التطبيق المكتوبة بالـ C++ الخاصة بمشروع النود جي اس، تحت اشراف لجنة التوجيه التقني.
+* صيانة التوثيق الخاص بالإضافة في إطار مشروع النود جي اس تحت اشراف لجنة التوجيه التقني للنود جي اس.
+* صيانة حزمة _nan_ على مدير حزم النود، و اصدار النسخ الجديدة منها حسب ما يقتضيه الأمر.
+* التراسل حول مستقبل النود جي اس و واجهة NAN لإعطاء المجتمع ملاحظات مسبقة حول التغييرات المستقبلية.
+
+يمكنك الإطلاع على القائمة الحالية للاعضاء هنا:
 [README](https://github.com/nodejs/nan#collaborators).
 
-### [aالمقاييس](https://github.com/nodejs/benchmarking)
+### [المقاييس](https://github.com/nodejs/benchmarking)
 
 The purpose of the Benchmark Working Group is to gain consensus
 on an agreed set of benchmarks that can be used to:
@@ -210,7 +202,7 @@ Responsibilities include:
 * Facilitate and promote the expansion of a healthy security service and product
   provider ecosystem.
 
-### [aالتدفقa](https://github.com/nodejs/readable-stream)
+### [التدفق](https://github.com/nodejs/readable-stream)
 
 The Streams Working Group is dedicated to the support and improvement of the
 Streams API as used in Node.js and the npm ecosystem. We seek to create a
@@ -229,7 +221,7 @@ Responsibilities include:
 * Recommending versions of `readable-stream` to be included in Node.js.
 * Messaging about the future of streams to give the community advance notice of changes.
 
-### [الموقعa](https://github.com/nodejs/nodejs.org)
+### [الموقع](https://github.com/nodejs/nodejs.org)
 
 The Website Working Group's purpose is to build and maintain a public
 website for the Node.js project.
