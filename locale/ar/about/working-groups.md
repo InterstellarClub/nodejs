@@ -11,7 +11,7 @@ title:  مجموعات العمل
 ## مجموعات العمل الحالية
 
 * [addon API](#addon-api)
-* [المقاييس](#المقاييس)
+* [القياس](#القياس)
 * [البناء](#البناء)
 * [التشخيص](#التشخيص)
 * [دوكر](#دوكر)
@@ -38,32 +38,28 @@ title:  مجموعات العمل
 يمكنك الإطلاع على القائمة الحالية للاعضاء هنا:
 [README](https://github.com/nodejs/nan#collaborators).
 
-### [المقاييس](https://github.com/nodejs/benchmarking)
+### [القياس](https://github.com/nodejs/benchmarking)
 
-The purpose of the Benchmark Working Group is to gain consensus
-on an agreed set of benchmarks that can be used to:
+يتمثل الغرض من مجموعة القياس الحصول على توافق حول مجموعة من المعايير المتفق عليها و الخاصة بالأداء التي يمكن استعمالها لأجل:
 
-* track and evangelize performance gains made between Node.js releases
-* avoid performance regressions between releases
+* تتبع و تشخيص تحسينات الأداء بين إصدارات النود جي اس
+* تجنب التراجع في الأداء في النسخ الأحدث
 
-Responsibilities include:
-* Identifying 1 or more benchmarks that reflect customer usage.
-  Likely will need more than one to cover typical Node.js use cases
-  including low-latency and high concurrency
-* Working to get community consensus on the list chosen
-* Adding regular execution of chosen benchmarks to Node.js builds
-* Tracking/publicizing performance between builds/releases
+تشمل مسؤولياتها:
+* تحديد معيار واحد أو اكثر يمثل الاستخدام الاعتيادي. عادة ما يتطلب ذلك اكثر من معيار واحد لتغطية حالات الاستخدام الاعتيادية للنود جي اس، بما في ذلك الاستخدام الذي يشمل تزامنا عالياً و مكوناً منخفضاً.
+* العمل لأجل الحصول على موافقة المجتمع على قائمة المعايير المختارة
+* إضافة تنفيذ دوري لجملة من المعايير المختارة لنسخ النود جي اس
+* تتبع و نشر نتائج الأداء بين مختلف الاصدارات و النسخ المبنية
 
 ### [البناء](https://github.com/nodejs/build)
 
-The Build Working Group's purpose is to create and maintain a distributed
-automation infrastructure.
+إن غرض مجموعة البناء هو إنشاء و صيانة بنية تحتية مؤتمتة و موزعة.
 
-Responsibilities include:
-* Producing packages for all target platforms.
-* Running tests.
-* Running performance testing and comparisons.
-* Creating and managing build-containers.
+تشمل مسؤولياتها:
+* إنتاج الحزم لجميع المنصات المستهدفة
+* إجراء الاختبارات.
+* إجراء اختبارات الأداء و المقارنات.
+* إنشاء و تسيير حاويات البناء
 
 ### [التشخيص](https://github.com/nodejs/diagnostics)
 
