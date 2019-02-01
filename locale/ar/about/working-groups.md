@@ -46,7 +46,7 @@ title:  مجموعات العمل
 * تجنب التراجع في الأداء في النسخ الأحدث
 
 تشمل مسؤولياتها:
-* تحديد معيار واحد أو اكثر يمثل الاستخدام الاعتيادي. عادة ما يتطلب ذلك اكثر من معيار واحد لتغطية حالات الاستخدام الاعتيادية للنود جي اس، بما في ذلك الاستخدام الذي يشمل تزامنا عالياً و مكوناً منخفضاً.
+* تحديد معيار واحد أو اكثر يمثل الاستخدام الاعتيادي. عادة ما يتطلب ذلك اكثر من معيار واحد لتغطية حالات الاستخدام الاعتيادية للنود جي اس، بما في ذلك الاستخدام الذي يشمل تزامنا عالياً و كموناً منخفضاً.
 * العمل لأجل الحصول على موافقة المجتمع على قائمة المعايير المختارة
 * إضافة تنفيذ دوري لجملة من المعايير المختارة لنسخ النود جي اس
 * تتبع و نشر نتائج الأداء بين مختلف الاصدارات و النسخ المبنية
@@ -63,33 +63,27 @@ title:  مجموعات العمل
 
 ### [التشخيص](https://github.com/nodejs/diagnostics)
 
-The Diagnostics Working Group's purpose is to surface a set of comprehensive,
-documented, and extensible diagnostic interfaces for use by Node.js tools and
-JavaScript VMs.
+تهدف مجموعة التشخيص إلى تحديد مجموعة من واجهات التشخيص المحددة و الموثقة و القابلة للتوسع لاستعمالها من طرف أدوات النود جي اس و بيئات جافاسكريبت الإفتراضية.
 
-Responsibilities include:
-* Collaborating with V8 to integrate `v8_inspector` into Node.js.
-* Collaborating with V8 to integrate `trace_event` into Node.js.
-* Collaborating with Core to refine `async_wrap` and `async_hooks`.
-* Maintaining and improving OS trace system integration (e.g. ETW, LTTNG, dtrace).
-* Documenting diagnostic capabilities and APIs in Node.js and its components.
-* Exploring opportunities and gaps, discussing feature requests, and addressing
-  conflicts in Node.js diagnostics.
-* Fostering an ecosystem of diagnostics tools for Node.js.
-* Defining and adding interfaces/APIs in order to allow dumps to be generated
-  when needed.
-* Defining and adding common structures to the dumps generated in order to
-  support tools that want to introspect those dumps.
+تشمل مسؤولياتها:
+* التعاون مع V8 لإدماج `v8_inspector` ضمن النود جي اس.
+* التعاون مع V8 لإدماج `trace_event` ضمن النود جي اس.
+* التعاون مع مجموعة العمل الأساسية لتحسين `async_wrap` و `async_wrap`.
+* صيانة و تحسين الدمج الخاص بنظام تتبع نظام التشغيل (ETW، LTTNG، dtrace على سبيل المثال).
+* توثيق القدرات التشخيصية و وواجهات برمجة التطبيقات في النود جي اس و مكوناتها.
+* استكشاف الفرص و الفجوات، و مناقشة طلبات إضافة الميزات ، و معالجة التداخلات في تشخيصات النود جي اس.
+* تعزيز النظام البيئي لأدوات التشخيص الخاصة بالنود جي اس.
+* تحديد و إضافة واجهات / واجهات برمجة تطبيقات لتمكين توليد مقالب عند الحاجة.
+* تحديد و إضافة هيكلية مشتركة للمقالب التي تم توليدها، و ذلك لأجل دعم الأدوات التي تهدف لاستقصاء تلك المقالب.
 
 ### [دوكر](https://github.com/nodejs/docker-node)
 
-The Docker Working Group's purpose is to build, maintain, and improve official
-Docker images for the Node.js project.
+إن غرض مجموعة العمل الخاصة بالدوكر هو بناء وصيانة وتحسين اسطوانات الدوكر الرسمية لمشروع النود جي اس.
 
-Responsibilities include:
-* Keeping the official Docker images updated in line with new Node.js releases.
-* Decide and implement image improvements and/or fixes.
-* Maintain and improve the images' documentation.
+تشمل مسؤولياتها:
+* الإبقاء على اسطوانات الدوكر الرسمية محدثة بالتزامن مع اصدارات النود جي اس.
+* اتخاذ القرارات المتعلقة بتحسين و تطبيق الاسطوانات و / أو إجراء اصلاحات عليها.
+* صيانة و تحسين التوثيق الخاص بهذه الاسطوانات.
 
 ### [الإدماج](https://github.com/nodejs/evangelism)
 
