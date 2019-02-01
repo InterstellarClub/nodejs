@@ -15,7 +15,7 @@ title:  مجموعات العمل
 * [البناء](#البناء)
 * [التشخيص](#التشخيص)
 * [دوكر](#دوكر)
-* [الإدماج](#الإدماج)
+* [التوعية](#التوعية)
 * [i18n](#i18n)
 * [الإصدارات](#الإصدارات)
 * [الحماية](#الحماية)
@@ -85,37 +85,30 @@ title:  مجموعات العمل
 * اتخاذ القرارات المتعلقة بتحسين و تطبيق الاسطوانات و / أو إجراء اصلاحات عليها.
 * صيانة و تحسين التوثيق الخاص بهذه الاسطوانات.
 
-### [الإدماج](https://github.com/nodejs/evangelism)
+### [التوعية](https://github.com/nodejs/evangelism)
 
-The Evangelism Working Group promotes the accomplishments
-of Node.js and lets the community know how they can get involved.
+تقوم مجموعة التوعية بإبراز انجازات النود جي اس و تسمح للمجتمع بمعرفة كيفية المساهمة في المشروع.
 
-Responsibilities include:
-* Facilitating project messaging.
-* Managing official project social media.
-* Handling the promotion of speakers for meetups and conferences.
-* Handling the promotion of community events.
-* Publishing regular update summaries and other promotional
-  content.
+تشمل مسؤولياتها:
+* تسهيل التواصل داخل المشروع.
+* إدارة وسائل التواصل الإجتماعي الرسمية للمشروع.
+* توجيه الترويج للمتحدثين في اللقاءات و المؤتمرات الخاصة بالنود جي اس.
+* توجيه الترويج للمناسبات الخاصة بالمجتمع.
+* نشر ملخصات تحديثية دورية و محتوى ترويجي آخر.
 
 ### i18n
 
-The i18n Working Groups handle more than just translations. They
-are endpoints for community members to collaborate with each
-other in their language of choice.
+إن مهام هذه المجموعة لا تقتصر على الترحمة فحسب، بل هي تمثل الوسيلة التي يتعاون من خلالها أعضاء المجتمع مع بعضهم باستخدام اللغة التي يختارونها.
 
-Each team is organized around a common spoken language. Each
-language community might then produce multiple localizations for
-various project resources.
+كل فريق ينتظم حول لغة معروفة، و يمكن كل مجتمع للغة معروفة ينتج عدة ترجمات للمشروعات المختلفة.
 
-Responsibilities include:
-* Translating any Node.js materials they believe are relevant to their
-  community.
-* Reviewing processes for keeping translations up to date and of high quality.
-* Managing and monitoring social media channels in their language.
-* Promoting Node.js speakers for meetups and conferences in their language.
+تشمل مسؤولياتها:
+* ترجمة أي مواد خاصة بالنود جي اس التي قد يتم اعتبارها على صلة بمجتمعهم.
+* مراجعة المعالجات لإبقاء عمليات الترجمة محدثة و ذات جودة عالية.
+* إدارة و مراقبة قنوات التواصل الاجتماعي بلغاتهم.
+* ترويج المتحدثين و اللقاءات و المؤتمؤات الخاصة بالنود جي اس بلغاتهم الأصلية.
 
-Each language community maintains its own membership.
+كل مجتمع خاص بلغة يصون عضويته الخاصة.
 
 * [nodejs-ar - Arabic (العَرَبِيَّة)](https://github.com/nodejs/nodejs-ar)
 * [nodejs-bg - Bulgarian (български)](https://github.com/nodejs/nodejs-bg)
@@ -153,44 +146,36 @@ Each language community maintains its own membership.
 * [nodejs-vi - Vietnamese (Tiếng Việt)](https://github.com/nodejs/nodejs-vi)
 
 ### [الإصدارات](https://github.com/nodejs/LTS)
-The Release Working Group manages the release process for Node.js.
+تقوم هذه المجموعة بإدارة عمليات الأصدار للنسخ الجديدة من النود جي اس.
 
-Responsibilities include:
-* Define the release process.
-* Define the content of releases.
-* Generate and create releases.
-* Test Releases.
-* Manage the Long Term Support and Current branches including
-  backporting changes to these branches.
-* Define the policy for what gets backported to release streams
+تشمل مسؤولياتها:
+* تحديد عملية الإصدار.
+* تحديد محتوى الإصدارات.
+* توليد و إنشاء الإصدارات.
+* إختبار الإصدارات.
+* تولي تسيير الدعم طويل الأمد و الفروع الحالية، بما في ذلك إدماج التغييرات اللازمة لتلك الفروع
+* تحديد السياسة المتعلقة بما سيتم اضافته للاصدارات
 
 ### [الحماية](https://github.com/nodejs/security-wg)
 
-The Security Working Group manages all aspects and processes linked to Node.js security.
+تتولى مجموعة الحماية جميع المسائل المرتبطة بتأمين النود جي اس.
 
-Responsibilities include:
-* Define and maintain security policies and procedures for:
-  * the core Node.js project
-  * other projects maintained by the Node.js Technical Steering Committee (TSC).
-* Work with the Node Security Platform to bring community vulnerability data into
-  the foundation as a shared asset.
-* Ensure the vulnerability data is updated in an efficient and timely manner.
-  For example, ensuring there are well-documented processes for reporting
-  vulnerabilities in community modules.
-* Review and recommend processes for handling of security reports (but not the
-  actual administration of security reports, which are reviewed by a group of people
-  directly delegated to by the TSC).
-* Define and maintain policies and procedures for the coordination of security
-  concerns within the external Node.js open source ecosystem.
-* Offer help to npm package maintainers to fix high-impact security bugs.
-* Maintain and make available data on disclosed security vulnerabilities in:
-  * the core Node.js project
-  * other projects maintained by the Node.js Foundation technical group
-  * the external Node.js open source ecosystem
-* Promote the improvement of security practices within the Node.js ecosystem.
-* Recommend security improvements for the core Node.js project.
-* Facilitate and promote the expansion of a healthy security service and product
-  provider ecosystem.
+تشمل مسؤولياتها:
+* تحديد و صيانة سياسات الأمن و إجراءاته لـ:
+ * مشروع النود جي اس الأساسي
+ * المشاريع الأخرى المصانة من قبل لجنة التوجيه التقني التابعة للنود جي اس
+* العمل مع منصة النود الأمنية لجلب ثغرات المجتمع الأمنية للمنظمة كمادة يتم مشاركتها.
+* ضمان أن بيانات الثغرات محدثة بطريفة فعالة و مراعية لعامل الوقت. مثلا، بأن يتم ضمان وجود معالجات موثقة جيدا فيما يخص عمليات الإبلاغ عن الثغرات في الوحدات التكميلية الخاصة بالمجتمع.
+* مراجعة عمليات توجيه التقارير الأمنية والتوصية بها (لا يعني ذلك إدارة التقارير الأمنية فعليا، فذلك يتم من خلال مجموعة من الأشخاص المختارين من قبل لجنة التوجيه التقني)
+* تحديد و صيانة السياسات و الإجراءات المتعلقة بالمخاوف الأمنية المشتركة في النظام البيئي الخارج و المفتوح للنود جي اس.
+* تقديم المساعدة للاشخاص الذين يتولون صيانة حزم النود، و ذلك لإصلاح الثغرات التي تشكل تهديدا جديا.
+* صيانة و توفير بيانات حول الثغرات التي تم الكشف عنها في:
+ * مشروع النود جي اس الأساسي
+ * المشاريع الأخرى المصانة من قبل لجنة التوجيه التقني التابعة للنود جي اس
+ * النظام البيئي الخارجي مفتوح المصدر الخاص بالنود جي اس
+* الترويج للتحسينات الأمنية في النظام البيئي للنود جي اس.
+* التوصية بالتحسينات الأمنية للمشروع الأساسي للنود جي اس.
+* تسهيل و ترويج توسع الخدمات الأمنية القوية و النظام البيئي لموفر المنتجات
 
 ### [التدفق](https://github.com/nodejs/readable-stream)
 
