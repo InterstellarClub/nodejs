@@ -178,31 +178,22 @@ title:  مجموعات العمل
 * تسهيل و ترويج توسع الخدمات الأمنية القوية و النظام البيئي لموفر المنتجات
 
 ### [التدفق](https://github.com/nodejs/readable-stream)
+تكرس هذه المجموعة عملها لدعم و تحسين واجهات برمجة التطبيقات الخاص بالتدفقات في النظام البيئي للنود جي اس و مدير حزم النود. نحن نهدف لخلق واجهات برمجة تطبيقات قابلة للتركيب و تحل مشكلة تمثيل حدث مرات عدة بطريقة معروفة وسهلة. يتم التحسينات على واجهة برمجة التطبيق حسب حاجة النظام البيئي. إن العمليات المشتركة إضافة إلى توافق مع الإصدارات الاقدم مع حلول أخرى هي مهمة للمجموعة.
 
-The Streams Working Group is dedicated to the support and improvement of the
-Streams API as used in Node.js and the npm ecosystem. We seek to create a
-composable API that solves the problem of representing multiple occurrences
-of an event over time in a humane, low-overhead fashion. Improvements to the
-API will be driven by the needs of the ecosystem; interoperability and
-backwards compatibility with other solutions and prior versions are paramount
-in importance.
-
-Responsibilities include:
-* Addressing stream issues on the Node.js issue tracker.
-* Authoring and editing stream documentation within the Node.js project.
-* Reviewing changes to stream subclasses within the Node.js project.
-* Redirecting changes to streams from the Node.js project to this project.
-* Assisting in the implementation of stream providers within Node.js.
-* Recommending versions of `readable-stream` to be included in Node.js.
-* Messaging about the future of streams to give the community advance notice of changes.
+تشمل المسؤوليات:
+* تحديد مشاكل التدفق في متتبع المشاكل الخاص بالنود جي اس.
+* تولي المسؤولية عن التوثيق الخاص بمشروع النود جي اس و تعديله.
+* مراجعة التغييرات للكلاسات الفرعية الخاصة بالتدفق ضمن مشروع النود جي اس.
+* إعادة توجيه التغييرات للتدفقات من مشروع النود جي اس إلى هذا المشروع.
+* المساعدة في تطبيق موفري التدفق ضمن النود جي اس.
+* التوصية بإدراج نسخ الـ `readable-stream` ضمن النود جي اس.
+* التراسل حول مستقبل التدفقات لإعطاء المجتمع لمحة مسبقة عن التغييرات.
 
 ### [الموقع](https://github.com/nodejs/nodejs.org)
 
-The Website Working Group's purpose is to build and maintain a public
-website for the Node.js project.
+تهدف مجموعة العمل الخاصة بالموقع إلى بناء و صيانة الموقع المتاح للعموم الخاص بمشروع النود جي اس.
 
-Responsibilities include:
-* Developing and maintaining a build and automation system for nodejs.org.
-* Ensuring the site is regularly updated with changes made to Node.js, like
-  releases and features.
-* Fostering and enabling a community of translators.
+تشمل مسؤولياتها:
+* تطوير و صيانة نظام صيانة و أتمتة خاص بالـ nodejs.org
+* ضمان ان الموقع يتم تحديثه دوريا بالتغييرات التي تم إجراؤها على النود جي اس، مثل الإصدارات و الميزات.
+* تعزيز و تمكين مجتمع مكون من مترجمين.
