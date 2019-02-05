@@ -4,12 +4,7 @@ layout: contribute.hbs
 ---
 
 # القمة التعاونية
-قمة التعاون 
-Collaboration Summit is an un-conference for bringing current and
-potential contributors together to discuss Node.js  with lively collaboration,
-education, and knowledge sharing. Committees and working groups come together
-twice per year to make important decisions while also being able to work on some
-exciting efforts they want to push forward in-person.
+قمة التعاون هي مؤتمر لأجل الحضور الحاليين و المساهمين المحتملين لنقاشات النودجيس مع تعاونات حيوية و تعليمية و مشاركة المعرفة. اللجان و مجموعة العمل تأتي معا مرتين في السنة لاتخاذ قرارات مهمة بينما أيضا القدرة للعمل على بعض جهود مثيرة يريدون دفعها إلى الأمام شخصيا.
 
 ## من الحاضرون ؟
 أي شخص مرحب به للحضور في قمة التعاون أو أثنائه،
