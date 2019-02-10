@@ -26,7 +26,7 @@ layout: contribute.hbs
 
 ## مواقع و مشاريع المجتمع دولي
 
-- [مجموعة الفيسبوك للـ Node.js بالعربية](https://www.facebook.com/groups/244117373172135)
+- [مجموعة الفيسبوك للـ Node.js بالعربية](https://www.facebook.com/groups/node.ar)
 - [مجتمع Node.js الصيني](http://cnodejs.org)
 - [المجتمع الفرنسي للـ Node.js لمستخدمي Google+](https://plus.google.com/communities/113346206415381691435)
 - [المجتمع المجري (المجرية)](http://nodehun.blogspot.com/)
