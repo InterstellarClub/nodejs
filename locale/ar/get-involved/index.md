@@ -4,32 +4,33 @@ layout: contribute.hbs
 ---
 # الإنخراط
 
-## تواصل في المجتمع
+## نقاش المجتمع
 
-- الـ[ڨيتهاب قائمة المشاكل](https://github.com/nodejs/node/issues) هو المكان للحوار حول  نواة ومميزات النودجيس.
-- في الوقت الحالي الدرشة تطوير النودجيس إذهب إلى `irc.freenode.net` في القناة `#node.js` مع [IRC client](http://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients) أو عبر المتصفح إذهب إلى القناة [freenode's WebChat](http://webchat.freenode.net/?channels=node.js).
-- الحساب الرسمي للنودجيس على التويتر هو [nodejs](https://twitter.com/nodejs).
-- ال[نودجيس تقويم المؤسسة](https://nodejs.org/calendar) مع كل اجتماعات الفريق العامة. 
-- [النودجيس في كل مكان](https://newsletter.nodejs.org) هي الرسالة الإخبارية الأسبوعية للنودجيس.
-- [مجموعة النوجيس](https://medium.com/the-node-js-collection) هي مجموعة المختارة من المجتمع في Medium .
-- [لجنة المجتمع](https://github.com/nodejs/community-committee) هي لجنة من مستوى عالى في مؤسسة النودجيس  تركز على مجهودات واجهة المجتمع 
+- تعتبر [قائمة المشكلات على GitHub]() المكان المخصص للنقاشات حول المميزات الأساسية للـ Node.js.
+- لأجل الانخراط في دردشة آنية عن تطوير الـ Node.js، تفضل بزيارة `irc.freenode.net` على قناة `#node.js` باستعمال [أحد برامج IRC](http://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients) أو اتصل بواسطة متصفحك باستعمال خدمة الشات الخاصة بـ [freenode](http://webchat.freenode.net/?channels=node.js)
+- الحساب الرسمي للـ Node.js على تويتر هو [nodejs](https://twitter.com/nodejs)
+- [رزنامة مؤسسة الـ Node.js](https://nodejs.org/calendar) تحتوي على تواريخ لقاءات جميع الفرق العامة.
 
+- [Node.js Everywhere](https://newsletter.nodejs.org) و تمثل الرسالة الإخبارية الشهرية للـ Node.js.
+
+- [Node.js Collection](https://medium.com/the-node-js-collection) وهي مجموعة من المحتوى المكتوب من طرف مجتمعنا على موقع medium.
+- The [Community Committee](https://github.com/nodejs/community-committee) و هي تمثل لجنة ذات مستوى عالٍ في مؤسسة الـ Node.js و تركز على الجهود الخاصة بالمجتمع.
 
 ## التعلم
 
-- [المرجع الرسمي للتوثيقات API](/api) تفاصيل عنن النودجيس API .
-- [NodeSchool.io](http://nodeschool.io) سوف يعلمك مفاهيم النوجيس عن طريق ألعاب بأوامر الأسطر التفاعلية.
-- [علامة النودجيس في Stack Overflow](http://stackoverflow.com/questions/tagged/node.js) يجمع معلومات جديدة كل يوم .
-- [علامة النودجيس في مجتمع DEV](https://dev.to/t/node) هو مكان مشاريع النوجيس، مقالات و دورات وكذلك لبدء المناقشات و طلب التقييم فيما يتعلق بمواضيع النوجيس. المطورين من جميع مستويات المهارة مرحب بهم للمشاركة.
-- [Nodeiflux](https://discordapp.com/invite/vUsrbjd) هو مجتمع ودي للنودجيس مطورون الواجهة الخلفية ليدعمو بعضهم البعض في Discord.
+- [التوثيق الرسمي لواجهة برمجة التطبيق](/api) يتحدث بالتفصيل على وجاهة برمجة التطبيق الخاصة بالـ Node.js
+- [NodeSchool.io] (http://nodeschool.io) سيعلمك مفاهيم الـ Node.js باستعمال العاب سطر اوامر تفاعلية.
+- [التاق الخاص بالـ Node.js على Stack Overflow](http://stackoverflow.com/questions/tagged/node.js) يجمع معلومات جديدة كل يوم.
+- [التاق الخاص بمجتمع مطوري الـ Node.js](https://dev.to/t/node) يمثل مكانا لمشاركة مشاريع الـ Node.js و المقالات و الدروس المتعلقة به إضافة إلى بدء النقاشات و طلب الآراء عن المواضيع المتعلقة بالـ Node.js. إن جميع المطورين من كافة المستويات مرحب بها هنا.
+- [Nodeiflux](https://discordapp.com/invite/vUsrbjd) هو مجتمع داعم لمطوري الجهة الخلفية للـ Node.js الذين يدعمون بعضهم على منصة Discord.
 
-## مواقع ومشاريع المجتمع دولي
+## مواقع و مشاريع المجتمع دولي
 
-- [مجموعة الفيسبوك لنودجيس بالعربية](https://www.facebook.com/groups/244117373172135)
-- [المجتمع الصيني](http://cnodejs.org)
-- [المجتمع الفرنسي للنودجيس لمستخدمي Google+](https://plus.google.com/communities/113346206415381691435)
-- [المجتمع الهنغارية (المجرية)](http://nodehun.blogspot.com/)
-- [مجموعة الفيسبوك الإسرائيلية لنودجيس](https://www.facebook.com/groups/node.il/)
+- [مجموعة الفيسبوك للـ Node.js بالعربية](https://www.facebook.com/groups/244117373172135)
+- [مجتمع Node.js الصيني](http://cnodejs.org)
+- [المجتمع الفرنسي للـ Node.js لمستخدمي Google+](https://plus.google.com/communities/113346206415381691435)
+- [المجتمع المجري (المجرية)](http://nodehun.blogspot.com/)
+- [مجموعة الفيسبوك الإسرائيلية للـ Node.js](https://www.facebook.com/groups/node.il/)
 - [مجموعة المستخدمين اليابانية](http://nodejs.jp/)
-- [مجموعة الفيسبوك باللغة الأسبانية لنودجيس](https://www.facebook.com/groups/node.es/)
+- [مجموعة الفيسبوك باللغة الأسبانية للـ Node.js](https://www.facebook.com/groups/node.es/)
 - [مجتمع اللغة الاسبانية](http://nodehispano.com)
