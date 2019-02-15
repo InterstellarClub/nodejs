@@ -1,5 +1,5 @@
 ---
-title: Docs
+title: التوثيق
 layout: docs.hbs
 labels:
   lts: LTS

@@ -1,5 +1,5 @@
 ---
-title: Node.js Speakers
+title: متحدثو الـ Node.js
 layout: contribute.hbs
 ---
 

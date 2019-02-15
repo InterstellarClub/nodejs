@@ -1,5 +1,5 @@
 ---
-title: Node Meetups
+title: لقاءات الـ Node
 layout: contribute.hbs
 ---
 
