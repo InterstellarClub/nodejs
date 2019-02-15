@@ -3,106 +3,106 @@ title: Node.js Speakers
 layout: contribute.hbs
 ---
 
-# Node.js Speakers
+# متحدثي الـ Node.js
 
-This is a list of local Node.js speakers. Please submit a PR if you'd like to add yourself or add others! Make sure you have permission before doing so as well.
+هذه قائمة للمتحدثين المحليين للـ Node.js. فضلا، قم بإنشاء طلب تعديل إذا كنت تريد إضافة نفسك أو آخرين كمتحدثين. تأكد أيضا من أنك تمتلك الترخيص قبل فعل ذلك.
 
-## Code of Conduct
+## القواعد السلوكية
 
-If anyone is reported as malicious or making others feel uncomfortable, they may be removed from this list. 
+إذا تم الإبلاغ عن احدهم بأنه ضار أو يجعل الآخرين غير مرتاحين، فقد يتم حذفه من القائمة.
 
-## Instructions
+## تعليمات
 
-- Submit everything alphabetically
+- قدم كل شيء بترتيب ألفبائياً
 
-## Speakers
+## المتحدثون
 
-### Canada 🇨🇦
+### كندا 🇨🇦
 
-#### Ontario 
+#### اونتاريو 
 
-##### Ottawa
+##### اوتاوا
 
-###### Michael Dawson
+###### مايكل داوسون
 
 - [@mhdawson](https://twitter.com/mhdawson1)
 - [LinkedIn](https://www.linkedin.com/in/michael-dawson-6051282/)
-- Topics - Node.js
+- المواضيع - Node.js
 
-#### British Columbia
+#### كولومبيا البريطانية
 
-##### Vancouver
+##### فانكوفر
 
-###### Manil Chowdhury
+###### مانيل تشاودري
 
 - [@keywordnew](https://twitter.com/keywordnew)
 - [LinkedIn](https://www.linkedin.com/in/manilchowdhury/)
-- Topics - Node Community, Open Source, Education, Diversity & Inclusion, wombats
+- المواضيع - مجتمع Node، المصادر المفتوحة، التعليم، التنوع و الشمولية، الوومبات
 
-### United States
+### الولايات المتحدة
 
-#### California
+#### كاليفورنيا
 
-##### San Francisco
+##### سان فرانسيسكو
 
-###### Atishay Jain
+###### اتيشاي جاين
 - [@atishay811](http://twitter.com/atishay811)
 - [LinkedIn](https://linkedin.com/in/atishay)
 - [Github](https://github.com/atishay)
-- Topics - Node.js, Native Modules(N-API, Nan), Node.js on desktop
+- المواضيع - Node.js، الوحدات الأصلية(N-API، Nan)، Node.js على سطح المكتب.
 
-###### Dan Shaw
+###### دان شو
 
 - [@dshaw](http://twitter.com/dshaw)
-- Topics - Node.js 
+- المواضيع - Node.js 
 
-###### Shruti Kapoor
+###### شروتي كابور
 
 - [@shrutikapoor08](http://twitter.com/shrutikapoor08)
-- Topics - Node.js 
+- المواضيع - Node.js 
 
-###### Tracy Lee
+###### ترايسي لي
 
 - [@ladyleet](http://twitter.com/ladyleet)
 - [LinkedIn](https://linkedin.com/in/tracyslee)
-- Topics - Node.js Community, Women in Tech, Diversity & Inclusion, RxJS & Node.js
+- المواضيع - مجتمع الـNode.js ، المرأة في عالم التقنية، التنوع و الشمولية، ، RxJS و Node.js
 
-#### New York
+#### نيويورك
 
-##### New York City
+##### مدينة نيويورك
 
-###### Tierney Cyren
+###### تيرني سيرن
 
 - [@bitandbang](http://twitter.com/bitandbang)
-- Topics - Node.js 
+- المواضيع - Node.js 
 
-###### Joe Sepi
+###### جو سيبي
 
 - [@joe_sepi](http://twitter.com/joe_sepi)
 - [LinkedIn](https://www.linkedin.com/in/joesepi/)
-- Topics - Node.js, JavaScript, Open Source, Community, Leadership, Punk Rock
+- المواضيع - Node.js، الجافاسكريبت، المصادر المفتوحة، المجتمع، القيادة، البانك روك
 
-#### North Carolina
+#### كارولينا الشمالية
 
-##### Raleigh
+##### رالي
 
-###### Tracy Lee
+###### ترايسي لي
 
 - [@ladyleet](http://twitter.com/ladyleet)
 - [LinkedIn](https://linkedin.com/in/tracyslee)
-- Topics - Node.js Community, Women in Tech, Diversity & Inclusion, RxJS & Node.js
+- المواضيع - مجتمع الـ Node.js، المرأة في عالم التقنية، التنوع و الشمولية ، RxJS و Node.js
 
-#### Oregon
+#### اوريغون
 
-##### Portland
+##### بورتلاند
 
-###### Ben Michel
+###### بن ميشيل
 
 - [@obensource](http://twitter.com/obensource)
-- Topics - Node.js 
+- المواضيع - Node.js 
 
-###### Christopher Hiller
+###### كريستوفر هيلر
 
 - [@b0neskull](https://twitter.com/b0neskull)
-- Topics - Node.js, Testing, Tooling, Maintainership & OSS Sustainability
+- المواضيع - Node.js، الإختبارات، الادوات، الإستدامة و الحفاظ على نظام المصادر المفتوحة
 

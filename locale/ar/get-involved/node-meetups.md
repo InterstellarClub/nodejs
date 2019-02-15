@@ -11,7 +11,7 @@ layout: contribute.hbs
 
 سيتم حذف اللقاء من القائمة إذا لم يتوفر على شهادة مطابقة أو تم الابلاغ عنه كمكان غير آمن.
 
-## ملاحظة تخص إضافة Meetupات
+## ملاحظة تخص إضافة اللقاءات
 
 الصيغة
 - [لقاء](https://www.meetup.com/pdxnode/)
@@ -570,4 +570,3 @@ layout: contribute.hbs
 - كيف تقدم طلب محاضرة ؟ راسل [فالنتين](mailto:valentin.huber@msg.group)
 - المنظم - فالنتين هوبر
 - معلومات الاتصال بالمنظم - [راسل المنظم](mailto:valentin.huber@msg.group)
-    
