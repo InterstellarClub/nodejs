@@ -1,4 +1,4 @@
----
+﻿---
 layout: security.hbs
 title: Security
 ---
@@ -19,49 +19,36 @@ title: Security
 
 تتم إدارة هذا البرنامج عبر منصة HackerOne على [https://hackerone.com/nodejs](https://hackerone.com/nodejs) لتفاصيل أكثر.
 
-## Reporting a Bug in a third party module
+## الإبلاغ عن ثغرة في أحد وحدات الطرف الثالث
 
-Security bugs in third party modules should be reported to their respective maintainers and should also be coordinated
-through the [Node Ecosystem Security Team](https://hackerone.com/nodejs-ecosystem) or by emailing 
+إن التبليغ عن الثغرات الامنية في وحدات الأطراف الثالثة يكون إلى المسؤولين عن صيانة تلك الوحدات، كما يجب أن يتم ذلك بالتنسيق مع [الفريق الأمني للنظام البيئي للـ Node.js](https://hackerone.com/nodejs-ecosystem) أو عبر مراسلة 
 [security-ecosystem@nodejs.org](mailto:security-ecosystem@nodejs.org).
 
-Details regarding this process can be found in the [Security Working Group repository](https://github.com/nodejs/security-wg/blob/master/processes/third_party_vuln_process.md).
+للإطلاع على تفاصيل اكثر حول العملية، قم بزيارة [مستودع مجموعة العمل الأمنية](https://github.com/nodejs/security-wg/blob/master/processes/third_party_vuln_process.md)
 
-Thank you for improving the security of Node.js and its ecosystem. Your efforts and responsible disclosure are greatly
-appreciated and will be acknowledged.
+شكرا لك لمساهمتك في تحسين الـ Node.js و النظام البيئي الخاص به. جهودك مقدرة و سيتم الاعتراف بها.
 
-## Disclosure Policy
+## سياسة الكشف عن الثغرات الأمنية
 
-Here is the security disclosure policy for Node.js
+تمثل النقاط الآتية سياسة الكشف عنن الثغرات الأمنية الخاصة بالـ Node.js
 
-- The security report is received and is assigned a primary handler. This person will coordinate the fix and release
-process. The problem is confirmed and a list of all affected versions is determined. Code is audited to find any
-potential similar problems. Fixes are prepared for all releases which are still under maintenance. These fixes are not
-committed to the public repository but rather held locally pending the announcement.
+- يتم استقبال و تعيين شخص يتولى التقرير الأمني، حيث ستتمثل مهمته في التنسيق بين اصلاح الثغرة و موعد اصدار هذا الإصلاح. يتم تأكيد المشكلة و إعداد قائمة بكافة النسخ المتضررة من الثغرة، كما يتم فحص الشفرة لإيجاد أي مشاكل مشابهة محتملة، وبعد ذلك، يتم تحضير تلك الإصلاحات لجميع الإصدارات التي لا تزال قيد الصيانة. لا يتم إجراء هذه الإصلاحات على المستودعات العمومية (المفتوحة)، بل يتم ذلك على المستودعات المحلية في إنتظار الإعلان عن الثغرة.
 
-- A suggested embargo date for this vulnerability is chosen and a CVE (Common Vulnerabilities and Exposures (CVE®))
-is requested for the vulnerability.
+- يتم الإتفاق على تاريخ مقترح للإعلان عن الثغرة، كما يتم طلب ما يسمى بـ CVE (Common Vulnerabilities and Exposures (CVE®)
 
-- On the embargo date, the Node.js security mailing list is sent a copy of the announcement. The changes are pushed to
-the public repository and new builds are deployed to nodejs.org. Within 6 hours of the mailing list being notified, a
-copy of the advisory will be published on the Node.js blog.
+- في يوم الإعلان عن  الثغرة، يتم إرسال نسخة من الإعلان إلى القائمة البريدية الأمنية للـ Node.js، كما يتم إجراء التغييرات على المستودعات المفتوحة و يتم رفع الإصدارات إلى موقع الـ nodejs.org. في غضون 6 ساعات من إعلام القائمة البريدية، سيتم نشر نسخة من التوجيه على مدونة الـ Node.js
 
-- Typically the embargo date will be set 72 hours from the time the CVE is issued. However, this may vary depending on
-the severity of the bug or difficulty in applying a fix.
+- عادة ما يتم تحديد تاريخ الإعلان عن الثغرة ليكون بعد 72 ساعة من تسوية الـ CVE، ولكن قد يختلف ذلك حسب مدى خطورة الثغرة و مدى صعوبة إصلاحها.
 
-- This process can take some time, especially when coordination is required with maintainers of other projects. Every
-effort will be made to handle the bug in as timely a manner as possible; however, it’s important that we follow the
-release process above to ensure that the disclosure is handled in a consistent manner.
+- قد تأخذ هذه العملية بعضاً من الوقت، خصوصا عندما يتطلب الأمر تنسيقا مع الأشخاص المسؤولين عن صيانة مشاريع اخرى، ولكن سيتم بذل كافة الجهود لمعالجة الخلل بأسرع صورة ممكنة. من المهم معرفة أننا نتبع عملية الكشف عن الثغرة المبينة أعلاه لضمان ان إغلاق الثغرة يكون بصفة دائمة.
 
+## إستقبال التحديثات الأمنية
 
-## Receiving Security Updates
-
-Security notifications will be distributed via the following methods.
+يتم توزيع الإشعارات الأمنية بإتباع الطرق التالية.
 
 - [https://groups.google.com/group/nodejs-sec](https://groups.google.com/group/nodejs-sec)
 - [https://nodejs.org/en/blog](https://nodejs.org/en/blog)
 
-## Comments on this Policy
+## تعليقات على هذه السياسة
 
-If you have suggestions on how this process could be improved please submit a [pull request](https://github.com/nodejs/nodejs.org)
-or [file an issue](https://github.com/nodejs/security-wg/issues/new) to discuss.
+إذا كانت لديك إقتراحات حول كيفية تحسين هذه العملية، قم بإيداع [طلب تعديل](https://github.com/nodejs/nodejs.org) أو [فتح مشكلة](https://github.com/nodejs/security-wg/issues/new) للنقاش.
