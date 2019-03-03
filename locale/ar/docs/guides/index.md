@@ -1,32 +1,34 @@
 ---
-title: Guides
+title: الإرشادات
 layout: docs.hbs
 ---
 
-# Guides
+# الإرشادات
 
-## General
+## عام
 
-- [Getting Started Guide](getting-started-guide/)
-- [Debugging - Getting Started](debugging-getting-started/)
-- [Easy profiling for Node.js Applications](simple-profiling/)
-- [Dockerizing a Node.js web app](nodejs-docker-webapp/)
-- [Migrating to safe Buffer constructors](buffer-constructor-deprecation/)
+- [دليل البدء](getting-started-guide/)
+- [التنقيح - البدء](debugging-getting-started/)
+- [ سهل التنميط من أجل تطبيقات Node.js](simple-profiling/)
+- [عمل دوكر على تطبيق ويب Node.js](nodejs-docker-webapp/)
+- [ترحيل إلى منشئات Buffer آمنة](buffer-constructor-deprecation/)
 
-
-## Node.js core concepts
-
-- [Overview of Blocking vs Non-Blocking](blocking-vs-non-blocking/)
-- [The Node.js Event Loop, Timers, and process.nextTick()](event-loop-timers-and-nexttick/)
-- [Don't Block the Event Loop (or the Worker Pool)](dont-block-the-event-loop/)
-- [Timers in Node.js](timers-in-node/)
+ 
+## المفاهيم الأساسية في الـ Node.js
 
 
-## Module-related guides
+- [نظرة عامة على Blocking ضد Non-Blocking](blocking-vs-non-blocking/)
+- [ الـ Node.js حلقة التكرارية، المؤقتات و process.nextTick() ](event-loop-timers-and-nexttick/)
+- [لا تعرقل الحلقة التكرارية (أو يحشد العمل)](dont-block-the-event-loop/)
+- [مؤقتات في Node.js](timers-in-node/)
 
-- [Anatomy of an HTTP Transaction](anatomy-of-an-http-transaction/)
-- [Working with Different Filesystems](working-with-different-filesystems/)
-- [Backpressuring in Streams](backpressuring-in-streams/)
-- [Domain Module Postmortem](domain-postmortem/)
-- [How to publish N-API package](publishing-napi-modules/)
-- [ABI Stability](abi-stability/)
+
+
+## الأدلة لوحدة المتعلقة
+
+- [التشريح لمعاملات HTTP](anatomy-of-an-http-transaction/)
+- [العمل مع مختلف أنظمة الملفات](working-with-different-filesystems/)
+- [الضغط الخلفي في القنوات](backpressuring-in-streams/)
+- [مِقْيَاسُ مَجَال تحليل](domain-postmortem/)
+- [كيفية نشر حزمة N-API](publishing-napi-modules/)
+- [استقرارية ABI](abi-stability/)
