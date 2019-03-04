@@ -1,16 +1,15 @@
 ---
-title: Getting Started Guide
+title: دليل البدء
 layout: docs.hbs
 ---
 
-# How do I start with Node.js after I installed it?
+# كيف أبدأ باستعمال الـ Node.js بعد أن قمت بتثبيته؟
 
-Once you have installed Node, let's try building our first web server.
-Create a file named "app.js", and paste the following code:
+بعد تثبيتك للـ Node، دعنا نجرب كيفية بناء أول خادوم ويب باستعماله.
+قم بإنشاء ملف بإسم "app.js" و ألصق داخله  الشفرة الآتية:
 
 ```javascript
 const http = require('http');
-
 const hostname = '127.0.0.1';
 const port = 3000;
 
@@ -25,4 +24,4 @@ server.listen(port, hostname, () => {
 });
 ```
 
-After that, run your web server using ``` node app.js ```, visit http://localhost:3000, and you will see a message 'Hello World'
+بعد ذلك، قم بتشغيل هذا الخادوم باستعمال الأمر ``` node app.js ```، و قم بزيارة الرابط http://localhost:3000 لترى رسالة مفادها 'Hello World'.
