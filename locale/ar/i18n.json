@@ -2,6 +2,16 @@
     "terms":{
         "CURRENT":{"AR":"الحالي","EN":"current"},
         "STABLE":{"AR": "مستقر", "EN": "stable"},
-        "LTS": {"AR": "دعم طويل الأمد", "EN": "lts"}
+        "LTS": {"AR": "دعم طويل الأمد", "EN": "lts"},
+        "RELEASE": {"AR": "إصدار", "EN": "release"},
+        "SERVER": {"AR": "خادوم", "EN": "server"},
+        "CODE": {"AR": "شيفرة", "EN": "code"},
+        "SOURCE": {"AR": "مصدر", "EN": "SOURCE"},
+        "FUNCTION": {"AR": "دالة", "EN": "function"},
+        "ARGUMENT": {"AR": "معطى", "EN": "argument"},
+        "VARIABLE": {"AR": "متغير", "EN": "variable"},
+        "CONSTANT": {"AR": "ثابت", "EN": "constant"},
+        "GUIDE": {"AR": "دليل", "EN": "guide"},
+        "GETTING-STARTED": {"AR": "البدء", "EN": "getting started"}
     }
 }
