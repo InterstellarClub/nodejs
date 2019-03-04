@@ -1,6 +1,7 @@
 {
-    "words":{
-        "NODEJS":{"AR":"النود جي اس","EN":"NodeJs"},
-        "CURRENT":{"AR":"الحالي","EN":"current"}
+    "terms":{
+        "CURRENT":{"AR":"الحالي","EN":"current"},
+        "STABLE":{"AR": "مستقر", "EN": "stable"},
+        "LTS": {"AR": "دعم طويل الأمد", "EN": "lts"}
     }
 }
