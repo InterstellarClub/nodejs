@@ -12,6 +12,7 @@
         "VARIABLE": {"AR": "متغير", "EN": "variable"},
         "CONSTANT": {"AR": "ثابت", "EN": "constant"},
         "GUIDE": {"AR": "دليل", "EN": "guide"},
-        "GETTING-STARTED": {"AR": "البدء", "EN": "getting started"}
+        "GETTING-STARTED": {"AR": "البدء", "EN": "getting started"},
+        "FEEDBACK": {"AR": "تغذية راجعة", "EN": "feedback"}
     }
 }
