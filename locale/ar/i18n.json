@@ -13,6 +13,7 @@
         "CONSTANT": {"AR": "ثابت", "EN": "constant"},
         "GUIDE": {"AR": "دليل", "EN": "guide"},
         "GETTING-STARTED": {"AR": "البدء", "EN": "getting started"},
-        "FEEDBACK": {"AR": "تغذية راجعة", "EN": "feedback"}
+        "FEEDBACK": {"AR": "تغذية راجعة", "EN": "feedback"},
+        "DEPENDENCY": {"AR": "اعتماد", "EN": "dependency"}
     }
 }

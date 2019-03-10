@@ -1,36 +1,27 @@
 ---
-title: How to publish N-API package
+title: كيفية نشر حزمة N-API 
 layout: docs.hbs
 ---
+# كيفية نشر نسخة N-API لحزمة معينة مع نسخة غير خاصة بـ N-API من نفس الحزمة
 
-# To publish N-API version of a package alongside a non-N-API version
-
-The following steps are illustrated using the package `iotivity-node`:
-  - First, publish the non-N-API version:
-    - Update the version in `package.json`. For `iotivity-node`, the version
-    becomes `1.2.0-2`.
-    - Go through the release checklist (ensure tests/demos/docs are OK)
+يتم توضيح الخطوات الآتية بإستعمال حزمة `iotivity-node`:
+  - كخطوة أولى، قم بنشر النسخة الغير خاصة بالـ N-API من الحزمة.
+    - قم بتحديث النسخة في ملف `package.json`. بالنسبة لـ `iotivity-node` فإن النسخة ستصبح `1.2.0-2`
+    - قم بتفحص قائمة التأكيدات الخاصة بالإصدارات (تأكد من ان test/demos/docs على ما يرام)
     - `npm publish`
-  - Then, publish the N-API version:
-    - Update the version in `package.json`. In the case of `iotivity-node`,
-    the version becomes `1.2.0-3`. For versioning, we recommend following
-    the pre-release version scheme as described by
-    [semver.org](http://semver.org/#spec-item-9) e.g. `1.2.0-napi`.
-    - Go through the release checklist (ensure tests/demos/docs are OK)
+  - بعد ذلك، قم بنشر النسخة الخاصة بالـ N-API:
+    - قم بتحديث النسخة في ملفة `package.json`. في حالة `iotivity-node`، فإن النسخة ستصبح `1.2.0-3`. عند وضع أرقام النسخ، ننصحك بإتباع الطريقة الآتية لوضع نسخ قبلية:  
+    [semver.org](http://semver.org/#spec-item-9). `1.2.0-napi` كمثال.
+    - قم بتفحص قائمة التأكيدات الخاصة بالإصدارات (تأكد من ان test/demos/docs على ما يرام)
     - `npm publish --tag n-api`
 
-In this example, tagging the release with `n-api` has ensured that, although
-version 1.2.0-3 is later than the non-N-API published version (1.2.0-2), it
-will not be installed if someone chooses to install `iotivity-node` by simply
-running `npm install iotivity-node`. This will install the non-N-API version
-by default. The user will have to run `npm install iotivity-node@n-api` to
-receive the N-API version. For more information on using tags with npm check
-out ["Using dist-tags"][].
+في هذا المثال، فإن وسم الحزمة بالوسم `n-api` سيضمن ذلك، رغم أن النسخة 1.2.0-3 احدث من آخر نسخة غير خاصة بالـ N-API تم نشرها (1.2.0-2). لن يتم تثبيت الحزمة إذا قام احدهم بفعل ذلك عن طريق الأمر
+`npm install iotivity-node` ، بل سيتم تثبيت نسخة غير خاصة بالـ N-API افتراضيا.
+حتى يتمكن المستخدم من تثبيت نسخة خاصة بالـ N-API، يجب عليه تنفيذ الأمر `npm install iotivity-node@n-api`. 
+لمزيد من المعلومات حول كيفية استعمال الوسوم مع مدير حزم النود، قم بزيارة ["Using dist-tags"][].
 
-# To introduce a dependency on an N-API version of a package
-
-To add the N-API version of `iotivity-node` as a dependency, the `package.json`
-will look like this:
+# كيفية تقديم اعتماد في نسخة لحزمة خاصة بـ N-API
+لإضافة نسخة خاصة بالـ N-API من حزمة `iotivity-node` كإعتماد ، يجب على ملف `package.json` أن يبدو كما يلي:
 
 ```json
 "dependencies": {
@@ -38,15 +29,8 @@ will look like this:
 }
 ```
 
-**Note:** As explained in
-["Using dist-tags"][], unlike regular versions, tagged versions cannot be
-addressed by version ranges such as `"^2.0.0"` inside `package.json`. The
-reason for this is that the tag refers to exactly one version. So, if the
-package maintainer chooses to tag a later version of the package using the
-same tag, `npm update` will receive the later version. This should be acceptable
-given the currently experimental nature of N-API. To depend on an N-API-enabled
-version other than the latest published, the `package.json` dependency will
-have to refer to the exact version like the following:
+**ملاحظة** مثل ما تم شرحه في ["Using dist-tags"][]، و على النقيض من النسخ العادية، فإن النسخ الموسومة لا يمكن ان يُشار إليها باستعمال "مدى النسخ" مثل `"^2.0.0"` داخل ملف `package.json`، وسبب ذلك هو أن الوسم يشير لنسخة واحدة فقط لذلك، إذا اختار الشخص المسؤول عن الحزمة أن يسم نسخة احدث من الحزمة باستعمال نفس الوسم، فإن الأمر `npm update` سيستقبل آخر نسخة، و هذا عادي نظرا لكون الـ N-API ما يزال اختباريا.
+لاستعمال اعتماد خاص بنسخة تدعم N-API عدا عن آخر نسخة تم نشرها، يجب ان يشار في ملف `package.json` إلى النسخ بالتحديد كما يلي:
 
 ```json
 "dependencies": {
