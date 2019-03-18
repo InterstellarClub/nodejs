@@ -1,19 +1,76 @@
 {
-    "terms":{
-        "CURRENT":{"AR":"الحالي","EN":"current"},
-        "STABLE":{"AR": "مستقر", "EN": "stable"},
-        "LTS": {"AR": "دعم طويل الأمد", "EN": "lts"},
-        "RELEASE": {"AR": "إصدار", "EN": "release"},
-        "SERVER": {"AR": "خادوم", "EN": "server"},
-        "CODE": {"AR": "شيفرة", "EN": "code"},
-        "SOURCE": {"AR": "مصدر", "EN": "SOURCE"},
-        "FUNCTION": {"AR": "دالة", "EN": "function"},
-        "ARGUMENT": {"AR": "معطى", "EN": "argument"},
-        "VARIABLE": {"AR": "متغير", "EN": "variable"},
-        "CONSTANT": {"AR": "ثابت", "EN": "constant"},
-        "GUIDE": {"AR": "دليل", "EN": "guide"},
-        "GETTING-STARTED": {"AR": "البدء", "EN": "getting started"},
-        "FEEDBACK": {"AR": "تغذية راجعة", "EN": "feedback"},
-        "DEPENDENCY": {"AR": "اعتماد", "EN": "dependency"}
+    "terms": {
+        "ABI": {
+            "AR": "واجهة التطبيق الثنائية",
+            "EN": "Application Binary Interface"
+        },
+        "API": {
+            "AR": "واجهة تطبيقات البرمجية",
+            "EN": "Application Programming Interface"
+        },
+        "ARGUMENT": {
+            "AR": "معطى",
+            "EN": "argument"
+        },
+        "CODE": {
+            "AR": "شيفرة",
+            "EN": "code"
+        },
+        "CONSTANT": {
+            "AR": "ثابت",
+            "EN": "constant"
+        },
+        "CURRENT": {
+            "AR": "الحالي",
+            "EN": "current"
+        },
+        "DEPENDENCY": {
+            "AR": "اعتماد",
+            "EN": "dependency"
+        },
+        "FEEDBACK": {
+            "AR": "تغذية راجعة",
+            "EN": "feedback"
+        },
+        "FUNCTION": {
+            "AR": "دالة",
+            "EN": "function"
+        },
+        "GETTING-STARTED": {
+            "AR": "البدء",
+            "EN": "getting started"
+        },
+        "GUIDE": {
+            "AR": "دليل",
+            "EN": "guide"
+        },
+        "LTS": {
+            "AR": "دعم طويل الأمد",
+            "EN": "lts"
+        },
+        "RELEASE": {
+            "AR": "إصدار",
+            "EN": "release"
+        },
+        "SERVER": {
+            "AR": "خادوم",
+            "EN": "server"
+        },
+        "SOURCE": {
+            "AR": "مصدر",
+            "EN": "SOURCE"
+        },
+        "STABLE": {
+            "AR": "مستقر",
+            "EN": "stable"
+        },
+        "VARIABLE": {
+            "AR": "متغير",
+            "EN": "variable"
+        },
+        "VERSION": {
+            "AR": "نسخة",
+            "EN": "version"
+        }
     }
 }
