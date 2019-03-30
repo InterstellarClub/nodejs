@@ -3,93 +3,89 @@ title: Anatomy of an HTTP Transaction
 layout: docs.hbs
 ---
 
-# Anatomy of an HTTP Transaction
+# التركيبة البنيوية لمُعَامَلَة HTTP
 
-The purpose of this guide is to impart a solid understanding of the process of
-Node.js HTTP handling. We'll assume that you know, in a general sense, how HTTP
-requests work, regardless of language or programming environment. We'll also
-assume a bit of familiarity with Node.js [`EventEmitters`][] and [`Streams`][].
-If you're not quite familiar with them, it's worth taking a quick read through
-the API docs for each of those.
+الغاية من هذا الدليل هو مَنَح معارف قوية لعمل Node.js في معالجة HTTP. لنفرض أنك تعرف 
+بشكل عام كيف تعمل طلبات HTTP بغض النظر عن اللغة أو بيئة البرمجة وسنفرض أيضا على دِرَايَة 
+ بقليلا من Node.js [`EventEmitters`][] و [`Streams`][]. إذا لم تكن فِعْلاً على دِرَايَة بهم وإنه 
+ الجَدِير قيام بقراءة سريعة من خلال توثيقات واجهة برمجة التطبيقات (API) لكل منهم.
 
-## Create the Server
 
-Any node web server application will at some point have to create a web server
-object. This is done by using [`createServer`][].
+## إنشاء الخادم
+
+أي تطبيق خادم الويب node وفي نقطة ما لإنشاء كائن خادم الويب، يتم ذلك
+ بإستعمال [`createServer`][].
 
 ```javascript
 const http = require('http');
 
 const server = http.createServer((request, response) => {
-  // magic happens here!
+  // السحر يحدث هنا!
 });
 ```
 
-The function that's passed in to [`createServer`][] is called once for every
-HTTP request that's made against that server, so it's called the request
-handler. In fact, the [`Server`][] object returned by [`createServer`][] is an
-[`EventEmitter`][], and what we have here is just shorthand for creating a
-`server` object and then adding the listener later.
+هذه الدالة تمرر داخل [`createServer`][] وهذا يدعى واحدة لكل طلب HTTP وهذا ما يجعله
+مُقَابِلَ هذا الخادم ولذا يدعى معالج الطالب، في الحقيقة كائن الخادم [`Server`][] مرجع
+بواسطة [`createServer`][] هو مُصدِر الحدث [`EventEmitter`][] و ما لدينا هنا فقط إختزال 
+لإنشاء كائن الخادم `server` وبعدها إضافة المستمع لاحقا.
+
 
 ```javascript
 const server = http.createServer();
 server.on('request', (request, response) => {
-  // the same kind of magic happens here!
+  // نفس النوع من السحر يحدث هنا!
 });
 ```
 
-When an HTTP request hits the server, node calls the request handler function
-with a few handy objects for dealing with the transaction, `request` and
-`response`. We'll get to those shortly.
+عندما طلب HTTP يضرب الخادم، node يستدعي دالة معالجة الطالب مع القليل من الكائنات
+المتاحة لتعامل مع المُدَاوَلَةٌ الطلب `request` و الجواب `response`، سوف نجلبهم قَرِيباً.
 
-In order to actually serve requests, the [`listen`][] method needs to be called
-on the `server` object. In most cases, all you'll need to pass to `listen` is
-the port number you want the server to listen on. There are some other options
-too, so consult the [API reference][].
+في التقدم الفعلي لطلب الخادم، طريقة الإستماع [`listen`][] تحتاج لإستدعاء كائن الخادم 
+`server` في أغلب الحالات، كل ماتحتاج لتمريره للمستمع `listen` هو رقم المنفذ "port" الذي
+تريد الخادم الإستماع إليه، يوجد بعض الخيارات الاخرى أيضا لذا راجع المرجع [API reference][].
 
-## Method, URL and Headers
 
-When handling a request, the first thing you'll probably want to do is look at
-the method and URL, so that appropriate actions can be taken. Node makes this
-relatively painless by putting handy properties onto the `request` object.
+## طريقة 'Method' و رابط 'URL' و رؤوس 'Headers'
+
+عند معالجة الطلب أول حاجَة ربما تود القيام بها هي تفقد الطرق و الرابط URL، لذا
+هذه الإجراءات المُلاَئِمة يمكن إتخاذها. Node جعل هذه متعبة نسبيا بوضع خَواصُّ المعالجة داخل
+كائن الطلب `request`.
 
 ```javascript
 const { method, url } = request;
 ```
-> **Note:** The `request` object is an instance of [`IncomingMessage`][].
+**ملاحظة:** كائن الطلب `request` هو مثيل لرسالة القادمة [`IncomingMessage`][].
 
-The `method` here will always be a normal HTTP method/verb. The `url` is the
-full URL without the server, protocol or port. For a typical URL, this means
-everything after and including the third forward slash.
+الطريقة `method` هنا ستكون دائما HTTP method/verb عاديا و `url` هو الرابط بدون خادم و
+البروتوكول أو المنفذ. لرابط نموذجي هذا يعني أن كل شئ بعد و مُتَضَمّن الخط مائلة للأمام "/" الثالث.
 
-Headers are also not far away. They're in their own object on `request` called
-`headers`.
+الرؤوس هي أيضا ليست بعيدة جدا، هم يملكون كائن في الطلب `request` يدعى الرؤوس `headers`.
 
 ```javascript
 const { headers } = request;
 const userAgent = headers['user-agent'];
 ```
 
-It's important to note here that all headers are represented in lower-case only,
-regardless of how the client actually sent them. This simplifies the task of
-parsing headers for whatever purpose.
+من المهم أن نذكر هنا أن جميع الرؤوس تًظهر الأحرف الصغيرة فقط وبِغَضّ النّظَرِ عن كيف ما 
+أرسلها العميل. هذا يسهل عملية تحليل الرؤوس لأي غرض محتمل.
 
-If some headers are repeated, then their values are overwritten or joined
-together as comma-separated strings, depending on the header. In some cases,
-this can be problematic, so [`rawHeaders`][] is also available.
+إذا تم تكرار بعض الرؤوس وبعدها هذه القيم إعادة الكتابة عليها أو سلاسل مَوْصُولة بفاصلة
+إسْتِنَاداً إلى الرأس، في بعض الحالات يمكن أن يكون مشكل لذا الروؤس الخام [`rawHeaders`][]
+هي أيضا متاحة.
 
-## Request Body
+## طلب الجسم (Request Body)
 
-When receiving a `POST` or `PUT` request, the request body might be important to
+<!-- When receiving a `POST` or `PUT` request, the request body might be important to
 your application. Getting at the body data is a little more involved than
-accessing request headers. The `request` object that's passed in to a handler
+accessing request headers. The `request` object that's passed in to a handler 
 implements the [`ReadableStream`][] interface. This stream can be listened to or
 piped elsewhere just like any other stream. We can grab the data right out of
-the stream by listening to the stream's `'data'` and `'end'` events.
+the stream by listening to the stream's `'data'` and `'end'` events. -->
+عند تلقي طلب من `POST` أو `PUT`، جسم الطلب ربما يكون مهماً لتطبيقك
 
-The chunk emitted in each `'data'` event is a [`Buffer`][]. If you know it's
-going to be string data, the best thing to do is collect the data in an array,
-then at the `'end'`, concatenate and stringify it.
+الأجزاء الباعثة في كل `'data'` والحدث هو [`Buffer`][]. إذا كنت تعرف أنها
+ستكون سِلْسِلَة من البيانات، أفضل شئ تفعله هو تجميع البيانات في مصفوفة
+وبعدها في `'end'`، الرصفهم وتحويلهم إلى نصوص.
 
 ```javascript
 let body = [];
@@ -101,22 +97,22 @@ request.on('data', (chunk) => {
 });
 ```
 
-> **Note:** This may seem a tad tedious, and in many cases, it is. Luckily,
+<!-- > **Note:** This may seem a tad tedious, and in many cases, it is. Luckily,
 there are modules like [`concat-stream`][] and [`body`][] on [`npm`][] which can
 help hide away some of this logic. It's important to have a good understanding
-of what's going on before going down that road, and that's why you're here!
+of what's going on before going down that road, and that's why you're here! -->
 
-## A Quick Thing About Errors
+## حاجَة سريعة حول الأخطاء
 
-Since the `request` object is a [`ReadableStream`][], it's also an
-[`EventEmitter`][] and behaves like one when an error happens.
+<!-- Since the `request` object is a [`ReadableStream`][], it's also an
+[`EventEmitter`][] and behaves like one when an error happens. -->
 
-An error in the `request` stream presents itself by emitting an `'error'` event
+<!-- An error in the `request` stream presents itself by emitting an `'error'` event
 on the stream. **If you don't have a listener for that event, the error will be
 *thrown*, which could crash your Node.js program.** You should therefore add an
 `'error'` listener on your request streams, even if you just log it and
 continue on your way. (Though it's probably best to send some kind of HTTP error
-response. More on that later.)
+response. More on that later.) -->
 
 ```javascript
 request.on('error', (err) => {
@@ -125,15 +121,14 @@ request.on('error', (err) => {
 });
 ```
 
-There are other ways of [handling these errors][] such as
-other abstractions and tools, but always be aware that errors can and do happen,
-and you're going to have to deal with them.
+هنالك طرق أخرى لمعالجة الأخطاء [handling these errors][] مثل بعض ملخصات و
+الأدوات لكن كن دائمًا على دراية بأن الأخطاء يمكن أن تحدث وستحدث و ستقوم
+بالتعامل معهم.
 
-## What We've Got so Far
+## على ماذا حصلت لِحَدّ الآن
 
-At this point, we've covered creating a server, and grabbing the method, URL,
-headers and body out of requests. When we put that all together, it might look
-something like this:
+في هذه النقطة لقد غطينا إنشاء خادم و إنْتِزاع الطرق و الروابط الروؤس و الجسم من 
+الطلبات. عندما نضع كل ذلك معا رُبّمَا ستظهر كما هذه:
 
 ```javascript
 const http = require('http');
@@ -153,50 +148,47 @@ http.createServer((request, response) => {
 }).listen(8080); // Activates this server, listening on port 8080.
 ```
 
-If we run this example, we'll be able to *receive* requests, but not *respond*
-to them. In fact, if you hit this example in a web browser, your request would
-time out, as nothing is being sent back to the client.
+إذا شغلنا هذا المثال سنكون قادرين على *تلقي* الطلبات، لكن لا *نرد* عليهم،
+في حَقِيقَةِ الأمْر إذا عَرَض  هذا في المتصفح، طلبك سيكون خارج المهلة ولاشئ يعاد
+.إرساله للعميل
 
-So far we haven't touched on the `response` object at all, which is an instance
-of [`ServerResponse`][], which is a [`WritableStream`][]. It contains many
-useful methods for sending data back to the client. We'll cover that next.
 
-## HTTP Status Code
+حتى الآن نحن لم نلمس كائن الجواب `response` كلياً. أَيّما في ما ذاك لـ[`ServerResponse`][]
+و مِمّ هو [`WritableStream`][]. أنه يحتوي على العديد من الطرق المفيدة لإرسال البيانات
+الراجعة لعميل و سنقوم بتغطية ذلك لاحقا.
 
-If you don't bother setting it, the HTTP status code on a response will always
-be 200. Of course, not every HTTP response warrants this, and at some point
-you'll definitely want to send a different status code. To do that, you can set
-the `statusCode` property.
+## رمز الحالة HTTP
+
+إذا كنت لا تُبالي في إعداده، رمز الحالة لـHTTP سيكون دائما في الروؤس 200،
+طبعاً ليس في كل جواب يعلمك به و في بعض النقاط حتما ستريد إرسال رمز حالة
+مختلف، للقيام بهذا يمكنك تعيين خاصية `statusCode`.
 
 ```javascript
-response.statusCode = 404; // Tell the client that the resource wasn't found.
+response.statusCode = 404; // أخبر العميل أنه لم يتم العثور على المصدر.
 ```
 
-There are some other shortcuts to this, as we'll see soon.
+هناك بعض الاختصارات الأخرى لهذا ، كما سنرى قريبًا.
 
-## Setting Response Headers
+## إعداد جواب رؤوس
 
-Headers are set through a convenient method called [`setHeader`][].
+يتم تعيين الرؤوس من خلال طريقة مناسبة تسمى [`setHeader`] [].
 
 ```javascript
 response.setHeader('Content-Type', 'application/json');
 response.setHeader('X-Powered-By', 'bacon');
 ```
 
-When setting the headers on a response, the case is insensitive on their names.
-If you set a header repeatedly, the last value you set is the value that gets
-sent.
+عند ضبط الرؤوس على الجواب، في الحالة التي تكون غير مدرك لأسمائهم.
+إذا عينت الروؤس بشكل متكرر القيمة الأخيرة التي هي القيمة التي ترسل.
 
-## Explicitly Sending Header Data
+## مُرفق إرسال بيانات الرأس
 
-The methods of setting the headers and status code that we've already discussed
-assume that you're using "implicit headers". This means you're counting on node
-to send the headers for you at the correct time before you start sending body
-data.
+الطرق لضبط الروؤس و رمز الحالة والتي سبق أن تناقشنا بإعتبرك أنك تستخدم "الروؤس المضمنة" 
+"implicit headers". هذا يعني أنك مُعْتَمِد على node للإرسال الروؤس لك في الوقت الحالي قبل البدء
+في إرسال بيانات الجسم.
 
-If you want, you can *explicitly* write the headers to the response stream.
-To do this, there's a method called [`writeHead`][], which writes the status
-code and the headers to the stream.
+إذا أردت يمكنك *تصريح* بكتابة الروؤس لتدفق الجواب، للقيام بهذا يوجد طريقة تدعى [`writeHead`][]
+التي تكتب رمز الحالة و الروؤس إلى التدفق.
 
 ```javascript
 response.writeHead(200, {
@@ -205,13 +197,13 @@ response.writeHead(200, {
 });
 ```
 
-Once you've set the headers (either implicitly or explicitly), you're ready to
-start sending response data.
+بمجرد تعيينك الروؤس (سواء ضمنيًا أو صريحًا)، أنت مستعد للبدء في إرسال بيانات الجواب.
 
-## Sending Response Body
+## إرسال جواب الجسم
 
-Since the `response` object is a [`WritableStream`][], writing a response body
-out to the client is just a matter of using the usual stream methods.
+بِما أَنَّ كائن الجواب `response` هو تدفق قابل للكتابة [`WritableStream`][]، كتابة جسم الجواب 
+خارجيا للعميل هي فقط مَسْألَة للإستخدام طرق التدفق الإعتيادية.
+
 
 ```javascript
 response.write('<html>');
@@ -222,29 +214,27 @@ response.write('</html>');
 response.end();
 ```
 
-The `end` function on streams can also take in some optional data to send as the
-last bit of data on the stream, so we can simplify the example above as follows.
+دالة النهاية `end` في التدفقات يمكن ان تأخذ في بعض البيانات الإختيارية لإرسالها 
+كأخر حرف من البيانات في التدفقات لذا يمكن تبسيطها في المثال الأعلى.
 
 ```javascript
 response.end('<html><body><h1>Hello, World!</h1></body></html>');
 ```
 
-> **Note:** It's important to set the status and headers *before* you start
-writing chunks of data to the body. This makes sense, since headers come before
-the body in HTTP responses.
+**ملاحظة:** من المهم تعيين الحالة و الروؤس *قبل* البدء بكتابة أقسام من البيانات
+للجسم وهذا يبدو منطقيا. منذ متى تأتي النص  قبل الرؤوس في جوابات HTTP.
 
-## Another Quick Thing About Errors
+## حاجَة أخرى سريعة حول الأخطاء
 
-The `response` stream can also emit `'error'` events, and at some point you're
-going to have to deal with that as well. All of the advice for `request` stream
-errors still applies here.
 
-## Put It All Together
+تدفق الجواب `response` يمكن أن يبعث حالة الأخطاء `'error'` و بعض النقاط ستتعامل معه أيضا.
+جميع النصائح لتدفق أخطاء الطلب `request` لاتزال تطبق هنا.
 
-Now that we've learned about making HTTP responses, let's put it all together.
-Building on the earlier example, we're going to make a server that sends back
-all of the data that was sent to us by the user. We'll format that data as JSON
-using `JSON.stringify`.
+## لنضعهم جميعا مع بعض
+
+الآن بعد أن تعلمنا عن عمل جوابات HTTP، لنقم بوضعهم كلهم معاً.
+بناء على المثال السابق سنقوم بإنشاء خادم يعيد إرسال جميع البيانات التي إرسلها
+إلينا من قِبل المستخدم وسنقوم بتنسيق البيانات على شكل JSON بإستعمال `JSON.stringify`.
 
 ```javascript
 const http = require('http');
@@ -281,12 +271,12 @@ http.createServer((request, response) => {
 }).listen(8080);
 ```
 
-## Echo Server Example
+## مثال لتردد خادم
 
-Let's simplify the previous example to make a simple echo server, which just
-sends whatever data is received in the request right back in the response. All
-we need to do is grab the data from the request stream and write that data to
-the response stream, similar to what we did previously.
+لنسهل المثال السابق لإنشاء خادم ترددي بسيط، أَيّ يرسل مهما كانت البيانات فقط والتي أستلمت
+من توا من الجواب. كل ما نريد فعله هو أخذ طلب التدفق و كتابة البيانات في جواب التدفق وهو
+مماثل ما فعلنا في السابق.
+
 
 ```javascript
 const http = require('http');
@@ -302,13 +292,12 @@ http.createServer((request, response) => {
 }).listen(8080);
 ```
 
-Now let's tweak this. We want to only send an echo under the following
-conditions:
+الآن لنقم تطويع هذه، نريد إرسال فقط تردد وفقا لشروط لمتبعة:
 
-* The request method is POST.
-* The URL is `/echo`.
+طريقة الطلب هي POST.
+الرابط 'URL' هو `/echo`
 
-In any other case, we want to simply respond with a 404.
+في حالة أخرى نحن نريد تبسيط الرد مع 404.
 
 ```javascript
 const http = require('http');
@@ -329,15 +318,15 @@ http.createServer((request, response) => {
 }).listen(8080);
 ```
 
-> **Note:** By checking the URL in this way, we're doing a form of "routing".
-Other forms of routing can be as simple as `switch` statements or as complex as
-whole frameworks like [`express`][]. If you're looking for something that does
-routing and nothing else, try [`router`][].
 
-Great! Now let's take a stab at simplifying this. Remember, the `request` object
-is a [`ReadableStream`][] and the `response` object is a [`WritableStream`][].
-That means we can use [`pipe`][] to direct data from one to the other. That's
-exactly what we want for an echo server!
+>**ملاحظة:** عند التحقق من الرابط URL بهذه الطريقة، نحن نقوم بشكل من التوجيه "routing".
+ ويوجد أشكال أخرى للتوجيه بسيطة مثل دالة `بَدَّالَةٌ` `switch` أو معقدة كما في أدوات مثل 
+ [`express`][]. إذا كنت نبحث على شئ يقوم بالتوجيه ولاشئ أخر جرب [`router`][].
+
+رائع! الآن نستقر على تبسيط هذا وتذكر كائنات الطلب `request` هي تدقف قابل للقراءة 
+[`ReadableStream`][] و كائنات الجواب `response` هي تدفق قابل للكتابة [`WritableStream`][].
+وهذا يعني أنه يمكننا إستخدام مَجْرىً لتوجيه البيانات من واحدة لأخرى. وهذا تماما مانريده 
+من خادم إرتدادي!
 
 ```javascript
 const http = require('http');
@@ -352,18 +341,18 @@ http.createServer((request, response) => {
 }).listen(8080);
 ```
 
-Yay streams!
+أجل التدفقات!
 
-We're not quite done yet though. As mentioned multiple times in this guide,
-errors can and do happen, and we need to deal with them.
+نحن لم ننتهي بعد على الرغم كما ذكرنا في عدة مرات في هذا الدليل، الأخطاء واردة
+ و نحتاج التعامل معها.
 
-To handle errors on the request stream, we'll log the error to `stderr` and send
-a 400 status code to indicate a `Bad Request`. In a real-world application,
-though, we'd want to inspect the error to figure out what the correct status code
-and message would be. As usual with errors, you should consult the
-[`Error` documentation][].
+لتعامل مع الأخطاء في طلب التدقف، وكذا مخرج الخطأ في `stderr` و إرسال رمز الحالة 404
+تدل على أن طلب سيء `Bad Request` ليس كما التطبيق في الحقيقي على أية حال، نود تفحص 
+الخطأ لمعرفة ماهو رمز الحالة الصحيح وما ستكون الرسالة كالعادة  في الأخطاء،يجب عليك مراجعة 
+توثيقة `الخطأ` [`Error` documentation][].
 
-On the response, we'll just log the error to `stderr`.
+<!-- On the response, we'll just log the error to `stderr`. -->
+
 
 ```javascript
 const http = require('http');
@@ -386,21 +375,19 @@ http.createServer((request, response) => {
 }).listen(8080);
 ```
 
-We've now covered most of the basics of handling HTTP requests. At this point,
-you should be able to:
 
-* Instantiate an HTTP server with a request handler function, and have it listen
-on a port.
-* Get headers, URL, method and body data from `request` objects.
-* Make routing decisions based on URL and/or other data in `request` objects.
-* Send headers, HTTP status codes and body data via `response` objects.
-* Pipe data from `request` objects and to `response` objects.
-* Handle stream errors in both the `request` and `response` streams.
+لقد قمنا الآن بتغطية أغلب الأساسيات مُعَالَجَة طالبات HTTP وفي هذه المرحلة من المفترض 
+تقدر على:
 
-From these basics, Node.js HTTP servers for many typical use cases can be
-constructed. There are plenty of other things these APIs provide, so be sure to
-read through the API docs for [`EventEmitters`][], [`Streams`][], and [`HTTP`][].
-
+تجسيد HTTP مع دالة معالجة الطلب و لإستماع للمنفذ.
+الحصول على الرؤوس و الرابط 'URL' و طرق و بيانات الجسم من كائنات `request`.
+صنع قرارات التوجيه إستنادا إلى الرابط و / أو  بيانات أخرى في كائنات `request`.
+إرسال الرؤوس و رموز حالات HTTP و بيانات الجسم بواسطة كائنات `request`.
+نقل البيانات من كائنات `request` وإلى كائنات `response`.
+تعامل مع أخطاء التدفق  في حالتي تدقفات `request` و `response`.
+من هذه الأساسيات، خوادم Node.js HTTP في العديد من حالات نَوْعِيّة يمكن إنشاؤه. يوجد 
+الكثير مثل هذه الأشياء مزودة بـAPIs لذا تأكد من قرأة التوثيقات الAPI منها 
+[`EventEmitters`][] و [`Streams`][] و [`HTTP`][].
 
 
 [`EventEmitters`]: https://nodejs.org/api/events.html
