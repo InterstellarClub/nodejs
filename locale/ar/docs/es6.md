@@ -18,28 +18,26 @@ layout: docs.hbs
 
 ## أي من المميزات هي قيد التقدم ؟
 
+تتم إضافة مميزات جديدة للـ V8 دوريا، و عموما يتوقع وصول هذه المميزات إلى الـ Node.js على الرغم من أن التوقيت يبقى غير معلوم.
 
-New features are constantly being added to the V8 engine. Generally speaking, expect them to land on a future Node.js release, although timing is unknown.
-
-You may list all the *in progress* features available on each Node.js release by grepping through the `--v8-options` argument. Please note that these are incomplete and possibly broken features of V8, so use them at your own risk:
+يمكنك الإطلاع على هذه المميزات التي هي **قيد التقدم** في كل نسخة من نسخ الـ Node.js عبر استعمال الأمر `grep` مع `--v8-options` و يجدر الأشارة إلى أن هذه المميزات غير مكتملة و قد تتعطل، لذلك فإن استعمالها يقع على مسؤوليتك الخاصة:
 
 ```bash
 node --v8-options | grep "in progress"
 ```
+## ماذا عن أداء ميزة بعينها؟
 
-## What about the performance of a particular feature?
+يعمل فريق V8 باستمرار على تحسين أداء ميزات اللغة الجديدة للوصول في نهاية المطاف إلى التكافؤ مع نظرائهم المنقولين أو الأصليين في EcmaScript 5 والإصدارات السابقة، و يتم قياس التقدم الحالي على موقع [six-speed](https://fhinkel.github.io/six-speed) حيث يُظهر الأداء الخاص بميزات ES2015 و ESNext بالمقارنة مع الميزات الأصلية المقابلة لها في الـ ES5.
 
-The V8 team is constantly working to improve the performance of new language features to eventually reach parity with their transpiled or native counterparts in EcmaScript 5 and earlier. The current progress there is tracked on the website [six-speed](https://fhinkel.github.io/six-speed), which shows the performance of ES2015 and ESNext features compared to their native ES5 counterparts.
+يتم العمل على تحسين الميزات المقدمة ابتداء من ES2015 و ما بعدها بالتنسيق عبر [خطة أداء](https://docs.google.com/document/d/1EA9EbfnydAmmU_lM8R_uEMQ-U_v4l9zulePSBkeYWmY) حيث يجمع فريق الـ V8 و ينسق ما يجب تحسينه، كما يصمم المستندات التي من شأنها التطرق لتلك المشاكل.
 
-The work on optimizing features introduced with ES2015 and beyond is coordinated via a [performance plan](https://docs.google.com/document/d/1EA9EbfnydAmmU_lM8R_uEMQ-U_v4l9zulePSBkeYWmY), where the V8 team gathers and coordinates areas that need improvement, and design documents to tackle those problems.
+## لقد قمت بإعداد بنيتي التحتية للاستفادة من علم `--harmony`. هل يجب علي إلغاء ذلك؟
 
-## I have my infrastructure set up to leverage the --harmony flag. Should I remove it?
+إن السلوك الحالي لعلم `--harmony` هو تمكين **المميزات التي سيتم شحنها** فقط. ففي نهاية المطاف هي تعتبر مرادفاً لـ `--es_staging` ، وكما ذكر مسبقا فإن هذه الميزات تعتبر كاملة و لكن غير ثابتة بعد. إذا اردت ان يتم ذلك بأمان، خصوصا في بيئة إنتاجية فيجب عليك أن تأخذ بعين الاعتبار حذف هذا العلم حتى يتم شحن تلك الميزات افتراضيا مع الـ V8، و من ثم مع الـ Node.js. إذا ابقيت على هذه الميزات مفعلة، فيجب ان تتوقع ان تتوقف شيفرتك عن العمل في ترقيات قادمة من الـ Node.js إذا غير الـ V8 من مسمياتهم لاتباع المعايير أكثر.
 
-The current behaviour of the `--harmony` flag on Node.js is to enable **staged** features only. After all, it is now a synonym of `--es_staging`. As mentioned above, these are completed features that have not been considered stable yet. If you want to play safe, especially on production environments, consider removing this runtime flag until it ships by default on V8 and, consequently, on Node.js. If you keep this enabled, you should be prepared for further Node.js upgrades to break your code if V8 changes their semantics to more closely follow the standard.
+## كيف يمكنني معرفة أي نسخة من الـ V8 يتم تضمينها مع نسخة معينة من الـ Node.js ?
 
-## How do I find which version of V8 ships with a particular version of Node.js?
-
-Node.js provides a simple way to list all dependencies and respective versions that ship with a specific binary through the `process` global object. In case of the V8 engine, type the following in your terminal to retrieve its version:
+يوفر الـ Node.js طريقة بسيطة لسرد كافة الاعتمادات و النسخ التي يتم تضمينها مع ملف ثنائي محدد عبر الكائن العام `process`. في حالة محرك الـ V8، فك بكتابة الأمر التالي في الطرفية لمعرفة نسخته:
 
 ```bash
 node -p process.versions.v8
