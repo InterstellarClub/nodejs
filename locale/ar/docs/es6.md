@@ -4,19 +4,20 @@ layout: docs.hbs
 ---
 # ECMAScript 2015 (ES6) و ما بعدها
 
-Node.js is built against modern versions of [V8](https://developers.google.com/v8/). By keeping up-to-date with the latest releases of this engine, we ensure new features from the [JavaScript ECMA-262 specification](http://www.ecma-international.org/publications/standards/Ecma-262.htm) are brought to Node.js developers in a timely manner, as well as continued performance and stability improvements.
+تم بناء الـ Node.js باستعمال نسخ حديثة من الـ [V8](https://developers.google.com/v8/)، و هذا يضمن اتاحة آخر المميزات الخاصة بالجافاسكريبت و الموافقة لـ [مواصفات JavaScript ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm) للمطورين في الوقت المناسب، إضافة إلى التحسينات المستمرة في الأداء و الثبات.
 
-All ECMAScript 2015 (ES6) features are split into three groups for **shipping**, **staged**, and **in progress** features:
+تقسم مميزات الـ ECMAScript 2015 (ES6) إلى ثلاثة مجموعات: **المميزات التي تم شحنها** و **المميزات التي سيتم شحنها** و **المميزات قيد التقدم** حيث:
 
-* All **shipping** features, which V8 considers stable, are turned **on by default on Node.js** and do **NOT** require any kind of runtime flag.
-* **Staged** features, which are almost-completed features that are not considered stable by the V8 team, require a runtime flag: `--harmony`.
-* **In progress** features can be activated individually by their respective harmony flag, although this is highly discouraged unless for testing purposes. Note: these flags are exposed by V8 and will potentially change without any deprecation notice.
+* أن كافة **المميزات التي تم شحنها** ، و التي يعتبرها الـ V8 ثابتة **يتم تشغيلها تلقائيا على الـ Node.js** و لا تتطلب أي نوع من الاعلام في وقت التشغيل.
+* أن **المميزات التي سيتم شحنها** و التي هي مميزات مكتملة تقريبا و لكنها لا تعتبر ثابتة حسب فريق تطوير الـ V8 تتطلب علما في وقت التشغيل لاستعمالها: `--harmony`
+* أن **المميزات قيد التقدم** يمكن تشغيلها فرديا عبر العلم الخاص بها، رغم أن هذا الأمر منصوح بشدة تجنبه إلا لاغراض الاختبار. ملاحظة: هذه الأعلام معرفة من قبل الـ V8 و من الممكن لها ان تتغير دون إشعار بذلك.
 
-## Which features ship with which Node.js version by default?
+## أي من المميزات تشحن مع أي نسخة من الـ Node.js إفتراضيا ؟
 
-The website [node.green](http://node.green) provides an excellent overview over supported ECMAScript features in various versions of Node.js, based on kangax's compat-table.
+يوفر موقع [node.green](http://node.green) نظرة عامة ممتازة حول مميزات الـ ECMAScript المدعومة في مختلف نسخ الـ Node.js بناء على جدول كانغاكس.
 
-## Which features are in progress?
+## أي من المميزات هي قيد التقدم ؟
+
 
 New features are constantly being added to the V8 engine. Generally speaking, expect them to land on a future Node.js release, although timing is unknown.
 
