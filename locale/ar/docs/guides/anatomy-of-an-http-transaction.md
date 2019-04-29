@@ -1,5 +1,5 @@
 ---
-title: Anatomy of an HTTP Transaction
+title: التركيبة البنيوية لمُعَامَلَة HTTP
 layout: docs.hbs
 ---
 
@@ -54,7 +54,7 @@ server.on('request', (request, response) => {
 ```javascript
 const { method, url } = request;
 ```
-**ملاحظة:** كائن الطلب `request` هو مثيل لرسالة القادمة [`IncomingMessage`][].
+> **ملاحظة:** كائن الطلب `request` هو مثيل لرسالة القادمة [`IncomingMessage`][].
 
 الطريقة `method` هنا ستكون دائما HTTP method/verb عاديا و `url` هو الرابط بدون خادم و
 البروتوكول أو المنفذ. لرابط نموذجي هذا يعني أن كل شئ بعد و مُتَضَمّن الخط مائلة للأمام "/" الثالث.
@@ -75,13 +75,12 @@ const userAgent = headers['user-agent'];
 
 ## طلب الجسم (Request Body)
 
-<!-- When receiving a `POST` or `PUT` request, the request body might be important to
-your application. Getting at the body data is a little more involved than
-accessing request headers. The `request` object that's passed in to a handler 
-implements the [`ReadableStream`][] interface. This stream can be listened to or
-piped elsewhere just like any other stream. We can grab the data right out of
-the stream by listening to the stream's `'data'` and `'end'` events. -->
-عند تلقي طلب من `POST` أو `PUT`، جسم الطلب ربما يكون مهماً لتطبيقك
+عند تلقي طلب من `POST` أو `PUT`، جسم الطلب ربما يكون مهماً لتطبيقك.
+للحصول على بيانات الجسم هو يَتَضَمّن أكثر من الوصول لطلبات الروؤس،
+كائن الـ`request` تمرر داخل أدوات المعالجة لواجهة الـ[`ReadableStream`][].
+هذا التدفق يمكن الإستماع له أو نقله كأي تدفق أخر. يمكنك أخذ البيانات مباشرة
+من التدفق عن طريق الإستماع إلى أحداث التدفقات `'data'` و `'end'`.
+
 
 الأجزاء الباعثة في كل `'data'` والحدث هو [`Buffer`][]. إذا كنت تعرف أنها
 ستكون سِلْسِلَة من البيانات، أفضل شئ تفعله هو تجميع البيانات في مصفوفة
@@ -93,30 +92,28 @@ request.on('data', (chunk) => {
   body.push(chunk);
 }).on('end', () => {
   body = Buffer.concat(body).toString();
-  // at this point, `body` has the entire request body stored in it as a string
+  // في هذه النقطة، `body` عنده كامل طلب الجسم مخزن فيه على شكل سلسلة نصية
 });
 ```
 
-<!-- > **Note:** This may seem a tad tedious, and in many cases, it is. Luckily,
-there are modules like [`concat-stream`][] and [`body`][] on [`npm`][] which can
-help hide away some of this logic. It's important to have a good understanding
-of what's going on before going down that road, and that's why you're here! -->
+> **ملاحظة:** قد يبدو هذا صبيانيا ومملا، وفي كثير من الحالات هو كذلك و لحسن الحظ
+هناك وحدات مثل [`concat-stream`][] و [`body`][] في [`npm`][] والتي يمكن أن تساعد 
+في إخفاء بعضاً من هذا المنطق. من المهم أن تفهم جيدا ماذا يحدث قبل الخوض في هذا
+الطريق ولهذا السبب أنت هنا!
 
 ## حاجَة سريعة حول الأخطاء
 
-<!-- Since the `request` object is a [`ReadableStream`][], it's also an
-[`EventEmitter`][] and behaves like one when an error happens. -->
+بِما أَنَّ كائن `request` هو [`ReadableStream`][] إنه أيضًا [`EventEmitter`][]
+و يتصرف كما أن خطأً قد حدث.
 
-<!-- An error in the `request` stream presents itself by emitting an `'error'` event
-on the stream. **If you don't have a listener for that event, the error will be
-*thrown*, which could crash your Node.js program.** You should therefore add an
-`'error'` listener on your request streams, even if you just log it and
-continue on your way. (Though it's probably best to send some kind of HTTP error
-response. More on that later.) -->
+أي خطأ في تدفق `request` يقدم نفسه ببعث لحدث `'error'` في التدفق. **إذا لم يكن
+ لديك مستمع لهذا الحدث، فالخطأ س*يلقي*، والتي سيحبط برنامج Node.js الخاص بك.**
+ ولذا يجب عليك إضافة مستمع لـ`'error'` على طلب تدفقاتك، حتى وإن سجلته فقط و 
+ أكملت في طريقك.(ولو أنه من الأفضل لإرسال مشابه لخطأ جواب HTTP. المزيد على ذلك لاحقًا.)
 
 ```javascript
 request.on('error', (err) => {
-  // This prints the error message and stack trace to `stderr`.
+  // هذا يطبع رسالة الخطأ و أثره مكدس في  `stderr`.
   console.error(err.stack);
 });
 ```
@@ -142,10 +139,10 @@ http.createServer((request, response) => {
     body.push(chunk);
   }).on('end', () => {
     body = Buffer.concat(body).toString();
-    // At this point, we have the headers, method, url and body, and can now
-    // do whatever we need to in order to respond to this request.
+    // في هذه النقطة، لدينا الرؤوس و الطريقة و الرابط و الجسم ويمكن الآن 
+    // القيام بما نحتاج إليه في أمر للجواب  لهذا الطلب
   });
-}).listen(8080); // Activates this server, listening on port 8080.
+}).listen(8080); // تنشيط الخادم و الاستماع على منفذ 8080.
 ```
 
 إذا شغلنا هذا المثال سنكون قادرين على *تلقي* الطلبات، لكن لا *نرد* عليهم،
@@ -204,7 +201,6 @@ response.writeHead(200, {
 بِما أَنَّ كائن الجواب `response` هو تدفق قابل للكتابة [`WritableStream`][]، كتابة جسم الجواب 
 خارجيا للعميل هي فقط مَسْألَة للإستخدام طرق التدفق الإعتيادية.
 
-
 ```javascript
 response.write('<html>');
 response.write('<body>');
@@ -221,11 +217,10 @@ response.end();
 response.end('<html><body><h1>Hello, World!</h1></body></html>');
 ```
 
-**ملاحظة:** من المهم تعيين الحالة و الروؤس *قبل* البدء بكتابة أقسام من البيانات
+>**ملاحظة:** من المهم تعيين الحالة و الروؤس *قبل* البدء بكتابة أقسام من البيانات
 للجسم وهذا يبدو منطقيا. منذ متى تأتي النص  قبل الرؤوس في جوابات HTTP.
 
 ## حاجَة أخرى سريعة حول الأخطاء
-
 
 تدفق الجواب `response` يمكن أن يبعث حالة الأخطاء `'error'` و بعض النقاط ستتعامل معه أيضا.
 جميع النصائح لتدفق أخطاء الطلب `request` لاتزال تطبق هنا.
@@ -248,7 +243,7 @@ http.createServer((request, response) => {
     body.push(chunk);
   }).on('end', () => {
     body = Buffer.concat(body).toString();
-    // BEGINNING OF NEW STUFF
+    // بداية الاشياء الجديدة
 
     response.on('error', (err) => {
       console.error(err);
@@ -256,17 +251,17 @@ http.createServer((request, response) => {
 
     response.statusCode = 200;
     response.setHeader('Content-Type', 'application/json');
-    // Note: the 2 lines above could be replaced with this next one:
+    // ملاحظة: السطرين في الأعلى يمكن إستبداله بالسطر التالي.
     // response.writeHead(200, {'Content-Type': 'application/json'})
 
     const responseBody = { headers, method, url, body };
 
     response.write(JSON.stringify(responseBody));
     response.end();
-    // Note: the 2 lines above could be replaced with this next one:
+    // ملاحظة: السطرين في الأعلى يمكن إستبداله بالسطر التالي.
     // response.end(JSON.stringify(responseBody))
 
-    // END OF NEW STUFF
+    // نهاية الاشياء الجديدة
   });
 }).listen(8080);
 ```
@@ -276,7 +271,6 @@ http.createServer((request, response) => {
 لنسهل المثال السابق لإنشاء خادم ترددي بسيط، أَيّ يرسل مهما كانت البيانات فقط والتي أستلمت
 من توا من الجواب. كل ما نريد فعله هو أخذ طلب التدفق و كتابة البيانات في جواب التدفق وهو
 مماثل ما فعلنا في السابق.
-
 
 ```javascript
 const http = require('http');
@@ -294,8 +288,8 @@ http.createServer((request, response) => {
 
 الآن لنقم تطويع هذه، نريد إرسال فقط تردد وفقا لشروط لمتبعة:
 
-طريقة الطلب هي POST.
-الرابط 'URL' هو `/echo`
+* طريقة الطلب هي POST.
+* الرابط 'URL' هو `/echo`
 
 في حالة أخرى نحن نريد تبسيط الرد مع 404.
 
@@ -317,7 +311,6 @@ http.createServer((request, response) => {
   }
 }).listen(8080);
 ```
-
 
 >**ملاحظة:** عند التحقق من الرابط URL بهذه الطريقة، نحن نقوم بشكل من التوجيه "routing".
  ويوجد أشكال أخرى للتوجيه بسيطة مثل دالة `بَدَّالَةٌ` `switch` أو معقدة كما في أدوات مثل 
@@ -351,8 +344,7 @@ http.createServer((request, response) => {
 الخطأ لمعرفة ماهو رمز الحالة الصحيح وما ستكون الرسالة كالعادة  في الأخطاء،يجب عليك مراجعة 
 توثيقة `الخطأ` [`Error` documentation][].
 
-<!-- On the response, we'll just log the error to `stderr`. -->
-
+في الجواب، سنسجل الخطأ فقط في`stderr`.
 
 ```javascript
 const http = require('http');
@@ -375,7 +367,6 @@ http.createServer((request, response) => {
 }).listen(8080);
 ```
 
-
 لقد قمنا الآن بتغطية أغلب الأساسيات مُعَالَجَة طالبات HTTP وفي هذه المرحلة من المفترض 
 تقدر على:
 
@@ -388,6 +379,7 @@ http.createServer((request, response) => {
 من هذه الأساسيات، خوادم Node.js HTTP في العديد من حالات نَوْعِيّة يمكن إنشاؤه. يوجد 
 الكثير مثل هذه الأشياء مزودة بـAPIs لذا تأكد من قرأة التوثيقات الAPI منها 
 [`EventEmitters`][] و [`Streams`][] و [`HTTP`][].
+
 
 
 [`EventEmitters`]: https://nodejs.org/api/events.html
