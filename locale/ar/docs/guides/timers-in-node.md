@@ -1,9 +1,9 @@
----
-title: Timers in Node.js
+﻿---
+title: المؤقتات في الـ Node.js
 layout: docs.hbs
 ---
 
-# Timers in Node.js and beyond
+# المؤقتات في الـ Node.js و ما بعدها
 
 The Timers module in Node.js contains functions that execute code after a set
 period of time. Timers do not need to be imported via `require()`, since
