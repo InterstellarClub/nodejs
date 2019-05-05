@@ -11,16 +11,17 @@ layout: docs.hbs
 يتم إعطاء كل عملية إنصات رقم [UUID][] حصري.
 
 يجب على عميل التدقيق معرفة و تحديد عنوان المضيف و رقم المنفذ، إضافة إلى الـUUID حتى يتم الاتصال.
-سيبدو العنوان كاملا كما يلي:  
+سيبدو العنوان كاملا كما يلي: 
 `ws://127.0.0.1:9229/0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e`
 
+ستستمع الـ Node.js إلى رسائل التصحيح إذا تلقت إشارة `SIGUSR1` (`SIGUSR1` غير متوفر على ويندوز.)
+في الـ Node.js 7 و ما قبله، يؤدي إستقبال هذه الإشارة إلى تنشيط واجهة برمجة التطبيقات القديمة الخاصة بالتصحيح، 
+أما في الـ  Node.js 8 و ما أحدث منه، يؤدي ذلك إلى تنشيط واجهة برمجة التطبيقات الخاصة بالمدقق 
 
-Node.js will also start listening for debugging messages if it receives a 
-`SIGUSR1` signal. (`SIGUSR1` is not available on Windows.) In Node.js 7 and
-earlier, this activates the legacy Debugger API. In Node.js 8 and later, it will
-activate the Inspector API.
+
 
 ---
+
 ## Security Implications
 
 Since the debugger has full access to the Node.js execution environment, a
