@@ -2,20 +2,18 @@
 title: Debugging - Getting Started
 layout: docs.hbs
 ---
+# دليل التصحيح
+سيساعدك هذا الدليل للبدء في تصحيح سكريبتات و تطبيقات الـ Node.js الخاصة بك.
 
-# Debugging Guide
+# تمكين المدقق
 
-This guide will help you get started debugging your Node.js apps and scripts.
+عند بدء الـ Node.js مع تمكين `--inspect`،  يتم الانصات إلى عملية تصحيح، و افتراضيا، يتم هذا الانصات عبر المضيف و المنفذ 127.0.0.1:9229.
+يتم إعطاء كل عملية إنصات رقم [UUID][] حصري.
 
-## Enable Inspector
+يجب على عميل التدقيق معرفة و تحديد عنوان المضيف و رقم المنفذ، إضافة إلى الـUUID حتى يتم الاتصال.
+سيبدو العنوان كاملا كما يلي:  
+`ws://127.0.0.1:9229/0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e`
 
-When started with the `--inspect` switch, a Node.js process listens for a
-debugging client. By default, it will listen at host and port 127.0.0.1:9229.
-Each process is also assigned a unique [UUID][].
-
-Inspector clients must know and specify host address, port, and UUID to connect.
-A full URL will look something like
-`ws://127.0.0.1:9229/0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e`.
 
 Node.js will also start listening for debugging messages if it receives a 
 `SIGUSR1` signal. (`SIGUSR1` is not available on Windows.) In Node.js 7 and
