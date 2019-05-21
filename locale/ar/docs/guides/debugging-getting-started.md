@@ -164,11 +164,9 @@ layout: docs.hbs
 
 ## سيناريوهات تمكين تصحيح الأخطاء عن بعد <a name="enabling-remote-debugging-scenarios">
 
-We recommend that you never have the debugger listen on a public IP address. If
-you need to allow remote debugging connections we recommend the use of ssh
-tunnels instead. We provide the following example for illustrative purposes only.
-Please understand the security risk of allowing remote access to a privileged
-service before proceeding.
+نوصي دائما بعدم تشغيل مصحح الأخطاء على عنوان انترنت عام. إذا أردت تمكين تصحيح الأخطاء عن بعد، فننصح بإستعمال أنفاق الـ ssh بدلا من ذلك.
+المثال الآتي لأغراض توضيحية فقط. يجب عليك فهم المخاطر الأمنية المحتملة عند السماح بالوصول عن بعد لخدمة ذات امتيازات قبل أن تمضي قدما.
+
 
 Let's say you are running Node on remote machine, remote.example.com, that you
 want to be able to debug. On that machine, you should start the node process
