@@ -95,67 +95,66 @@ layout: docs.hbs
 
 ## خيارات سطر الأوامر
 
+ يبين الجدول الآتي تأثير كل تخصيص خاص بوقت التشغيل على تصحيح الأخطاء:
 
-The following table lists the impact of various runtime flags on debugging:
 
-<table cellpadding="0" cellspacing="0">
-  <tr><th>Flag</th><th>Meaning</th></tr>
+
+<table cellpadding="0" cellspacing="0" dir="rtl">
+  <tr><th>التخصيص</th><th>المعنى</th></tr>
   <tr>
-    <td>--inspect</td>
+    <td><span dir="ltr">--inspect</span></td>
     <td>
       <ul>
-        <li>Enable inspector agent</li>
-        <li>Listen on default address and port (127.0.0.1:9229)</li>
+        <li>يقوم بتمكين عميل التدقيق</li>
+        <li>يشتغل إفتراضيا على العنوان و المنفذ (127.0.0.1:9229)</li>
       </ul>
     </td>
   </tr>
   <tr>
-    <td>--inspect=<i>[host:port]</i></td>
+    <td><span dir="ltr">--inspect=<i>[host:port]</i></span></td>
     <td>
       <ul>
-        <li>Enable inspector agent</li>
-        <li>Bind to address or hostname <i>host</i> (default: 127.0.0.1)</li>
-        <li>Listen on port <i>port</i> (default: 9229)</li>
+        <li>يقوم بتمكين عميل التدقيق</li>
+        <li>يحدد عنوانا أو  إسم مضيف <i>host</i> (افتراضيا: 127.0.0.1)</li>
+        <li>يشتغل على المنفذ <i>port</i> (افتراضيا: 9229)</li>
       </ul>
     </td>
   </tr>
   <tr>
-    <td>--inspect-brk</td>
+    <td><span dir="ltr">--inspect-brk</span></td>
     <td>
       <ul>
-        <li>Enable inspector agent</li>
-        <li>Listen on default address and port (127.0.0.1:9229)</li>
-        <li>Break before user code starts</li>
+        <li>يقوم بتمكين عميل التدقيق</li>
+        <li>يشتغل على العنوان و المنفذ الافتراضيين (127.0.0.1:9229)</li>
+        <li>يتوقف قبل بدء تنفيذ شيفرة المستخدم</li>
       </ul>
     </td>
   </tr>
   <tr>
-    <td>--inspect-brk=<i>[host:port]</i></td>
+    <td><span dir="ltr">--inspect-brk=<i>[host:port]</i><span></td>
     <td>
       <ul>
-        <li>Enable inspector agent</li>
-        <li>Bind to address or hostname <i>host</i> (default: 127.0.0.1)</li>
-        <li>Listen on port <i>port</i> (default: 9229)</li>
-        <li>Break before user code starts</li>
+        <li>يقوم بتمكين عميل التدقيق</li>
+        <li>يحدد عنوانا قيمته <i>host</i> (افتراضيا: 127.0.0.1)</li>
+        <li>يشتغل على المنفذ <i>port</i> (افتراضيا: 9229)</li>
+        <li>يتوقف قبل بدء تنفيذ شيفرة المستخدم</li>
       </ul>
     </td>
   </tr>
   <tr>
-    <td><code>node inspect <i>script.js</i></code></td>
+    <td><span dir="ltr"><code>node inspect <i>script.js</i></code></span></td>
     <td>
       <ul>
-        <li>Spawn child process to run user's script under --inspect flag;
-            and use main process to run CLI debugger.</li>
+        <li>يخبر العمليات الفرعية بتنفيذ السكربت الخاص بالمستخدم تحت علم <span dir="ltr">--inspect</span> مع استعمال العملية الرئيسية لتشغيل مصحح الأخطاء من سطر الأوامر.</li>
       </ul>
     </td>
   </tr>
   <tr>
-    <td><code>node inspect --port=xxxx <i>script.js</i></code></td>
+    <td><span dir="ltr"><code>node inspect --port=xxxx <i>script.js</i></code><span></td>
     <td>
       <ul>
-        <li>Spawn child process to run user's script under --inspect flag;
-            and use main process to run CLI debugger.</li>
-        <li>Listen on port <i>port</i> (default: 9229)</li>
+        <li>يخبر العمليات الفرعية بتنفيذ السكربت الخاص بالمستخدم تحت علم <span dir="ltr">--inspect</span> مع استعمال العملية الرئيسية لتشغيل مصحح الأخطاء من سطر الأوامر.</li>
+        <li>يشتغل عبر المنفذ <i>port</i> (افتراضيا: 9229)</li>
       </ul>
     </td>
   </tr>
