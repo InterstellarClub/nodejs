@@ -14,9 +14,9 @@ layout: docs.hbs
 سيبدو العنوان كاملا كما يلي: 
 `ws://127.0.0.1:9229/0f2c936f-b1cd-4ac9-aab3-f63b0f33d55e`
 
-ستستمع الـ Node.js إلى رسائل التصحيح إذا تلقت إشارة `SIGUSR1` (`SIGUSR1` غير متوفر على ويندوز.)
-في الـ Node.js 7 و ما قبله، يؤدي إستقبال هذه الإشارة إلى تنشيط واجهة برمجة التطبيقات القديمة الخاصة بالتصحيح، 
-أما في الـ  Node.js 8 و ما أحدث منه، يؤدي ذلك إلى تنشيط واجهة برمجة التطبيقات الخاصة بالمدقق 
+ستستمع الـ Node.js إلى رسائل التصحيح إذا تلقت إشارة `SIGUSR1` (`SIGUSR1` غير متوفر على ويندوز)، حيث انه 
+في الـ Node.js 7 و ما قبله، ينشط إستقبال هذه الإشارة واجهة برمجة التطبيقات القديمة الخاصة بالتصحيح، 
+أما في الـ  Node.js 8 و ما بعده، فذلك ينشط واجهة برمجة التطبيقات الخاصة بالمدقق 
 
 
 
@@ -35,78 +35,66 @@ layout: docs.hbs
 0.0.0.0 أو غيره من العناوين إذا كنت تنوي ان تسمح بإتصالات خارجية لمصحح الأخطاء، ولكن فعل هذا قد يعرضك لمخاطر
 أمنية جمة. تأكد من توظيف الجدران النارية و صلاحيات الوصول المناسبة لمنع أي تهديد أمني.
 
+إقرأ القسم المعنون بـ [سيناريوهات تمكين تصحيح الأخطاء عن بعد](#enabling-remote-debugging-scenarios) للحصول 
+على بعض النصائح حول كيفية تمكين الاتصالات عن بعد بمصحح الأخطاء بشكل آمن.
 
+## التطبيقات المحلية تمتلك الوصول الكامل للمدقق
 
-See the section on '[Enabling remote debugging scenarios](#enabling-remote-debugging-scenarios)' on some advice on how
-to safely allow remote debugger clients to connect.
+حتى لو قمت بربط منقذ المدقق بالعنوان 127.0.0.1 (الإفتراضي)، فإن أي تطبيقات محلية ستحصل على صلاحية الوصول الكاملة 
+له. لقد تم تصميم ذلك حتى يتسنى لمصححات الأخطاء المحلية أن ترتبط به بالشكل المناسب.
 
-### Local applications have full access to the inspector
+## المتصفحات و مآخذ الويب و سياسة نفس الأصل
 
-Even if you bind the inspector port to 127.0.0.1 (the default), any applications
-running locally on your machine will have unrestricted access. This is by design
-to allow local debuggers to be able to attach conveniently.
+يمكن لمواقع الانترنت المفتوحة من متصفح أن تجري طلبات HTTP و webSockets تحت النموذج الأمني الخاص بالمتصفح، و يعد ضروريا
+إجراء اتصال HTTP مبدئي لأجل الحصول على معرف حصري خاص بجلسة تصحيح الأخطاء. تمنع سياسة نفس الأصل المواقع من إجراء هذا الإتصال
+وكتأمين من هجمات الـ [DNS rebinding](https://en.wikipedia.org/wiki/DNS_rebinding)، يقوم الـ Node.js بالتحقق من أن الرؤوس الخاصة 
+بالمضيف و الخاصة بالاتصال إما تحدد عنوانا أو `localhost` أو `localhost6` بدقة.
 
-### Browsers, WebSockets and same-origin policy
+تمنع سياسات التأمين هذه الإتصال عن طريق تحديد إسم المضيف بخادم لتصحيح الأخطاء عن بعد، لكن يمكنك إيجاد طريقة للالتفاف حول هذا بتحديد عنوان 
+بروتوكول الانترنت أو باستعمال نفق ssh كما هو موصوف اسفله.
 
-Websites open in a web-browser can make WebSocket and HTTP requests under the
-browser security model. An initial HTTP connection is necessary to obtain a
-unique debugger session id. The same-origin-policy prevents websites from being
-able to make this HTTP connection. For additional security against
-[DNS rebinding attacks](https://en.wikipedia.org/wiki/DNS_rebinding), Node.js
-verifies that the 'Host' headers for the connection either
-specify an IP address or `localhost` or `localhost6` precisely.
+## برامج التدقيق
 
-These security policies disallow connecting to a remote debug server by
-specifying the hostname. You can work-around this restriction by specifying
-either the IP address or by using ssh tunnels as described below.
-
-## Inspector Clients
-
-Several commercial and open source tools can connect to Node's Inspector. Basic
-info on these follows:
+هناك عدة أدوات مفتوحة المصدر يمكنها الإتصال بالدقق الخاص بالـ Node.js و ما يلي هي معلومات مبدئية عنها:
 
 #### [node-inspect](https://github.com/nodejs/node-inspect)
 
-* CLI Debugger supported by the Node.js Foundation which uses the [Inspector Protocol][].
-* A version is bundled with Node and can be used with `node inspect myscript.js`.
-* The latest version can also be installed independently (e.g. `npm install -g node-inspect`)
-  and used with `node-inspect myscript.js`.
+* مصحح أخطاء في سطر الأوامر مدعوم من مؤسسة الـ Node.js و يستعمل البروتوكول المسمى [Inspector Protocol][].
+* تشحن نسخة منه مع الـ Node و يمكن استعماله بواسطة الأمر `node inspect myscript.js`.
+* يمكن تثبيت آخر نسخة منه بشكل مستقل (`npm install -g node-inspect` على سبيل المثال) و يمكن استعمالها  بواسطة الأمر `node inspect myscript.js`.
 
-#### [Chrome DevTools](https://github.com/ChromeDevTools/devtools-frontend) 55+
+#### <span dir="ltr">[Chrome DevTools](https://github.com/ChromeDevTools/devtools-frontend) 55+</span>
 
-* **Option 1**: Open `chrome://inspect` in a Chromium-based
-  browser. Click the Configure button and ensure your target host and port
-  are listed.
-* **Option 2**: Copy the `devtoolsFrontendUrl` from the output of `/json/list`
-  (see above) or the --inspect hint text and paste into Chrome.
+* **الطريقة الأولى**: قم بفتح  العنوان `chrome://inspect` في أي متصفح مبني على Chromium. قم بالضغط على زر Configure و تأكد 
+من أن المضيف و المنفذ في القائمة.
+* **الطريقة الثانية**: قم بنسخ `devtoolsFrontendUrl` من الناتج عن `/json/list` (أنظر أعلاه) أو النص التلميحي الناتج عن --inspect 
+و قم بلصقه في Chrome.
 
-#### [Visual Studio Code](https://github.com/microsoft/vscode) 1.10+
+#### <span dir="ltr">[Visual Studio Code](https://github.com/microsoft/vscode) 1.10+</span>
 
-* In the Debug panel, click the settings icon to open `.vscode/launch.json`.
-  Select "Node.js" for initial setup.
+* في قائمة تصحيح الأخطاء، إضغط على ايقونة الإعدادات لفتح `.vscode/launch.json`.
+  قم باختيار "Node.js" للتثبيت الأولي. 
 
 #### [Visual Studio](https://github.com/Microsoft/nodejstools) 2017
+* قم باختيار "Debug > Start Debugging" من القائمة أو قم بالضغط على F5.
+* [خطوات تفصيلية بالإنجليزية](https://github.com/Microsoft/nodejstools/wiki/Debugging)
 
-* Choose "Debug > Start Debugging" from the menu or hit F5.
-* [Detailed instructions](https://github.com/Microsoft/nodejstools/wiki/Debugging).
+#### [JetBrains WebStorm](https://www.jetbrains.com/webstorm/) 2017.1+ و منتجات JetBrains الأخرى
 
-#### [JetBrains WebStorm](https://www.jetbrains.com/webstorm/) 2017.1+ and other JetBrains IDEs
-
-* Create a new Node.js debug configuration and hit Debug. `--inspect` will be used
-  by default for Node.js 7+. To disable uncheck `js.debugger.node.use.inspect` in
-  the IDE Registry.
+* قم بإنشاء إعدادات تصحيح جديدة خاصة بالـ Node.js و اضغط على Debug. سيتم استعمال `--inspect` افتراضياً بالنسبة للنسخ 7 فما فوق.
+  لإلغاء ذلك، قم بإلغاء تمكين `js.debugger.node.use.inspect` في السجل الخاص بالبرنامج.
 
 #### [chrome-remote-interface](https://github.com/cyrus-and/chrome-remote-interface)
-
-* Library to ease connections to Inspector Protocol endpoints.
+* مكتبة تسهل التواصل بأطراف اتصال بروتوكول التدقيق.
 
 #### [Gitpod](https://www.gitpod.io)
 
-* Start a Node.js debug configuration from the `Debug` view or hit `F5`. [Detailed instructions](https://medium.com/gitpod/debugging-node-js-applications-in-theia-76c94c76f0a1)
+* قم بإنشاء إعدادات تصحيح الأخطاء الخاصة بالـ Node.js من `Debug` أو قم بالضغط على F5. هنا [خطوات تفصيلية بالإنجليزية](https://medium.com/gitpod/debugging-node-js-applications-in-theia-76c94c76f0a1)
 
 ---
 
-## Command-line options
+## خيارات سطر الأوامر
+
 
 The following table lists the impact of various runtime flags on debugging:
 
@@ -175,7 +163,7 @@ The following table lists the impact of various runtime flags on debugging:
 
 ---
 
-## Enabling remote debugging scenarios
+## سيناريوهات تمكين تصحيح الأخطاء عن بعد <a name="enabling-remote-debugging-scenarios">
 
 We recommend that you never have the debugger listen on a public IP address. If
 you need to allow remote debugging connections we recommend the use of ssh
