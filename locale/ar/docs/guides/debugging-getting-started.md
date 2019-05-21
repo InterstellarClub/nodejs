@@ -21,25 +21,21 @@ layout: docs.hbs
 
 
 ---
+## تأثيرات أمنية
 
-## Security Implications
+بما أن لدى مصحح الأخطاء وصولاً كاملاً إلى بيئة تنفيذ الـ Node.js، قد يمكن لبرمجية ضارة متصلة بهذا المنفذ أن تنفذ 
+شيفرات عشوائية من خلال عملية الـ Node، ولذلك فإنه من المهم فهم التأثيرات الأمنية المحتملة التي تنتج عن إتاحة
+المنفذ الخاص بمصحح الأخطاء في الشبكات العامة و الخاصة.
 
-Since the debugger has full access to the Node.js execution environment, a
-malicious actor able to connect to this port may be able to execute arbitrary
-code on behalf of the Node process. It is important to understand the security
-implications of exposing the debugger port on public and private networks.
+## إتاحة المنفذ الخاص بالتصحيح للعامة غير آمن
+إذا كان لمصحح الأخطاء عنوان عام، او كان عنوانه هو 0.0.0.0، فيمكن لأي عميل قادر على الوصول لعنوان الانترنت 
+الخاص بك أن يتواصل مع مصحح الأخطاء بدون أية قيود، و سيتمكن من تنفيذ برمجيات عشوائية.
 
-### Exposing the debug port publicly is unsafe
+إفتراضيا، تأخذ العملية `node --inspect` العنوان 127.0.0.1، ويجب عليك تحديد العنوان العام لها صراحة سواء كان 
+0.0.0.0 أو غيره من العناوين إذا كنت تنوي ان تسمح بإتصالات خارجية لمصحح الأخطاء، ولكن فعل هذا قد يعرضك لمخاطر
+أمنية جمة. تأكد من توظيف الجدران النارية و صلاحيات الوصول المناسبة لمنع أي تهديد أمني.
 
-If the debugger is bound to a public IP address, or to 0.0.0.0, any clients that
-can reach your IP address will be able to connect to the debugger without any
-restriction and will be able to run arbitrary code.
 
-By default `node --inspect` binds to 127.0.0.1. You explicitly need to provide a
-public IP address or 0.0.0.0, etc., if you intend to allow external connections
-to the debugger. Doing so may expose you a potentially significant security
-threat. We suggest you ensure appropriate firewalls and access controls in place
-to prevent a security exposure.
 
 See the section on '[Enabling remote debugging scenarios](#enabling-remote-debugging-scenarios)' on some advice on how
 to safely allow remote debugger clients to connect.
