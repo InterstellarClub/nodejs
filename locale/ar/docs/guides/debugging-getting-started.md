@@ -18,7 +18,7 @@ layout: docs.hbs
 في الـ Node.js 7 و ما قبله، ينشط إستقبال هذه الإشارة واجهة برمجة التطبيقات القديمة الخاصة بالتصحيح، 
 أما في الـ  Node.js 8 و ما بعده، فذلك ينشط واجهة برمجة التطبيقات الخاصة بالمدقق 
 
-
+ﻻهﻻ
 
 ---
 ## تأثيرات أمنية
@@ -164,59 +164,52 @@ layout: docs.hbs
 
 ## سيناريوهات تمكين تصحيح الأخطاء عن بعد <a name="enabling-remote-debugging-scenarios">
 
-نوصي دائما بعدم تشغيل مصحح الأخطاء على عنوان انترنت عام. إذا أردت تمكين تصحيح الأخطاء عن بعد، فننصح بإستعمال أنفاق الـ ssh بدلا من ذلك.
+نوصي دائما بعدم تشغيل مصحح الأخطاء على عنوان انترنت عام. إذا أردت تمكين تصحيح الأخطاء عن بعد، فننصح بإستعمال قنوات الـ ssh بدلا من ذلك.
 المثال الآتي لأغراض توضيحية فقط. يجب عليك فهم المخاطر الأمنية المحتملة عند السماح بالوصول عن بعد لخدمة ذات امتيازات قبل أن تمضي قدما.
 
+فلنفترض أنك قمت بتشغيل الـ Node في حاسوب بعيد، remote.example.com على سبيل المثال، و تريد ان تتمكن من تصحيح الأخطاء فيها. 
+في ذلك الحاسوب البعيد، عليك بدء عملية node مع جعل المدقق يستمع على المضيف المحلي فقط (وهو الافتراضي).
 
-Let's say you are running Node on remote machine, remote.example.com, that you
-want to be able to debug. On that machine, you should start the node process
-with the inspector listening only to localhost (the default).
 
 ```bash
 $ node --inspect server.js
 ```
 
-Now, on your local machine from where you want to initiate a debug client
-connection, you can setup an ssh tunnel:
+الآن، و على حاسوبك المحلي  الذي تريد من خلاله إنشاء اتصال بعميل تصحيح الأخطاء، يمكنك إنشاء قناة ssh:
 
 ```bash
 $ ssh -L 9221:localhost:9229 user@remote.example.com
 ```
 
-This starts a ssh tunnel session where a connection to port 9221 on your local
-machine will be forwarded to port 9229 on remote.example.com. You can now attach
-a debugger such as Chrome DevTools or Visual Studio Code to localhost:9221,
-which should be able to debug as if the Node.js application was running locally.
+يقوم هذا الأمر بإنشاء جلسة لقناة ssh حيث يتم إعادة توجيه الإتصال من المنفذ 9221 على جهازك المحلي إلى المنفذ 9221 على النطاق remote.example.com. 
+يمكنك الآن ربط مصحح أخطاء مثل <span dir="ltr">Chrome DevTools</span> أو <span dir="ltr">Visual Studio Code</span> بالعنوان localhost:9221
+مما يعني أنه قادر على بدء تصحيح الأخطاء كما لو أن تطبيق الـ Node.js يشتغل محليا.
 
 ---
 
-## Legacy Debugger
+## مصحح الأخطاء القديم
 
-**The legacy debugger has been deprecated as of Node 7.7.0. Please use --inspect
-and Inspector instead.**
+**لقد تم اعتبار مصحح الأخطاء القديم قديماً ابتداء من نسخة الـ Node 7.7.0. قم باستعمال <span dir="ltr">--inspect</span> 
+أو المدقق بدلا منه.
 
-When started with the **--debug** or **--debug-brk** switches in version 7 and
-earlier, Node.js listens for debugging commands defined by the discontinued
-V8 Debugging Protocol on a TCP port, by default `5858`. Any debugger client
-which speaks this protocol can connect to and debug the running process; a
-couple popular ones are listed below.
+عند تشغيل مصحح الأخطاء القديم مع  <span dir="ltr">**--debug**</span> أو  <span dir="ltr">**--debug-brk**</span> في النسخة 7 
+و ما قبلها، تستمع الـ Node.js إلى تعليمات التصحيح المعرفة من قبل بروتوكول التصحيح الخاص بالـ V8 الذي تم ايقاف تطويره و ذلك على منفذ TCP
+`5858` افتراضياً. يستطيع أي عميل تصحيح يستخدم هذا البروتوكول أن يتصل و يصحح العملية الجاري تنفيذها، و من أشهرها ما سيُذكر أسفله.
 
-The V8 Debugging Protocol is no longer maintained or documented.
+إن بروتوكول التصحيح الخاص بالـ V8 لم تعد يتم صيانته أو توثيقه دوريا.
 
-#### [Built-in Debugger](https://nodejs.org/dist/latest-v6.x/docs/api/debugger.html)
+#### [مصحح الأخطاء المبني ضمنيا](https://nodejs.org/dist/latest-v6.x/docs/api/debugger.html)
 
-Start `node debug script_name.js` to start your script under Node's builtin
-command-line debugger. Your script starts in another Node process started with
-the `--debug-brk` option, and the initial Node process runs the `_debugger.js`
-script and connects to your target.
+قم بتنفيذ الأمر <span dir="ltr">`node debug script_name.js`</span> لبدء النص البرمجي الخاص بك عن طريق مصحح الأخطاء المبني ضمنيا في Node.
+يمكن للنص البرمجي الخاص بك أن يبدأ في عملية Node اخرى باستعمال <span dir="ltr">`--debug-brk`</span> كما تشغل عملية Node 
+المبدئية الملف <span dir="ltr">`_debugger.js`</span> و توصلك بوجهتك.
 
 #### [node-inspector](https://github.com/node-inspector/node-inspector)
 
-Debug your Node.js app with Chrome DevTools by using an intermediary process
-which translates the Inspector Protocol used in Chromium to the V8 Debugger
-protocol used in Node.js.
+قم بتصحيح الأخطاء في تطبيق Node.js الخاص بواسطة الـ <span dir="ltr">Chrome DevTools</span> و ذلك باستعمال عملية وسيطة تقوم بتحويل 
+بروتوكول المدقق المستعمل في Chromium إلى بروتوكول تصحيح الأخطاء في الـ V8 المستعمل في الـ Node.js
 
 <!-- refs -->
 
-[Inspector Protocol]: https://chromedevtools.github.io/debugger-protocol-viewer/v8/
+[بروتوكول المدقق]: https://chromedevtools.github.io/debugger-protocol-viewer/v8/
 [UUID]: https://tools.ietf.org/html/rfc4122
