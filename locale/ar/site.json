@@ -24,7 +24,7 @@
     },
     {
       "link": "feed/releases.xml",
-      "text": "الاصدارات : Node.js مدونة"
+      "text": "الإصدارات : Node.js مدونة"
     },
     {
       "link": "feed/vulnerability.xml",
@@ -32,7 +32,7 @@
     }
   ],
   "home": {
-    "text": "الرئيسية"
+    "text": "الرئيسة"
   },
   "about": {
     "link": "about",
@@ -51,7 +51,7 @@
     },
     "releases": {
       "link": "about/releases",
-      "text": "الاصدارات"
+      "text": "الإصدارات"
     },
     "resources": {
       "link": "about/resources",
@@ -71,7 +71,7 @@
     "text": "تنزيلات",
     "releases": {
       "link": "download/releases",
-      "text": "الاصدارات السابقة"
+      "text": "الإصدارات السابقة"
     },
     "package-manager": {
       "link": "download/package-manager",
@@ -79,7 +79,7 @@
     },
     "shasums": {
       "link": "SHASUMS256.txt.asc",
-      "text": "وثائق الاصدارات مختومة SHASUMS"
+      "text": "وثائق الإصدارات مختومة SHASUMS"
     },
     "install-on-linux": {
       "text": "تثبيت Node.js باستعمال أرشيف ثنائي على لينكس"
@@ -112,10 +112,10 @@
   },
   "getinvolved": {
     "link": "get-involved",
-    "text": "إنضم إلينا",
+    "text": "انضم إلينا",
     "code-and-learn": {
       "link": "get-involved/code-and-learn",
-      "text": "برمج و تعلم"
+      "text": "برمج وتعلم"
     },
     "collab-summit": {
       "link": "get-involved/collab-summit",
@@ -147,7 +147,7 @@
     "text": "المؤسسة"
   },
   "releases": {
-    "title": "أرشيف الاصدارات",
+    "title": "أرشيف الإصدارات",
     "downloads": "التنزيلات"
   },
   "links": {
