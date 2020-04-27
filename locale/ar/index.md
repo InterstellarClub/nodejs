@@ -1,9 +1,9 @@
 ---
 layout: index.hbs
 labels:
-  current-version: الاصدار الحالي
+  current-version: الإصدار الحالي
   download: تحميل
-  download-for: تحميل النسخة الخاصة ب
+  download-for: تحميل النسخة الخاصة بـ
   other-downloads: تحميل نسخ أخرى
   other-lts-downloads: أخرى LTS تحميل نسخ 
   other-current-downloads: تحميلات حالية أخرى
@@ -12,12 +12,12 @@ labels:
   tagline-current: آخر المستجدات
   tagline-lts: موصى به لجميع المستخدمين
   changelog: سجل التغييرات
-  api: API Docs
-  version-schedule-prompt: أو انظر الى
+  api: توثيق API
+  version-schedule-prompt: أو انظر إلى
   version-schedule-prompt-link-text: أجندة LTS.
   newsletter: نعم
-  newsletter-prefix: قم بالانضمام الى
-  newsletter-postfix: " , الرسالة الإخبارية الشّهريّة عن Node.js "
+  newsletter-prefix: قم بالانضمام لـ
+  newsletter-postfix: "، الرسالة الإخبارية الشّهريّة عن Node.js "
 ---
 
-Node.js® هو اطار عمل مبني على محرك [Chrome V8](https://v8.dev/).
+Node.js® هو إطار عمل مبني على محرك [Chrome V8](https://v8.dev/).
